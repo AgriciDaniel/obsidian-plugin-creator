@@ -1,8 +1,10 @@
 # Verification
 
-Public edition 0.2.0, local candidate checked on 2026-11-02. This record applies
-to the public source edition. Its own hosted CI has not run because the edition
-has not been committed or published.
+Public edition 0.2.0, checked on 2026-11-02. This record applies to the clean
+public source edition. Its [initial hosted CI run](https://github.com/AgriciDaniel/obsidian-plugin-creator-public/actions/runs/41485543731) passed both
+`test` and `creator-builds` on source commit `8c0b858563218454652034f3f64b425b716928cb`. The
+[GitHub release](https://github.com/AgriciDaniel/obsidian-plugin-creator-public/releases/tag/v0.2.0)
+identifies the final release commit and its own CI run.
 
 ## Observed local checks
 
@@ -58,8 +60,8 @@ requires the distribution, privacy, rights, and owner approval checks.
 
 ## Remaining evidence
 
-The public edition's hosted CI, actual Obsidian interaction, physical iOS and
+Actual Obsidian interaction, physical iOS and
 Android, real-vault performance, accessibility, specific integrations, directory
 acceptance, and commercial demand are not established by these local gates.
 Each actual plugin needs its own implemented criteria and runtime evidence.
-No publication, account change, or installation into an active vault occurred.
+Hosted source/build checks are separate from Obsidian runtime and device acceptance. No installation into an active vault is part of this release workflow.

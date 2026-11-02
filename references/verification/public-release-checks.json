@@ -236,12 +236,28 @@
       "overview_hides_tag_nodes": true,
       "tag_connections_view_available": true,
       "delivery": "Reviewed generic defaults copied only into newly created working vaults; no private state is shipped."
+    },
+    "hosted_ci": {
+      "repository": "AgriciDaniel/obsidian-plugin-creator-public",
+      "head_sha": "8c0b858563218454652034f3f64b425b716928cb",
+      "url": "https://github.com/AgriciDaniel/obsidian-plugin-creator-public/actions/runs/41485543731",
+      "conclusion": "success",
+      "jobs": [
+        {
+          "name": "test",
+          "conclusion": "success"
+        },
+        {
+          "name": "creator-builds",
+          "conclusion": "success"
+        }
+      ],
+      "scope": "Initial sanitized source commit. The final release notes identify the separately checked release head."
     }
   },
   "research_snapshot_date": "2026-11-01",
   "research_note": "121 public source entries and 200 original paraphrased claims. URLs were not all fetched again during this distribution check.",
   "unverified": [
-    "public repository hosted CI",
     "Obsidian runtime interaction",
     "physical iOS and Android",
     "real-vault performance and accessibility",
@@ -249,5 +265,5 @@
     "directory submission acceptance",
     "commercial demand"
   ],
-  "publication": "Not committed or published. Separate owner approval is required."
+  "publication": "Owner authorized public release on 2026-11-02. The release tag and final CI evidence are recorded in the GitHub release."
 }

@@ -2,7 +2,7 @@
 
 All notable changes to Obsidian Plugin Brain are documented in this file. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this repository adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.2.0] - 2026-11-01
+## [0.2.0] - 2026-11-02
 
 ### Added
 
@@ -34,7 +34,7 @@ All notable changes to Obsidian Plugin Brain are documented in this file. The fo
 - Prevented client synthesis from rewriting product canon and retained inherited raw provenance when creating a vault.
 - Added a fixed-date demo with retained SHA256 checks, operator guidance, a continuation prompt, and observed verification results.
 
-## Public edition candidate, 2026-11-02
+## Public source edition, 2026-11-02
 
 - Added a reviewed public source catalog and catalog-bound vault markers.
 - Kept private captures, internal ledgers, operational history, and Git history out of the public edition.
@@ -42,4 +42,4 @@ All notable changes to Obsidian Plugin Brain are documented in this file. The fo
 - Added public-tree, archive, provenance, and negative-control checks.
 - Updated navigation, documentation, package links, and third-party notices.
 
-This public edition candidate has not been published.
+Initial public distribution uses a clean Git history, category graph colors, and seven saved graph views. Hosted CI passed for the sanitized source snapshot; release notes identify the final checked commit.

@@ -1,0 +1,270 @@
+{
+  "schema": "obsidian-plugin-creator.build-evidence.v1",
+  "date": "2026-11-01",
+  "node": "v24.22.1",
+  "dependency_lock_sha256": "268b4c71287e82a1c59f93fc222418494b44413055b85b95aa53ab5377b70393",
+  "dependency_versions": {
+    "obsidian": "1.14.4",
+    "typescript": "5.8.3",
+    "esbuild": "0.28.2",
+    "@codemirror/state": "6.7.6",
+    "@codemirror/view": "6.43.13",
+    "three": "0.187.0",
+    "@types/three": "0.187.0",
+    "eslint": "10.14.0",
+    "typescript-eslint": "8.72.1",
+    "eslint-plugin-obsidianmd": "0.4.2",
+    "@eslint/js": "9.39.4"
+  },
+  "toolchain_install": "External prerequisite; this verifier performs no network or install.",
+  "outcomes": [
+    {
+      "archetype": "command",
+      "checks": [
+        {
+          "check": "typescript",
+          "exit_code": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "check": "bundle",
+          "exit_code": 0,
+          "stdout": "{\n  \"bytes\": 1338,\n  \"imports\": [\n    {\n      \"path\": \"obsidian\",\n      \"kind\": \"require-call\",\n      \"external\": true\n    }\n  ]\n}\n",
+          "stderr": ""
+        },
+        {
+          "check": "official_lint",
+          "exit_code": 0,
+          "stdout": "[{\"filePath\":\"<project>/src/main.ts\",\"messages\":[],\"suppressedMessages\":[],\"errorCount\":0,\"fatalErrorCount\":0,\"warningCount\":0,\"fixableErrorCount\":0,\"fixableWarningCount\":0,\"usedDeprecatedRules\":[{\"ruleId\":\"@typescript-eslint/no-restricted-imports\",\"replacedBy\":[\"no-restricted-imports\"],\"info\":{\"deprecatedSince\":\"8.64.0\",\"replacedBy\":[{\"rule\":{\"name\":\"no-restricted-imports\",\"url\":\"https://eslint.org/docs/latest/rules/no-restricted-imports\"}}],\"url\":\"https://github.com/typescript-eslint/typescript-eslint/pull/12527\"}}]}]\n",
+          "stderr": ""
+        }
+      ],
+      "evidence_class": "generated-source-build-and-official-lint",
+      "source_sha256": "740a935a6209fb3dcf27e2c2e8be4f04be13973a3c8dea7c417ff4a9a4b111fe",
+      "styles_sha256": "1d50690554c7f57c6d8a14f9eac981c2ac1e0420952667a14593ff4363d21fd4",
+      "generation_receipt_sha256": "f5e014a96b0bc511b487df6f32d9333a88e5e80688f189995455208b033c1a09",
+      "runtime": "unverified",
+      "physical_devices": "unverified",
+      "bundle_sha256": "0c0961c51a535f522f8217ad94c4a1b99893daa6e37e2e01e96248165ba77b1f",
+      "bundle_bytes": 1338
+    },
+    {
+      "archetype": "dashboard",
+      "checks": [
+        {
+          "check": "typescript",
+          "exit_code": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "check": "bundle",
+          "exit_code": 0,
+          "stdout": "{\n  \"bytes\": 2503,\n  \"imports\": [\n    {\n      \"path\": \"obsidian\",\n      \"kind\": \"require-call\",\n      \"external\": true\n    }\n  ]\n}\n",
+          "stderr": ""
+        },
+        {
+          "check": "official_lint",
+          "exit_code": 0,
+          "stdout": "[{\"filePath\":\"<project>/src/main.ts\",\"messages\":[],\"suppressedMessages\":[],\"errorCount\":0,\"fatalErrorCount\":0,\"warningCount\":0,\"fixableErrorCount\":0,\"fixableWarningCount\":0,\"usedDeprecatedRules\":[{\"ruleId\":\"@typescript-eslint/no-restricted-imports\",\"replacedBy\":[\"no-restricted-imports\"],\"info\":{\"deprecatedSince\":\"8.64.0\",\"replacedBy\":[{\"rule\":{\"name\":\"no-restricted-imports\",\"url\":\"https://eslint.org/docs/latest/rules/no-restricted-imports\"}}],\"url\":\"https://github.com/typescript-eslint/typescript-eslint/pull/12527\"}}]}]\n",
+          "stderr": ""
+        }
+      ],
+      "evidence_class": "generated-source-build-and-official-lint",
+      "source_sha256": "c6815043a6043adabdb4e499e9b1d2a64b560595ab3099e1558c32c83312b03d",
+      "styles_sha256": "11b4b121ff3a2a7d941aa03c68846b0de7fdd96b7eb7b53b671afa6b792f30fc",
+      "generation_receipt_sha256": "faa98c19488b1b72057b65c61f6ae3b0ffefd1c2888d0148973ac0abd126f1bf",
+      "runtime": "unverified",
+      "physical_devices": "unverified",
+      "bundle_sha256": "45e487198b0918482abd6bd5defceb8cdc3999357e7ed13a072ea7699b54c0c1",
+      "bundle_bytes": 2503
+    },
+    {
+      "archetype": "bases",
+      "checks": [
+        {
+          "check": "typescript",
+          "exit_code": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "check": "bundle",
+          "exit_code": 0,
+          "stdout": "{\n  \"bytes\": 2039,\n  \"imports\": [\n    {\n      \"path\": \"obsidian\",\n      \"kind\": \"require-call\",\n      \"external\": true\n    }\n  ]\n}\n",
+          "stderr": ""
+        },
+        {
+          "check": "official_lint",
+          "exit_code": 0,
+          "stdout": "[{\"filePath\":\"<project>/src/main.ts\",\"messages\":[],\"suppressedMessages\":[],\"errorCount\":0,\"fatalErrorCount\":0,\"warningCount\":0,\"fixableErrorCount\":0,\"fixableWarningCount\":0,\"usedDeprecatedRules\":[{\"ruleId\":\"@typescript-eslint/no-restricted-imports\",\"replacedBy\":[\"no-restricted-imports\"],\"info\":{\"deprecatedSince\":\"8.64.0\",\"replacedBy\":[{\"rule\":{\"name\":\"no-restricted-imports\",\"url\":\"https://eslint.org/docs/latest/rules/no-restricted-imports\"}}],\"url\":\"https://github.com/typescript-eslint/typescript-eslint/pull/12527\"}}]}]\n",
+          "stderr": ""
+        }
+      ],
+      "evidence_class": "generated-source-build-and-official-lint",
+      "source_sha256": "aba255a6e6659bebc3039b9a184850e5aea8124d9e9e418688940fe8bee4d317",
+      "styles_sha256": "fc4d969f4af3a0b48acd88ff15683069f4607f8e226268b9ad19021f8d13ebdf",
+      "generation_receipt_sha256": "e609f3808e8c04e63a50ff79a049327918e1561685c533df35866f57ee85c07f",
+      "runtime": "unverified",
+      "physical_devices": "unverified",
+      "bundle_sha256": "54d20cff1722955801008413a7272418551a54da9dadaeeb530d77d99682e2e5",
+      "bundle_bytes": 2039
+    },
+    {
+      "archetype": "editor",
+      "checks": [
+        {
+          "check": "typescript",
+          "exit_code": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "check": "bundle",
+          "exit_code": 0,
+          "stdout": "{\n  \"bytes\": 1605,\n  \"imports\": [\n    {\n      \"path\": \"obsidian\",\n      \"kind\": \"require-call\",\n      \"external\": true\n    },\n    {\n      \"path\": \"@codemirror/view\",\n      \"kind\": \"require-call\",\n      \"external\": true\n    }\n  ]\n}\n",
+          "stderr": ""
+        },
+        {
+          "check": "official_lint",
+          "exit_code": 0,
+          "stdout": "[{\"filePath\":\"<project>/src/main.ts\",\"messages\":[],\"suppressedMessages\":[],\"errorCount\":0,\"fatalErrorCount\":0,\"warningCount\":0,\"fixableErrorCount\":0,\"fixableWarningCount\":0,\"usedDeprecatedRules\":[{\"ruleId\":\"@typescript-eslint/no-restricted-imports\",\"replacedBy\":[\"no-restricted-imports\"],\"info\":{\"deprecatedSince\":\"8.64.0\",\"replacedBy\":[{\"rule\":{\"name\":\"no-restricted-imports\",\"url\":\"https://eslint.org/docs/latest/rules/no-restricted-imports\"}}],\"url\":\"https://github.com/typescript-eslint/typescript-eslint/pull/12527\"}}]}]\n",
+          "stderr": ""
+        }
+      ],
+      "evidence_class": "generated-source-build-and-official-lint",
+      "source_sha256": "bb808d668f247393d40349a720571a93c57c5e5d13b53af4e204fc62626da024",
+      "styles_sha256": "0f5944796cc6f1d6e6de0d3a2200b3d937d4a054a39020d888acb6d2a649b1cb",
+      "generation_receipt_sha256": "edbe17f33687ddea3dbe7e859ac384dfd9a023ea26cc4c0e92dbada5bc769580",
+      "runtime": "unverified",
+      "physical_devices": "unverified",
+      "bundle_sha256": "ce086d5632325eb4b677ecf87fe4759c53767192b6d077dae009e977c54bd0a9",
+      "bundle_bytes": 1605
+    },
+    {
+      "archetype": "markdown",
+      "checks": [
+        {
+          "check": "typescript",
+          "exit_code": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "check": "bundle",
+          "exit_code": 0,
+          "stdout": "{\n  \"bytes\": 1979,\n  \"imports\": [\n    {\n      \"path\": \"obsidian\",\n      \"kind\": \"require-call\",\n      \"external\": true\n    }\n  ]\n}\n",
+          "stderr": ""
+        },
+        {
+          "check": "official_lint",
+          "exit_code": 0,
+          "stdout": "[{\"filePath\":\"<project>/src/main.ts\",\"messages\":[],\"suppressedMessages\":[],\"errorCount\":0,\"fatalErrorCount\":0,\"warningCount\":0,\"fixableErrorCount\":0,\"fixableWarningCount\":0,\"usedDeprecatedRules\":[{\"ruleId\":\"@typescript-eslint/no-restricted-imports\",\"replacedBy\":[\"no-restricted-imports\"],\"info\":{\"deprecatedSince\":\"8.64.0\",\"replacedBy\":[{\"rule\":{\"name\":\"no-restricted-imports\",\"url\":\"https://eslint.org/docs/latest/rules/no-restricted-imports\"}}],\"url\":\"https://github.com/typescript-eslint/typescript-eslint/pull/12527\"}}]}]\n",
+          "stderr": ""
+        }
+      ],
+      "evidence_class": "generated-source-build-and-official-lint",
+      "source_sha256": "9c40f01db9da00d6ef64b5e35cf6e4f229aeea4267cf457ba5fcd72bcd3397ed",
+      "styles_sha256": "90740d946f3283c7856844a42c25f27d803d10aaec6216cbf597d0fefc3385a1",
+      "generation_receipt_sha256": "c6a32a7166ea1034426b012054f13d7bfc4372cf3949811d790666666cc4e3c2",
+      "runtime": "unverified",
+      "physical_devices": "unverified",
+      "bundle_sha256": "f9e7196d2b44bb4e58b3f7b03ef8a51d122f4c8b316ddef39494125641492e32",
+      "bundle_bytes": 1979
+    },
+    {
+      "archetype": "canvas",
+      "checks": [
+        {
+          "check": "typescript",
+          "exit_code": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "check": "bundle",
+          "exit_code": 0,
+          "stdout": "{\n  \"bytes\": 3298,\n  \"imports\": [\n    {\n      \"path\": \"obsidian\",\n      \"kind\": \"require-call\",\n      \"external\": true\n    }\n  ]\n}\n",
+          "stderr": ""
+        },
+        {
+          "check": "official_lint",
+          "exit_code": 0,
+          "stdout": "[{\"filePath\":\"<project>/src/main.ts\",\"messages\":[],\"suppressedMessages\":[],\"errorCount\":0,\"fatalErrorCount\":0,\"warningCount\":0,\"fixableErrorCount\":0,\"fixableWarningCount\":0,\"usedDeprecatedRules\":[{\"ruleId\":\"@typescript-eslint/no-restricted-imports\",\"replacedBy\":[\"no-restricted-imports\"],\"info\":{\"deprecatedSince\":\"8.64.0\",\"replacedBy\":[{\"rule\":{\"name\":\"no-restricted-imports\",\"url\":\"https://eslint.org/docs/latest/rules/no-restricted-imports\"}}],\"url\":\"https://github.com/typescript-eslint/typescript-eslint/pull/12527\"}}]}]\n",
+          "stderr": ""
+        }
+      ],
+      "evidence_class": "generated-source-build-and-official-lint",
+      "source_sha256": "36e9675d462499d29268f728cc1b7a2c262aebf1691ba5f2737f7819b58e28b0",
+      "styles_sha256": "807f2d14fdabbe5057674587a60ca327df4d5671514c645a33367978742fecdd",
+      "generation_receipt_sha256": "5181123af4b97d8a558093e49685545982c9b96dafab5b706684f9151dab32eb",
+      "runtime": "unverified",
+      "physical_devices": "unverified",
+      "bundle_sha256": "9220749598680bbe1db93de77d377e97366bec466650920f5f4152aa7fa88a13",
+      "bundle_bytes": 3298
+    },
+    {
+      "archetype": "webgl",
+      "checks": [
+        {
+          "check": "typescript",
+          "exit_code": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "check": "bundle",
+          "exit_code": 0,
+          "stdout": "{\n  \"bytes\": 1126410,\n  \"imports\": [\n    {\n      \"path\": \"obsidian\",\n      \"kind\": \"require-call\",\n      \"external\": true\n    }\n  ]\n}\n",
+          "stderr": ""
+        },
+        {
+          "check": "official_lint",
+          "exit_code": 0,
+          "stdout": "[{\"filePath\":\"<project>/src/main.ts\",\"messages\":[],\"suppressedMessages\":[],\"errorCount\":0,\"fatalErrorCount\":0,\"warningCount\":0,\"fixableErrorCount\":0,\"fixableWarningCount\":0,\"usedDeprecatedRules\":[{\"ruleId\":\"@typescript-eslint/no-restricted-imports\",\"replacedBy\":[\"no-restricted-imports\"],\"info\":{\"deprecatedSince\":\"8.64.0\",\"replacedBy\":[{\"rule\":{\"name\":\"no-restricted-imports\",\"url\":\"https://eslint.org/docs/latest/rules/no-restricted-imports\"}}],\"url\":\"https://github.com/typescript-eslint/typescript-eslint/pull/12527\"}}]}]\n",
+          "stderr": ""
+        }
+      ],
+      "evidence_class": "generated-source-build-and-official-lint",
+      "source_sha256": "d890d4ddf3a53e61c35c3cb7636a0d8ef53e165cb98a0c4e89abb93573c6d8fd",
+      "styles_sha256": "12abd97f50570e4c38b12fd4fb8f8bc05a57ed18f8c15e0b4e6bf30e2ce16e4d",
+      "generation_receipt_sha256": "8f6113e67c42dbe286253011dd965fe692df53fccf397525274efcc2c785ee73",
+      "runtime": "unverified",
+      "physical_devices": "unverified",
+      "bundle_sha256": "346aff9a143a3c30d5538706f99d689a29e40170fefa919f4147ec85233ea195",
+      "bundle_bytes": 1126410
+    },
+    {
+      "archetype": "vault-index",
+      "checks": [
+        {
+          "check": "typescript",
+          "exit_code": 0,
+          "stdout": "",
+          "stderr": ""
+        },
+        {
+          "check": "bundle",
+          "exit_code": 0,
+          "stdout": "{\n  \"bytes\": 2390,\n  \"imports\": [\n    {\n      \"path\": \"obsidian\",\n      \"kind\": \"require-call\",\n      \"external\": true\n    }\n  ]\n}\n",
+          "stderr": ""
+        },
+        {
+          "check": "official_lint",
+          "exit_code": 0,
+          "stdout": "[{\"filePath\":\"<project>/src/main.ts\",\"messages\":[],\"suppressedMessages\":[],\"errorCount\":0,\"fatalErrorCount\":0,\"warningCount\":0,\"fixableErrorCount\":0,\"fixableWarningCount\":0,\"usedDeprecatedRules\":[{\"ruleId\":\"@typescript-eslint/no-restricted-imports\",\"replacedBy\":[\"no-restricted-imports\"],\"info\":{\"deprecatedSince\":\"8.64.0\",\"replacedBy\":[{\"rule\":{\"name\":\"no-restricted-imports\",\"url\":\"https://eslint.org/docs/latest/rules/no-restricted-imports\"}}],\"url\":\"https://github.com/typescript-eslint/typescript-eslint/pull/12527\"}}]}]\n",
+          "stderr": ""
+        }
+      ],
+      "evidence_class": "generated-source-build-and-official-lint",
+      "source_sha256": "844c7c86f5b09856e19e044266675c00ab9041fab9f340fd58fd1f9fa34e7c78",
+      "styles_sha256": "20161b5a423b55328200a51be24de5531a43104c1f8fc161c30ee68f0df87eb7",
+      "generation_receipt_sha256": "87728d4878f3065b4c776d2fffc56cabe4be9443ff90d3b838654e640999e299",
+      "runtime": "unverified",
+      "physical_devices": "unverified",
+      "bundle_sha256": "0f51d3c6d6ebf09be2315fb1a733741af7f0f03ec3ea58d9e6ed8aea2a737a1d",
+      "bundle_bytes": 2390
+    }
+  ]
+}

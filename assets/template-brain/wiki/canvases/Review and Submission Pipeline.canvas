@@ -1,0 +1,109 @@
+{
+  "nodes": [
+    {
+      "id": "step1",
+      "type": "text",
+      "text": "### Gate 1: Manifest & Versioning\n- Lowercase `id` without `obsidian`\n- `version` & `minAppVersion` strict `X.Y.Z`\n- `versions.json` parity\n- Description <= 250 chars with period",
+      "color": "4",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 210
+    },
+    {
+      "id": "step2",
+      "type": "text",
+      "text": "### Gate 2: Lifecycle & Memory\n- Zero `detachLeavesOfType` in `onunload()`\n- `this.register*` for events/DOM/intervals\n- Deferred view safe (`instanceof` after reveal)\n- Unmount React/Svelte & dispose WebGL in `onClose()`",
+      "color": "5",
+      "x": 380,
+      "y": 0,
+      "width": 340,
+      "height": 210
+    },
+    {
+      "id": "step3",
+      "type": "text",
+      "text": "### Gate 3: Security, Mobile & Sync\n- Zero `innerHTML` / `outerHTML`\n- Zero `node:*` / `electron` if `isDesktopOnly: false`\n- `requestUrl` for cross-origin HTTP\n- Keep `data.json` lean for Obsidian Sync",
+      "color": "1",
+      "x": 780,
+      "y": 0,
+      "width": 340,
+      "height": 210
+    },
+    {
+      "id": "step4",
+      "type": "file",
+      "file": "wiki/concepts/Community Store submission, eslint-plugin review gates, BRAT, and release CI.md",
+      "color": "4",
+      "x": 1180,
+      "y": 0,
+      "width": 360,
+      "height": 210
+    },
+    {
+      "id": "scorecard",
+      "type": "file",
+      "file": "wiki/deliverables/Health Scorecard.md",
+      "x": 380,
+      "y": 280,
+      "width": 340,
+      "height": 190
+    },
+    {
+      "id": "approval",
+      "type": "file",
+      "file": "wiki/decisions/Approval Queue.md",
+      "x": 780,
+      "y": 280,
+      "width": 340,
+      "height": 190
+    }
+  ],
+  "edges": [
+    {
+      "id": "r1",
+      "fromNode": "step1",
+      "fromSide": "right",
+      "toNode": "step2",
+      "toSide": "left",
+      "label": "static check"
+    },
+    {
+      "id": "r2",
+      "fromNode": "step2",
+      "fromSide": "right",
+      "toNode": "step3",
+      "toSide": "left",
+      "label": "eslint-plugin-obsidianmd"
+    },
+    {
+      "id": "r3",
+      "fromNode": "step3",
+      "fromSide": "right",
+      "toNode": "step4",
+      "toSide": "left",
+      "label": "GitHub Release + PR"
+    },
+    {
+      "id": "r4",
+      "fromNode": "step2",
+      "fromSide": "bottom",
+      "toNode": "scorecard",
+      "toSide": "top"
+    },
+    {
+      "id": "r5",
+      "fromNode": "scorecard",
+      "fromSide": "right",
+      "toNode": "approval",
+      "toSide": "left"
+    },
+    {
+      "id": "r6",
+      "fromNode": "approval",
+      "fromSide": "right",
+      "toNode": "step4",
+      "toSide": "bottom"
+    }
+  ]
+}

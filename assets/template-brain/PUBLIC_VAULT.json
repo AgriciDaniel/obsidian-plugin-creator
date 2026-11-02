@@ -1,0 +1,6 @@
+{
+  "schema": "obsidian-plugin-public-vault.v1",
+  "catalog": "references/public-sources.json",
+  "catalog_sha256": "2180b7c07b51d01618808966204194f8af8337355313bcd9edfe343ddb1a809b",
+  "distribution": "Public source summaries only. Private intake and Obsidian state are created locally."
+}

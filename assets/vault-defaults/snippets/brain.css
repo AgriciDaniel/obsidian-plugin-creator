@@ -1,0 +1,23 @@
+:root {
+  --brain-accent: #1A73E8;
+  --brain-accent-strong: #0B57D0;
+  --brain-warn: #D93025;
+  --brain-gold: #F9AB00;
+  --brain-tint: #D3E3FD;
+}
+
+.markdown-preview-view h1 {
+  color: var(--brain-accent-strong);
+}
+
+.markdown-preview-view a {
+  color: var(--brain-accent);
+}
+
+/* Graph nodes use the note-type palette; tag nodes share the violet accent. */
+.graph-view {
+  --graph-node-tag: #B7A0E6;
+  --graph-node-focused: #A882FF;
+  --graph-node-unresolved: var(--text-faint);
+  --graph-line: var(--background-modifier-border);
+}

@@ -1,0 +1,11 @@
+{
+  "created_at": "2026-11-01T17:44:15+00:00",
+  "description": "Coordinate the run, assign tasks, and keep the orchestration ledger current.",
+  "id": "wizard-conductor",
+  "result": "Interrupted work recovered and local completion record written. Local completion work; no claim of a separately executed named role agent.",
+  "role": "wizard-conductor",
+  "schema": "brainstein.task.v1",
+  "status": "completed",
+  "title": "wizard-conductor gate work",
+  "updated_at": "2026-11-01"
+}

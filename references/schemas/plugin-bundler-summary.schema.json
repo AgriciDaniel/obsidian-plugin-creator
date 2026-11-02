@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/AgriciDaniel/obsidian-plugin-creator-public/schemas/plugin-bundler-summary.schema.json",
+  "title": "Obsidian Plugin Bundler and Static Analysis Summary",
+  "description": "Normalized output produced by obsidian_plugin_brain.importers.plugin_repo.import_plugin_repo.",
+  "type": "object",
+  "required": [
+    "manifest",
+    "scopes",
+    "bundler",
+    "externals",
+    "signals",
+    "warnings",
+    "no_data"
+  ],
+  "properties": {
+    "manifest": {
+      "type": "object"
+    },
+    "versions": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "scopes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "core-commands-lifecycle",
+          "dashboard-custom-views",
+          "bases-custom-view",
+          "modals-suggests-settings",
+          "visuals-2d-canvas-svg",
+          "visuals-3d-webgl",
+          "editor-codemirror6",
+          "markdown-processors",
+          "vault-metadata-links",
+          "ui-framework-mounted",
+          "mobile-cross-platform",
+          "network-external-api"
+        ]
+      }
+    },
+    "bundler": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "externals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "signals": {
+      "type": "object"
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "no_data": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

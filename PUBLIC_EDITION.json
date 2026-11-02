@@ -1,0 +1,10 @@
+{
+  "schema": "obsidian-plugin-public-edition.v1",
+  "version": "0.2.0",
+  "source_catalog": "references/public-sources.json",
+  "source_count": 121,
+  "claim_count": 200,
+  "catalog_sha256": "2180b7c07b51d01618808966204194f8af8337355313bcd9edfe343ddb1a809b",
+  "proposed_repository": "AgriciDaniel/obsidian-plugin-creator-public",
+  "publication": "Candidate only. Owner approval is required before commit or publication."
+}

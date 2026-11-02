@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "evidence_class": "heuristic-rule-metadata",
+  "limitations": [
+    "Token and regular-expression scans can miss aliases and control flow or report false positives.",
+    "Rule 002 description length and punctuation are local editorial conventions.",
+    "Passing this catalog is not ESLint, compilation, device verification, or submission approval."
+  ],
+  "rules": {
+    "OB-REV-001": {
+      "title": "Selected manifest format",
+      "scope": "core-commands-lifecycle",
+      "canon_note": "Community Store submission, eslint-plugin review gates, BRAT, and release CI",
+      "confidence": "evidence-based",
+      "source_ids": [
+        "SRC-01-003"
+      ]
+    },
+    "OB-REV-002": {
+      "title": "Description convention and compatibility map",
+      "scope": "core-commands-lifecycle",
+      "canon_note": "Community Store submission, eslint-plugin review gates, BRAT, and release CI",
+      "confidence": "practitioner",
+      "source_ids": [
+        "SRC-01-003",
+        "SRC-01-007"
+      ]
+    },
+    "OB-REV-003": {
+      "title": "Preserve workspace leaves on unload",
+      "scope": "core-commands-lifecycle",
+      "canon_note": "Plugin lifecycle, Component ownership, and cleanup discipline",
+      "confidence": "evidence-based",
+      "source_ids": [
+        "SRC-01-001"
+      ]
+    },
+    "OB-REV-004": {
+      "title": "Use scoped app access",
+      "scope": "core-commands-lifecycle",
+      "canon_note": "Plugin lifecycle, Component ownership, and cleanup discipline",
+      "confidence": "evidence-based",
+      "source_ids": [
+        "SRC-01-001"
+      ]
+    },
+    "OB-REV-005": {
+      "title": "Review HTML injection sinks",
+      "scope": "core-commands-lifecycle",
+      "canon_note": "Security, XSS prevention, Sync storage limits, and network disclosure",
+      "confidence": "evidence-based",
+      "source_ids": [
+        "SRC-01-001"
+      ]
+    },
+    "OB-REV-006": {
+      "title": "Desktop API imports and mobile target",
+      "scope": "mobile-cross-platform",
+      "canon_note": "Mobile compatibility, startup performance, and memory profiling",
+      "confidence": "evidence-based",
+      "source_ids": [
+        "SRC-01-008"
+      ]
+    },
+    "OB-REV-007": {
+      "title": "Host module external declarations",
+      "scope": "editor-codemirror6",
+      "canon_note": "Build toolchains, esbuild, Vite dual-target, hot-reload, and testing",
+      "confidence": "evidence-based",
+      "source_ids": [
+        "SRC-01-007"
+      ]
+    },
+    "OB-REV-008": {
+      "title": "Command prefixes and default hotkeys",
+      "scope": "core-commands-lifecycle",
+      "canon_note": "Plugin lifecycle, Component ownership, and cleanup discipline",
+      "confidence": "evidence-based",
+      "source_ids": [
+        "SRC-01-001"
+      ]
+    },
+    "OB-REV-009": {
+      "title": "Native settings headings",
+      "scope": "modals-suggests-settings",
+      "canon_note": "Modals, suggest interfaces, menus, settings tabs, and SecretStorage",
+      "confidence": "evidence-based",
+      "source_ids": [
+        "SRC-01-001"
+      ]
+    },
+    "OB-REV-010": {
+      "title": "Vault startup events and FileManager use",
+      "scope": "vault-metadata-links",
+      "canon_note": "Vault API, FileManager, atomic edits, and DataAdapter boundaries",
+      "confidence": "evidence-based",
+      "source_ids": [
+        "SRC-04-023",
+        "SRC-04-025",
+        "obs-docs-optimize-load-time"
+      ]
+    },
+    "OB-REV-011": {
+      "title": "Cross-origin request review",
+      "scope": "network-external-api",
+      "canon_note": "Security, XSS prevention, Sync storage limits, and network disclosure",
+      "confidence": "evidence-based",
+      "source_ids": [
+        "obs-docs-requesturl-api"
+      ]
+    },
+    "OB-REV-012": {
+      "title": "WebGL lifecycle signal review",
+      "scope": "visuals-3d-webgl",
+      "canon_note": "3D WebGL, Three.js, React Three Fiber, and spatial codex views",
+      "confidence": "practitioner",
+      "source_ids": [
+        "src-03-threejs-dispose-manual",
+        "src-03-mdn-resize-observer",
+        "src-03-mdn-page-visibility"
+      ]
+    },
+    "OB-REV-013": {
+      "title": "React root teardown",
+      "scope": "ui-framework-mounted",
+      "canon_note": "UI frameworks in plugins Vanilla DOM, React, Svelte, and Vue",
+      "confidence": "evidence-based",
+      "source_ids": [
+        "src-03-react-createroot-docs"
+      ]
+    },
+    "OB-REV-014": {
+      "title": "Theme variable adoption",
+      "scope": "dashboard-custom-views",
+      "canon_note": "Design system, CSS variables, themes, icons, and accessibility",
+      "confidence": "practitioner",
+      "source_ids": [
+        "SRC-02-006"
+      ]
+    }
+  }
+}

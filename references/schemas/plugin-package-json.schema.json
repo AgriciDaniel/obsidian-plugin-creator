@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/AgriciDaniel/obsidian-plugin-creator-public/schemas/plugin-package-json.schema.json",
+  "title": "Obsidian Plugin package.json Contract",
+  "description": "Normalized static-import schema for an Obsidian plugin package.json file.",
+  "type": "object",
+  "required": [
+    "name"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string"
+    },
+    "main": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "module",
+        "commonjs"
+      ]
+    },
+    "scripts": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "dependencies": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "devDependencies": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    }
+  }
+}

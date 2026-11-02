@@ -1,0 +1,34 @@
+{
+  "name": "agricidaniel-obsidian-plugin-brain",
+  "owner": {
+    "name": "Daniel Agrici"
+  },
+  "metadata": {
+    "description": "Obsidian Plugin Brain template and skill layer",
+    "version": "0.2.0"
+  },
+  "plugins": [
+    {
+      "name": "obsidian-plugin-brain",
+      "source": "./",
+      "description": "Obsidian brain for Architecting, building, styling, optimizing, testing, auditing, and shipping Obsidian plugins across all plugin scopes: core commands, multi-pane dashboards and Bases views, 2D and 3D WebGL visuals and canvases, CodeMirror 6 editor extensions, Markdown processors, vault and MetadataCache engines, mobile compatibility, and Community Store releases..",
+      "version": "0.2.0",
+      "author": {
+        "name": "Daniel Agrici"
+      },
+      "repository": "https://github.com/AgriciDaniel/obsidian-plugin-creator-public",
+      "license": "Apache-2.0",
+      "category": "obsidian-plugin",
+      "tags": [
+        "obsidian",
+        "brain",
+        "obsidian-plugin"
+      ],
+      "keywords": [
+        "obsidian-plugin-brain",
+        "obsidian-plugin",
+        "obsidian"
+      ]
+    }
+  ]
+}

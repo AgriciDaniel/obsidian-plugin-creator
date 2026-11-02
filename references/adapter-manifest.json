@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "status": "domain-adapted",
+  "domain": "Architecting, building, styling, optimizing, testing, auditing, and shipping Obsidian plugins across all plugin scopes: core commands, multi-pane dashboards and Bases views, 2D and 3D WebGL visuals and canvases, CodeMirror 6 editor extensions, Markdown processors, vault and MetadataCache engines, mobile compatibility, and Community Store releases.",
+  "generic_only": false,
+  "raw_input_types": [
+    "Plugin manifest.json and optional versions.json/package.json",
+    "Recognized esbuild, Vite, and Rollup configuration text",
+    "Bounded TypeScript, JavaScript, Svelte, Vue, and CSS source text"
+  ],
+  "rules": {
+    "domain_adapted_requires": [
+      "one real domain importer or ingestion path",
+      "one domain-specific synthesis module",
+      "one report renderer",
+      "one fixture per supported input type",
+      "tests for importer, synthesis, rendering, malformed input, and missing credentials"
+    ]
+  },
+  "input_schemas": [
+    {
+      "name": "Obsidian plugin manifest.json",
+      "path": "references/schemas/obsidian-manifest.schema.json",
+      "format": "JSON Schema"
+    },
+    {
+      "name": "Obsidian plugin versions.json compatibility map",
+      "path": "references/schemas/obsidian-versions.schema.json",
+      "format": "JSON Schema"
+    },
+    {
+      "name": "Obsidian plugin package.json contract",
+      "path": "references/schemas/plugin-package-json.schema.json",
+      "format": "JSON Schema"
+    },
+    {
+      "name": "Obsidian plugin bundler and static analysis summary",
+      "path": "references/schemas/plugin-bundler-summary.schema.json",
+      "format": "JSON Schema"
+    },
+    {
+      "name": "Creator product brief",
+      "path": "references/schemas/plugin-creator-brief.schema.json",
+      "format": "JSON Schema"
+    }
+  ],
+  "importers": [
+    {
+      "name": "Static Obsidian plugin repository importer",
+      "path": "obsidian_plugin_brain/importers/plugin_repo.py"
+    }
+  ],
+  "synthesis_modules": [
+    {
+      "name": "Obsidian plugin review and multi-scope readiness rules",
+      "path": "obsidian_plugin_brain/synthesis/review_health.py"
+    }
+  ],
+  "report_renderers": [
+    {
+      "name": "Obsidian plugin readiness and submission audit renderer",
+      "path": "obsidian_plugin_brain/reports/readiness_report.py",
+      "format": "Markdown"
+    }
+  ],
+  "fixtures": [
+    {
+      "name": "Healthy multi-scope Obsidian plugin manifest fixture",
+      "path": "tests/fixtures/obsidian-plugin/healthy-multi-scope/manifest.json"
+    },
+    {
+      "name": "Healthy multi-scope Obsidian plugin versions fixture",
+      "path": "tests/fixtures/obsidian-plugin/healthy-multi-scope/versions.json"
+    },
+    {
+      "name": "Healthy multi-scope Obsidian plugin package.json fixture",
+      "path": "tests/fixtures/obsidian-plugin/healthy-multi-scope/package.json"
+    },
+    {
+      "name": "Healthy multi-scope esbuild config fixture",
+      "path": "tests/fixtures/obsidian-plugin/healthy-multi-scope/esbuild.config.mjs"
+    },
+    {
+      "name": "Flawed anti-pattern plugin fixture",
+      "path": "tests/fixtures/obsidian-plugin/flawed-antipatterns/manifest.json"
+    },
+    {
+      "name": "Malformed plugin manifest fixture",
+      "path": "tests/fixtures/obsidian-plugin/malformed/manifest.json"
+    },
+    {
+      "name": "Creator brief example",
+      "path": "references/creator/example-brief.json"
+    }
+  ],
+  "tests": [
+    {
+      "name": "Obsidian plugin adapter and synthesis tests",
+      "path": "tests/test_obsidian_plugin_adapter.py"
+    },
+    {
+      "name": "Creator generation and privacy boundary regressions",
+      "path": "tests/test_plugin_creator.py"
+    }
+  ],
+  "unsupported_inputs": [
+    "Startup profiles and heap traces are manual evidence, not parsed by V1."
+  ],
+  "source_generators": [
+    {
+      "name": "Bounded offline source artifact creator",
+      "path": "obsidian_plugin_brain/creator.py",
+      "boundary": "New output below an explicit workspace; no overwrite, network, execution, active installation, or note writes."
+    }
+  ]
+}

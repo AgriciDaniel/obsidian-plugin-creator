@@ -1,0 +1,8 @@
+.DS_Store
+.quartz
+node_modules
+public
+.quartz-cache
+.raw
+.obsidian
+private

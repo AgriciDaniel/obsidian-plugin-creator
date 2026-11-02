@@ -1,0 +1,41 @@
+{
+  "allowed_actions": [
+    "lint vault",
+    "design hubs",
+    "fix graph hygiene",
+    "verify citations"
+  ],
+  "blockers": [
+    "dead links",
+    "orphan notes",
+    "missing frontmatter",
+    "missing citations"
+  ],
+  "evidence_paths": [
+    "assets/template-brain/",
+    "examples/sample-vault/",
+    "scripts/lint_vault.py"
+  ],
+  "expected_outputs": [
+    "vault structure findings",
+    "note/link requirements"
+  ],
+  "forbidden_actions": [
+    "delete raw sources",
+    "leave dead links or uncited reports"
+  ],
+  "gates": [
+    "required notes exist with frontmatter and resolved links"
+  ],
+  "inputs": [
+    "assets/template-brain",
+    "references/brain-architecture.md"
+  ],
+  "mission": "Shape the Obsidian vault surface, links, graph hygiene, and required notes.",
+  "next_handoff": "demo-verifier",
+  "outputs": [
+    "vault structure findings",
+    "note/link requirements"
+  ],
+  "role": "vault-architect"
+}

@@ -1,0 +1,41 @@
+{
+  "allowed_actions": [
+    "scan text files",
+    "review package exclusions",
+    "check advisory boundaries"
+  ],
+  "blockers": [
+    "secrets",
+    "local paths",
+    "symlinks",
+    "unsafe mutation defaults"
+  ],
+  "evidence_paths": [
+    "SECURITY.md",
+    "scripts/package_release.py",
+    "references/safety-gates.md"
+  ],
+  "expected_outputs": [
+    "security findings",
+    "release blockers"
+  ],
+  "forbidden_actions": [
+    "approve secrets",
+    "approve external mutation without rollback gate"
+  ],
+  "gates": [
+    "no known secrets or unsafe default actions"
+  ],
+  "inputs": [
+    "SECURITY.md",
+    "brainstein/validate.py",
+    "references/safety-gates.md"
+  ],
+  "mission": "Review secret exposure, unsafe automation, provenance, and advisory boundaries.",
+  "next_handoff": "release-gatekeeper",
+  "outputs": [
+    "security findings",
+    "release blockers"
+  ],
+  "role": "security-reviewer"
+}

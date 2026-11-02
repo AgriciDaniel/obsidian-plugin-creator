@@ -1,0 +1,254 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-labelledby="title desc">
+  <title id="title">Obsidian Plugin Creator: choose an idea, forge a plugin</title>
+  <desc id="desc">A pixel vault keeper chooses an idea and sends it into a floating amethyst crystal. Orbiting notes carry knowledge, modules ease into place, a finished plugin capsule lifts from the workbench, and the keeper celebrates. A smooth twelve second conceptual loop, not a product demonstration.</desc>
+  <defs>
+    <style>
+text{font-family:ui-monospace,"Cascadia Code","DejaVu Sans Mono",monospace;font-variant-ligatures:none}
+.pixel{shape-rendering:crispEdges}
+.float,.float *,.keeper-motion,.keeper-motion *,.idea-card,.idea-card *,.block-one,.block-one *,.block-two,.block-two *,.block-three,.block-three *,.capsule,.capsule *,.orbit,.orbit *,.packet{shape-rendering:geometricPrecision}
+.float{animation:float 4.8s ease-in-out infinite}
+.halo{animation:halo 12s ease-in-out infinite;transform-origin:925px 170px}
+.eye{animation:blink 5s ease-in-out infinite;transform-origin:711px 243px}
+.antenna{animation:antenna 2.4s ease-in-out infinite}
+.keeper-motion{animation:keeper 12s cubic-bezier(.4,0,.2,1) infinite;transform-origin:711px 296px}
+.wing{animation:tap 12s cubic-bezier(.4,0,.2,1) infinite;transform-origin:733px 272px}
+.idea-card{transform-origin:774px 273px;animation:idea 12s cubic-bezier(.35,0,.2,1) infinite}
+.ray{stroke-dasharray:3 8;opacity:.45}
+.packet{fill:#f1c9ff;opacity:0}
+.packet-a{animation:packet-a 3.2s linear infinite}
+.packet-b{animation:packet-b 4.1s linear infinite;animation-delay:-2s}
+.orbit{transform-origin:925px 160px;animation:orbit 16s linear infinite}
+.orbit.reverse{animation-direction:reverse;animation-duration:22s}
+.block-one{transform-origin:1034px 282px;animation:assemble-one 12s cubic-bezier(.2,.75,.25,1) infinite}
+.block-two{transform-origin:1088px 282px;animation:assemble-two 12s cubic-bezier(.2,.75,.25,1) infinite}
+.block-three{transform-origin:1061px 230px;animation:assemble-three 12s cubic-bezier(.2,.75,.25,1) infinite}
+.screen-feature{animation:screen 12s ease-in-out infinite}
+.capsule{animation:launch 12s cubic-bezier(.4,0,.15,1) infinite;transform-origin:1100px 248px}
+.launch-trail{animation:trail 12s ease-in-out infinite;transform-origin:1094px 269px}
+.arrival-ring{animation:arrival 12s ease-out infinite;transform-origin:925px 157px}
+.spark{animation:twinkle 4s ease-in-out infinite}.spark.late{animation-delay:-2s}
+.status{animation:status 12s ease-in-out infinite}
+.crystal-shadow{animation:shadow 4.8s ease-in-out infinite;transform-origin:925px 266px}
+.stage-0{animation:stage 12s ease-in-out infinite}
+.stage-1{animation:stage 12s ease-in-out infinite;animation-delay:-9s}
+.stage-2{animation:stage 12s ease-in-out infinite;animation-delay:-6s}
+.stage-3{animation:stage 12s ease-in-out infinite;animation-delay:-3s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes halo{0%,100%{opacity:.3;transform:scale(.98)}32%,52%{opacity:.8;transform:scale(1.03)}78%{opacity:.5;transform:scale(1)}}
+@keyframes blink{0%,43%,48%,100%{transform:scaleY(1)}45%,46%{transform:scaleY(.1)}}
+@keyframes antenna{0%,100%{opacity:.5}50%{opacity:1}}
+@keyframes keeper{0%,12%,100%{transform:translate(0,0) rotate(0)}22%{transform:translate(1px,-1px) rotate(-3deg)}36%,66%{transform:translate(0,0) rotate(0)}75%{transform:translate(0,-3px) rotate(2deg)}81%{transform:translate(0,-11px) rotate(-2deg)}87%{transform:translate(0,1px) rotate(1deg)}93%{transform:translate(0,0) rotate(0)}}
+@keyframes tap{0%,11%,100%{transform:rotate(0)}18%{transform:rotate(-24deg)}24%{transform:rotate(4deg)}31%,62%{transform:rotate(0)}73%,84%{transform:rotate(-55deg)}92%{transform:rotate(0)}}
+@keyframes idea{0%,11%{opacity:0;transform:translate(0,0) rotate(0)}17%{opacity:1;transform:translate(0,-6px) rotate(-4deg)}26%{opacity:1;transform:translate(48px,-79px) rotate(-12deg)}35%{opacity:1;transform:translate(116px,-119px) rotate(4deg)}40%{opacity:0;transform:translate(148px,-125px) rotate(0)}100%{opacity:0;transform:translate(148px,-125px)}}
+@keyframes packet-a{0%{opacity:0;transform:translate(823px,177px)}5%{opacity:1}49%{transform:translate(864px,177px)}73%{transform:translate(864px,155px)}95%{opacity:1;transform:translate(898px,155px)}100%{opacity:0;transform:translate(898px,155px)}}
+@keyframes packet-b{0%{opacity:0;transform:translate(958px,110px)}5%{opacity:1}38%{transform:translate(1004px,110px)}70%{transform:translate(1004px,69px)}95%{opacity:1;transform:translate(1050px,69px)}100%{opacity:0;transform:translate(1050px,69px)}}
+@keyframes orbit{to{transform:rotate(360deg)}}
+@keyframes assemble-one{0%,31%{opacity:.25;transform:translate(-42px,-28px) rotate(-12deg)}39%{opacity:.9;transform:translate(-15px,-12px) rotate(-4deg)}48%{opacity:1;transform:translate(0,3px) rotate(1deg)}53%,92%{opacity:1;transform:translate(0,0) rotate(0)}100%{opacity:.25;transform:translate(-42px,-28px) rotate(-12deg)}}
+@keyframes assemble-two{0%,39%{opacity:.25;transform:translate(33px,-32px) rotate(12deg)}48%{opacity:.9;transform:translate(12px,-10px) rotate(4deg)}57%{opacity:1;transform:translate(0,3px) rotate(-1deg)}62%,92%{opacity:1;transform:translate(0,0) rotate(0)}100%{opacity:.25;transform:translate(33px,-32px) rotate(12deg)}}
+@keyframes assemble-three{0%,47%{opacity:.25;transform:translate(0,-45px) rotate(-8deg)}56%{opacity:.9;transform:translate(0,-12px) rotate(3deg)}65%{opacity:1;transform:translate(0,3px) rotate(0)}70%,92%{opacity:1;transform:translate(0,0) rotate(0)}100%{opacity:.25;transform:translate(0,-45px) rotate(-8deg)}}
+@keyframes screen{0%,53%,100%{opacity:.25}61%,92%{opacity:1}}
+@keyframes launch{0%,60%,100%{opacity:0;transform:translate(0,0) scale(.85)}66%{opacity:1;transform:translate(0,-5px) scale(1)}73%{opacity:1;transform:translate(0,-12px) scale(1)}84%{opacity:1;transform:translate(21px,-93px) scale(1)}91%{opacity:0;transform:translate(31px,-132px) scale(.8)}99%{opacity:0;transform:translate(31px,-132px) scale(.8)}}
+@keyframes trail{0%,70%,100%{opacity:0;transform:translate(0,0) scaleY(.4)}77%{opacity:.8;transform:translate(8px,-27px) scaleY(1)}87%{opacity:0;transform:translate(25px,-94px) scaleY(1.4)}}
+@keyframes arrival{0%,32%,61%,100%{opacity:0;transform:scale(.3)}40%{opacity:.8;transform:scale(.55)}56%{opacity:0;transform:scale(1.4)}}
+@keyframes shadow{0%,100%{opacity:.4;transform:scaleX(1)}50%{opacity:.22;transform:scaleX(.78)}}
+@keyframes twinkle{0%,100%{opacity:.3}50%{opacity:.95}}
+@keyframes status{0%,57%,100%{opacity:.4}64%,92%{opacity:1}}
+@keyframes stage{0%,20%,100%{opacity:1}26%,94%{opacity:.45}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}.idea-card,.packet,.capsule,.launch-trail,.arrival-ring{opacity:0}.ray{stroke-dasharray:none}}
+</style>
+    <pattern id="stars" width="156" height="136" patternUnits="userSpaceOnUse">
+      <rect x="24" y="24" width="2" height="2" fill="#695178" />
+      <rect x="110" y="92" width="3" height="3" fill="#695178" />
+    </pattern>
+    <pattern id="floor" width="50" height="22" patternUnits="userSpaceOnUse">
+      <path d="M0 0H50M25 0V22" stroke="#33233f" stroke-width="1" fill="none" />
+    </pattern>
+    <g id="star" class="pixel" fill="#d9bbff">
+      <path d="M-2-8H2V-2H8V2H2V8H-2V2H-8V-2H-2Z" />
+    </g>
+    <g id="note" class="pixel">
+      <path d="M0 0H40V8H48V58H0Z" fill="#ebd9b8" />
+      <path d="M40 0V8H48" fill="#bd986f" />
+      <path d="M9 15H31M9 24H37M9 33H30M9 42H22" stroke="#7e589f" stroke-width="3" />
+    </g>
+    <g id="module" class="pixel">
+      <path d="M0 0H38L48 10V48H10L0 38Z" fill="#7a4baa" />
+      <path d="M0 0H38L48 10H10Z" fill="#b386dd" />
+      <path d="M38 10H48V48H38Z" fill="#4c3169" />
+      <path d="M16 17H24V25H32V33H24V41H16V33H8V25H16Z" fill="#e4c6ff" />
+    </g>
+  </defs>
+  <path class="pixel" d="M8 0H1192V8H1200V432H1192V440H8V432H0V8H8Z" fill="#171025" />
+  <path d="M8 8H1192V432H8Z" fill="url(#stars)" />
+  <path d="M530 378H1174V408H530Z" fill="url(#floor)" />
+  <path class="pixel" d="M16 38V16H38M1162 16H1184V38M16 402V424H38M1162 424H1184V402" stroke="#74518b" stroke-width="2" fill="none" />
+  <rect x="52" y="51" width="8" height="8" fill="#dc9864" />
+  <text x="74" y="60" font-size="13" letter-spacing="3" fill="#cfb6e9">DANIEL AGRICI</text>
+  <g fill="#67458f" shape-rendering="crispEdges">
+    <path d="M60 113h8v8h-8zM68 113h8v8h-8zM76 113h8v8h-8zM52 121h8v8h-8zM84 121h8v8h-8zM52 129h8v8h-8zM84 129h8v8h-8zM52 137h8v8h-8zM84 137h8v8h-8zM52 145h8v8h-8zM84 145h8v8h-8zM52 153h8v8h-8zM84 153h8v8h-8zM60 161h8v8h-8zM68 161h8v8h-8zM76 161h8v8h-8zM100 113h8v8h-8zM108 113h8v8h-8zM116 113h8v8h-8zM124 113h8v8h-8zM100 121h8v8h-8zM132 121h8v8h-8zM100 129h8v8h-8zM132 129h8v8h-8zM100 137h8v8h-8zM108 137h8v8h-8zM116 137h8v8h-8zM124 137h8v8h-8zM100 145h8v8h-8zM132 145h8v8h-8zM100 153h8v8h-8zM132 153h8v8h-8zM100 161h8v8h-8zM108 161h8v8h-8zM116 161h8v8h-8zM124 161h8v8h-8zM156 113h8v8h-8zM164 113h8v8h-8zM172 113h8v8h-8zM180 113h8v8h-8zM148 121h8v8h-8zM148 129h8v8h-8zM156 137h8v8h-8zM164 137h8v8h-8zM172 137h8v8h-8zM180 145h8v8h-8zM180 153h8v8h-8zM148 161h8v8h-8zM156 161h8v8h-8zM164 161h8v8h-8zM172 161h8v8h-8zM196 113h8v8h-8zM204 113h8v8h-8zM212 113h8v8h-8zM220 113h8v8h-8zM228 113h8v8h-8zM212 121h8v8h-8zM212 129h8v8h-8zM212 137h8v8h-8zM212 145h8v8h-8zM212 153h8v8h-8zM196 161h8v8h-8zM204 161h8v8h-8zM212 161h8v8h-8zM220 161h8v8h-8zM228 161h8v8h-8zM244 113h8v8h-8zM252 113h8v8h-8zM260 113h8v8h-8zM268 113h8v8h-8zM244 121h8v8h-8zM276 121h8v8h-8zM244 129h8v8h-8zM276 129h8v8h-8zM244 137h8v8h-8zM276 137h8v8h-8zM244 145h8v8h-8zM276 145h8v8h-8zM244 153h8v8h-8zM276 153h8v8h-8zM244 161h8v8h-8zM252 161h8v8h-8zM260 161h8v8h-8zM268 161h8v8h-8zM292 113h8v8h-8zM300 113h8v8h-8zM308 113h8v8h-8zM316 113h8v8h-8zM324 113h8v8h-8zM308 121h8v8h-8zM308 129h8v8h-8zM308 137h8v8h-8zM308 145h8v8h-8zM308 153h8v8h-8zM292 161h8v8h-8zM300 161h8v8h-8zM308 161h8v8h-8zM316 161h8v8h-8zM324 161h8v8h-8zM348 113h8v8h-8zM356 113h8v8h-8zM364 113h8v8h-8zM340 121h8v8h-8zM372 121h8v8h-8zM340 129h8v8h-8zM372 129h8v8h-8zM340 137h8v8h-8zM348 137h8v8h-8zM356 137h8v8h-8zM364 137h8v8h-8zM372 137h8v8h-8zM340 145h8v8h-8zM372 145h8v8h-8zM340 153h8v8h-8zM372 153h8v8h-8zM340 161h8v8h-8zM372 161h8v8h-8zM388 113h8v8h-8zM420 113h8v8h-8zM388 121h8v8h-8zM396 121h8v8h-8zM420 121h8v8h-8zM388 129h8v8h-8zM396 129h8v8h-8zM420 129h8v8h-8zM388 137h8v8h-8zM404 137h8v8h-8zM420 137h8v8h-8zM388 145h8v8h-8zM412 145h8v8h-8zM420 145h8v8h-8zM388 153h8v8h-8zM412 153h8v8h-8zM420 153h8v8h-8zM388 161h8v8h-8zM420 161h8v8h-8z" />
+  </g>
+  <g fill="#f5e6ca" shape-rendering="crispEdges">
+    <path d="M60 107h8v8h-8zM68 107h8v8h-8zM76 107h8v8h-8zM52 115h8v8h-8zM84 115h8v8h-8zM52 123h8v8h-8zM84 123h8v8h-8zM52 131h8v8h-8zM84 131h8v8h-8zM52 139h8v8h-8zM84 139h8v8h-8zM52 147h8v8h-8zM84 147h8v8h-8zM60 155h8v8h-8zM68 155h8v8h-8zM76 155h8v8h-8zM100 107h8v8h-8zM108 107h8v8h-8zM116 107h8v8h-8zM124 107h8v8h-8zM100 115h8v8h-8zM132 115h8v8h-8zM100 123h8v8h-8zM132 123h8v8h-8zM100 131h8v8h-8zM108 131h8v8h-8zM116 131h8v8h-8zM124 131h8v8h-8zM100 139h8v8h-8zM132 139h8v8h-8zM100 147h8v8h-8zM132 147h8v8h-8zM100 155h8v8h-8zM108 155h8v8h-8zM116 155h8v8h-8zM124 155h8v8h-8zM156 107h8v8h-8zM164 107h8v8h-8zM172 107h8v8h-8zM180 107h8v8h-8zM148 115h8v8h-8zM148 123h8v8h-8zM156 131h8v8h-8zM164 131h8v8h-8zM172 131h8v8h-8zM180 139h8v8h-8zM180 147h8v8h-8zM148 155h8v8h-8zM156 155h8v8h-8zM164 155h8v8h-8zM172 155h8v8h-8zM196 107h8v8h-8zM204 107h8v8h-8zM212 107h8v8h-8zM220 107h8v8h-8zM228 107h8v8h-8zM212 115h8v8h-8zM212 123h8v8h-8zM212 131h8v8h-8zM212 139h8v8h-8zM212 147h8v8h-8zM196 155h8v8h-8zM204 155h8v8h-8zM212 155h8v8h-8zM220 155h8v8h-8zM228 155h8v8h-8zM244 107h8v8h-8zM252 107h8v8h-8zM260 107h8v8h-8zM268 107h8v8h-8zM244 115h8v8h-8zM276 115h8v8h-8zM244 123h8v8h-8zM276 123h8v8h-8zM244 131h8v8h-8zM276 131h8v8h-8zM244 139h8v8h-8zM276 139h8v8h-8zM244 147h8v8h-8zM276 147h8v8h-8zM244 155h8v8h-8zM252 155h8v8h-8zM260 155h8v8h-8zM268 155h8v8h-8zM292 107h8v8h-8zM300 107h8v8h-8zM308 107h8v8h-8zM316 107h8v8h-8zM324 107h8v8h-8zM308 115h8v8h-8zM308 123h8v8h-8zM308 131h8v8h-8zM308 139h8v8h-8zM308 147h8v8h-8zM292 155h8v8h-8zM300 155h8v8h-8zM308 155h8v8h-8zM316 155h8v8h-8zM324 155h8v8h-8zM348 107h8v8h-8zM356 107h8v8h-8zM364 107h8v8h-8zM340 115h8v8h-8zM372 115h8v8h-8zM340 123h8v8h-8zM372 123h8v8h-8zM340 131h8v8h-8zM348 131h8v8h-8zM356 131h8v8h-8zM364 131h8v8h-8zM372 131h8v8h-8zM340 139h8v8h-8zM372 139h8v8h-8zM340 147h8v8h-8zM372 147h8v8h-8zM340 155h8v8h-8zM372 155h8v8h-8zM388 107h8v8h-8zM420 107h8v8h-8zM388 115h8v8h-8zM396 115h8v8h-8zM420 115h8v8h-8zM388 123h8v8h-8zM396 123h8v8h-8zM420 123h8v8h-8zM388 131h8v8h-8zM404 131h8v8h-8zM420 131h8v8h-8zM388 139h8v8h-8zM412 139h8v8h-8zM420 139h8v8h-8zM388 147h8v8h-8zM412 147h8v8h-8zM420 147h8v8h-8zM388 155h8v8h-8zM420 155h8v8h-8z" />
+  </g>
+  <g fill="#c8a7ee" shape-rendering="crispEdges">
+    <path d="M54 188h5v5h-5zM59 188h5v5h-5zM64 188h5v5h-5zM69 188h5v5h-5zM54 193h5v5h-5zM74 193h5v5h-5zM54 198h5v5h-5zM74 198h5v5h-5zM54 203h5v5h-5zM59 203h5v5h-5zM64 203h5v5h-5zM69 203h5v5h-5zM54 208h5v5h-5zM54 213h5v5h-5zM54 218h5v5h-5zM84 188h5v5h-5zM84 193h5v5h-5zM84 198h5v5h-5zM84 203h5v5h-5zM84 208h5v5h-5zM84 213h5v5h-5zM84 218h5v5h-5zM89 218h5v5h-5zM94 218h5v5h-5zM99 218h5v5h-5zM104 218h5v5h-5zM114 188h5v5h-5zM134 188h5v5h-5zM114 193h5v5h-5zM134 193h5v5h-5zM114 198h5v5h-5zM134 198h5v5h-5zM114 203h5v5h-5zM134 203h5v5h-5zM114 208h5v5h-5zM134 208h5v5h-5zM114 213h5v5h-5zM134 213h5v5h-5zM119 218h5v5h-5zM124 218h5v5h-5zM129 218h5v5h-5zM149 188h5v5h-5zM154 188h5v5h-5zM159 188h5v5h-5zM164 188h5v5h-5zM144 193h5v5h-5zM144 198h5v5h-5zM144 203h5v5h-5zM154 203h5v5h-5zM159 203h5v5h-5zM164 203h5v5h-5zM144 208h5v5h-5zM164 208h5v5h-5zM144 213h5v5h-5zM164 213h5v5h-5zM149 218h5v5h-5zM154 218h5v5h-5zM159 218h5v5h-5zM164 218h5v5h-5zM174 188h5v5h-5zM179 188h5v5h-5zM184 188h5v5h-5zM189 188h5v5h-5zM194 188h5v5h-5zM184 193h5v5h-5zM184 198h5v5h-5zM184 203h5v5h-5zM184 208h5v5h-5zM184 213h5v5h-5zM174 218h5v5h-5zM179 218h5v5h-5zM184 218h5v5h-5zM189 218h5v5h-5zM194 218h5v5h-5zM204 188h5v5h-5zM224 188h5v5h-5zM204 193h5v5h-5zM209 193h5v5h-5zM224 193h5v5h-5zM204 198h5v5h-5zM209 198h5v5h-5zM224 198h5v5h-5zM204 203h5v5h-5zM214 203h5v5h-5zM224 203h5v5h-5zM204 208h5v5h-5zM219 208h5v5h-5zM224 208h5v5h-5zM204 213h5v5h-5zM219 213h5v5h-5zM224 213h5v5h-5zM204 218h5v5h-5zM224 218h5v5h-5zM269 188h5v5h-5zM274 188h5v5h-5zM279 188h5v5h-5zM284 188h5v5h-5zM264 193h5v5h-5zM264 198h5v5h-5zM264 203h5v5h-5zM264 208h5v5h-5zM264 213h5v5h-5zM269 218h5v5h-5zM274 218h5v5h-5zM279 218h5v5h-5zM284 218h5v5h-5zM294 188h5v5h-5zM299 188h5v5h-5zM304 188h5v5h-5zM309 188h5v5h-5zM294 193h5v5h-5zM314 193h5v5h-5zM294 198h5v5h-5zM314 198h5v5h-5zM294 203h5v5h-5zM299 203h5v5h-5zM304 203h5v5h-5zM309 203h5v5h-5zM294 208h5v5h-5zM304 208h5v5h-5zM294 213h5v5h-5zM309 213h5v5h-5zM294 218h5v5h-5zM314 218h5v5h-5zM324 188h5v5h-5zM329 188h5v5h-5zM334 188h5v5h-5zM339 188h5v5h-5zM344 188h5v5h-5zM324 193h5v5h-5zM324 198h5v5h-5zM324 203h5v5h-5zM329 203h5v5h-5zM334 203h5v5h-5zM339 203h5v5h-5zM324 208h5v5h-5zM324 213h5v5h-5zM324 218h5v5h-5zM329 218h5v5h-5zM334 218h5v5h-5zM339 218h5v5h-5zM344 218h5v5h-5zM359 188h5v5h-5zM364 188h5v5h-5zM369 188h5v5h-5zM354 193h5v5h-5zM374 193h5v5h-5zM354 198h5v5h-5zM374 198h5v5h-5zM354 203h5v5h-5zM359 203h5v5h-5zM364 203h5v5h-5zM369 203h5v5h-5zM374 203h5v5h-5zM354 208h5v5h-5zM374 208h5v5h-5zM354 213h5v5h-5zM374 213h5v5h-5zM354 218h5v5h-5zM374 218h5v5h-5zM384 188h5v5h-5zM389 188h5v5h-5zM394 188h5v5h-5zM399 188h5v5h-5zM404 188h5v5h-5zM394 193h5v5h-5zM394 198h5v5h-5zM394 203h5v5h-5zM394 208h5v5h-5zM394 213h5v5h-5zM394 218h5v5h-5zM419 188h5v5h-5zM424 188h5v5h-5zM429 188h5v5h-5zM414 193h5v5h-5zM434 193h5v5h-5zM414 198h5v5h-5zM434 198h5v5h-5zM414 203h5v5h-5zM434 203h5v5h-5zM414 208h5v5h-5zM434 208h5v5h-5zM414 213h5v5h-5zM434 213h5v5h-5zM419 218h5v5h-5zM424 218h5v5h-5zM429 218h5v5h-5zM444 188h5v5h-5zM449 188h5v5h-5zM454 188h5v5h-5zM459 188h5v5h-5zM444 193h5v5h-5zM464 193h5v5h-5zM444 198h5v5h-5zM464 198h5v5h-5zM444 203h5v5h-5zM449 203h5v5h-5zM454 203h5v5h-5zM459 203h5v5h-5zM444 208h5v5h-5zM454 208h5v5h-5zM444 213h5v5h-5zM459 213h5v5h-5zM444 218h5v5h-5zM464 218h5v5h-5z" />
+  </g>
+  <text x="52" y="268" font-size="17" fill="#e2cfe8">A second brain for your next plugin.</text>
+  <text x="52" y="299" font-size="14" fill="#ab96ba">Good ideas. Connected knowledge. Useful tools.</text>
+  <path d="M52 329H477" stroke="#493254" />
+  <g class="stage-0">
+    <rect x="54" y="357" width="6" height="6" fill="#e9aa72" />
+    <text x="72" y="365" font-size="13" fill="#f0d8b6">IDEA</text>
+  </g>
+  <g class="stage-1">
+    <rect x="151" y="357" width="6" height="6" fill="#bb8ee7" />
+    <text x="169" y="365" font-size="13" fill="#e8cfff">PLAN</text>
+  </g>
+  <g class="stage-2">
+    <rect x="253" y="357" width="6" height="6" fill="#bb8ee7" />
+    <text x="271" y="365" font-size="13" fill="#e8cfff">BUILD</text>
+  </g>
+  <g class="stage-3">
+    <rect x="363" y="357" width="6" height="6" fill="#bb8ee7" />
+    <text x="381" y="365" font-size="13" fill="#e8cfff">REFINE</text>
+  </g>
+  <!-- The workshop is a visual metaphor. It makes no runtime acceptance claim. -->
+  <g class="pixel">
+    <!-- wall shelves and books -->
+    <path d="M561 99H766V109H561ZM585 107H595V125H585ZM735 107H745V125H735Z" fill="#53384e" />
+    <rect x="579" y="63" width="17" height="36" fill="#826091" />
+    <rect x="600" y="55" width="19" height="44" fill="#a46c48" />
+    <rect x="623" y="60" width="14" height="39" fill="#5f477e" />
+    <rect x="642" y="50" width="22" height="49" fill="#836592" />
+    <path d="M583 73H592M604 65H615M647 62H659" stroke="#dfb283" stroke-width="3" />
+    <path d="M716 99V77H708V69H716V53H724V69H734V77H724V99Z" fill="#626a56" />
+    <!-- hanging knowledge graph -->
+    <g fill="none" stroke="#795494" stroke-width="2">
+      <path d="M803 76H857V109H897M817 171H864V155H898M960 100H1004V69H1069M968 190H1032V145H1092" />
+    </g>
+    <use href="#note" x="779" y="48" />
+    <use href="#note" x="778" y="149" />
+    <use href="#note" x="1052" y="40" />
+    <g class="ray" fill="none" stroke="#d6a3ff" stroke-width="3">
+      <path d="M823 177H864V155H898M958 110H1004V69H1050M965 190H1032V145H1090" />
+    </g>
+    <!-- crystal's stepped halo -->
+    <g class="halo" fill="none" stroke="#8657af">
+      <path d="M883 76H966V91H981V109H994V221H980V241H962V254H884V240H868V221H854V110H869V92H883Z" stroke-width="2" />
+      <path d="M878 104H971V225H878Z" opacity=".2" stroke-width="12" />
+    </g>
+    <ellipse class="crystal-shadow" cx="925" cy="266" rx="35" ry="6" fill="#b180ed" />
+    <g class="orbit">
+      <circle cx="925" cy="160" r="62" fill="none" stroke="#795595" stroke-width="1" opacity=".4" />
+      <rect x="919" y="93" width="10" height="10" fill="#edb576" />
+      <rect x="919" y="217" width="8" height="8" fill="#b294df" />
+    </g>
+    <g class="orbit reverse">
+      <circle cx="925" cy="160" r="76" fill="none" stroke="#795595" stroke-width="1" opacity=".2" />
+      <rect x="845" y="155" width="8" height="8" fill="#cfa6ff" />
+    </g>
+    <circle class="arrival-ring" cx="925" cy="157" r="62" fill="none" stroke="#ebc8ff" stroke-width="2" />
+    <g class="float">
+      <path d="M924 92L960 133L971 193L938 232L898 211L885 152Z" fill="#4d287c" />
+      <path d="M924 92L925 161L885 152Z" fill="#d1a2fa" />
+      <path d="M924 92L960 133L925 161Z" fill="#ae74e5" />
+      <path d="M960 133L971 193L925 161Z" fill="#7642b2" />
+      <path d="M925 161L971 193L938 232Z" fill="#9561c9" />
+      <path d="M885 152L925 161L898 211Z" fill="#9465cc" />
+      <path d="M925 161L938 232L898 211Z" fill="#5c338e" />
+      <path d="M924 92L960 133L971 193L938 232L898 211L885 152Z" stroke="#e1baff" stroke-width="2" fill="none" />
+      <path d="M924 104V145M894 150L918 156M934 174L944 194" stroke="#f4ddff" stroke-width="3" fill="none" />
+    </g>
+    <!-- crystal socket and plugin modules -->
+    <path d="M875 272H969L988 284V300H861V283Z" fill="#4a315b" />
+    <path d="M875 272H969L980 280H866Z" fill="#a379bc" />
+    <path d="M887 266H957V273H887Z" fill="#ba85f1" />
+    <rect x="877" y="288" width="9" height="5" fill="#e5a762" />
+    <rect class="antenna" x="959" y="288" width="12" height="5" fill="#c693ff" />
+    <g class="block-one">
+      <use href="#module" x="1010" y="258" />
+    </g>
+    <g class="block-two">
+      <use href="#module" x="1064" y="258" />
+    </g>
+    <g class="block-three">
+      <use href="#module" x="1037" y="206" />
+    </g>
+    <!-- finished-feature monitor -->
+    <path d="M831 315H983V380H831Z" fill="#6d536c" />
+    <path d="M839 321H975V371H839Z" fill="#21182f" />
+    <path d="M897 380H918V391H937V398H877V391H897Z" fill="#674759" />
+    <path d="M846 328H866V364H846Z" fill="#3c2b51" />
+    <path d="M850 334H862M850 341H862M850 348H858" stroke="#8865a1" stroke-width="2" />
+    <g class="screen-feature">
+      <path d="M874 330H966V339H874Z" fill="#a776cb" />
+      <path d="M874 346H900V363H874ZM907 346H933V363H907ZM940 346H966V363H940Z" fill="#71508e" />
+      <path d="M879 353H892M912 353H925M945 353H958" stroke="#e5b27d" stroke-width="3" />
+    </g>
+    <!-- workbench -->
+    <path d="M570 304H1137V318H570Z" fill="#b08465" />
+    <path d="M576 318H1132V330H576Z" fill="#5a3b41" />
+    <path d="M590 330H610V394H590ZM1100 330H1120V394H1100Z" fill="#795244" />
+    <path d="M591 338H608V345H591M1102 338H1118V345H1102" stroke="#b17a55" stroke-width="2" />
+    <!-- open notebook -->
+    <path d="M637 284H681L697 292L714 284H757V303H637Z" fill="#8d5f43" />
+    <path d="M639 278H680L697 287L715 278H753V299H715L697 305L680 299H639Z" fill="#e6cfaa" />
+    <path d="M648 285H674M648 291H678M719 285H743M719 291H738" stroke="#a07883" stroke-width="2" />
+    <!-- a small vault keeper, original character -->
+    <g class="keeper-motion">
+      <path d="M680 289V261H674V229H682V217H738V229H746V261H738V288Z" fill="#4d345f" />
+      <path d="M680 229H740V259H680Z" fill="#a77ec7" />
+      <path d="M687 235H734V252H687Z" fill="#251c39" />
+      <g class="eye" fill="#ffe8bc">
+        <path d="M694 240H704V247H694ZM718 240H728V247H718Z" />
+      </g>
+      <path d="M697 259H725V284H697Z" fill="#8157a0" />
+      <path d="M706 267H716V277H706Z" fill="#e1a874" />
+      <path d="M708 217V206H714V217Z" fill="#986bba" />
+      <rect class="antenna" x="705" y="201" width="12" height="7" fill="#dfadff" />
+      <path d="M684 263H694V283H684Z" fill="#b395c7" />
+      <g class="wing">
+        <path d="M728 263H739V276H750V284H731Z" fill="#b395c7" />
+        <path d="M746 280H758V287H746Z" fill="#e6c5a9" />
+      </g>
+      <path d="M695 286H705V301H688V294H695ZM719 286H729V294H736V301H719Z" fill="#4f355f" />
+    </g>
+    <!-- an idea travels from the notebook to the crystal -->
+    <g class="idea-card">
+      <use href="#note" transform="translate(761 257) scale(.55)" />
+    </g>
+    <!-- warm desk lantern -->
+    <path d="M585 280V248H594V240H609V248H618V280Z" fill="#a56f42" />
+    <path d="M591 252H611V274H591Z" fill="#efb969" />
+    <path d="M596 256H604V270H596Z" fill="#ffe3a1" />
+    <path d="M580 280H623V286H580ZM592 234H610V240H592Z" fill="#62434b" />
+    <!-- tiny tool cup -->
+    <path d="M1096 295V273H1120V295Z" fill="#5d3f6a" />
+    <path d="M1100 275V255M1111 274V250M1116 275V262" stroke="#d4a16e" stroke-width="4" />
+    <rect class="packet packet-a" x="-2" y="-2" width="5" height="5" />
+    <rect class="packet packet-b" x="-2" y="-2" width="5" height="5" />
+  </g>
+  <g class="spark">
+    <use href="#star" x="996" y="119" />
+  </g>
+  <g class="spark late">
+    <use href="#star" x="850" y="226" transform="translate(425 113) scale(.5)" />
+  </g>
+  <g class="spark">
+    <use href="#star" x="1138" y="103" transform="translate(569 51.5) scale(.5)" />
+  </g>
+  <g class="status">
+    <rect x="978" y="359" width="7" height="7" fill="#dca571" />
+    <text x="993" y="367" font-size="11" fill="#dec7f0">PLUGIN IN ORBIT</text>
+  </g>
+  <text x="52" y="409" font-size="10" letter-spacing="1.5" fill="#8b739d">THE CRYSTAL WORKSHOP</text>
+  <g class="launch-trail">
+    <path d="M1081 269L1085 302L1091 274L1096 294L1100 267Z" fill="#c18bfd" />
+    <path d="M1085 269L1088 286L1092 269Z" fill="#f8dbad" />
+  </g>
+  <g class="capsule">
+    <path d="M1080 232H1105L1113 240V267H1088L1080 259Z" fill="#c398ee" stroke="#ecd6ff" stroke-width="1" />
+    <path d="M1088 244H1096V250H1103V257H1096V263H1088V257H1082V250H1088Z" fill="#533574" />
+    <rect x="1106" y="242" width="6" height="23" fill="#7851a2" />
+  </g>
+</svg>

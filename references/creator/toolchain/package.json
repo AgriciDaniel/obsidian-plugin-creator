@@ -1,0 +1,33 @@
+{
+  "name": "creator-starter",
+  "version": "0.1.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "type": "module",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "build": "tsc --noEmit && node esbuild.config.mjs",
+    "lint": "eslint src"
+  },
+  "devDependencies": {
+    "obsidian": "1.14.4",
+    "typescript": "5.8.3",
+    "esbuild": "0.28.2",
+    "@codemirror/state": "6.7.6",
+    "@codemirror/view": "6.43.13",
+    "three": "0.187.0",
+    "@types/three": "0.187.0",
+    "eslint": "10.14.0",
+    "typescript-eslint": "8.72.1",
+    "eslint-plugin-obsidianmd": "0.4.2",
+    "@eslint/js": "9.39.4"
+  },
+  "overrides": {
+    "eslint-plugin-obsidianmd": {
+      "obsidian": "$obsidian"
+    }
+  },
+  "engines": {
+    "node": ">=24 <25"
+  }
+}

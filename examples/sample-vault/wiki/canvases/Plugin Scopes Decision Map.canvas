@@ -1,0 +1,253 @@
+{
+  "nodes": [
+    {
+      "id": "group-core",
+      "type": "group",
+      "label": "1. Core Lifecycle and UI Surfaces",
+      "color": "4",
+      "x": -40,
+      "y": -60,
+      "width": 760,
+      "height": 520
+    },
+    {
+      "id": "group-visuals",
+      "type": "group",
+      "label": "2. Dashboards, Bases, 2D Canvas and 3D WebGL",
+      "color": "5",
+      "x": 780,
+      "y": -60,
+      "width": 760,
+      "height": 520
+    },
+    {
+      "id": "group-editor",
+      "type": "group",
+      "label": "3. Editor, Markdown, Vault and MetadataCache",
+      "color": "6",
+      "x": -40,
+      "y": 520,
+      "width": 760,
+      "height": 520
+    },
+    {
+      "id": "group-ship",
+      "type": "group",
+      "label": "4. Frameworks, Toolchains, Mobile, Security and Store Release",
+      "color": "2",
+      "x": 780,
+      "y": 520,
+      "width": 760,
+      "height": 520
+    },
+    {
+      "id": "c01",
+      "type": "file",
+      "file": "wiki/concepts/Plugin lifecycle, Component ownership, and cleanup discipline.md",
+      "x": 0,
+      "y": 0,
+      "width": 330,
+      "height": 190
+    },
+    {
+      "id": "c04",
+      "type": "file",
+      "file": "wiki/concepts/Modals, suggest interfaces, menus, settings tabs, and SecretStorage.md",
+      "x": 360,
+      "y": 0,
+      "width": 330,
+      "height": 190
+    },
+    {
+      "id": "c05",
+      "type": "file",
+      "file": "wiki/concepts/Design system, CSS variables, themes, icons, and accessibility.md",
+      "x": 180,
+      "y": 230,
+      "width": 340,
+      "height": 190
+    },
+    {
+      "id": "c02",
+      "type": "file",
+      "file": "wiki/concepts/Workspace leaves, custom ItemView dashboards, and deferred views.md",
+      "x": 820,
+      "y": 0,
+      "width": 330,
+      "height": 190
+    },
+    {
+      "id": "c03",
+      "type": "file",
+      "file": "wiki/concepts/Obsidian Bases API, native dashboards, and query surfaces.md",
+      "x": 1180,
+      "y": 0,
+      "width": 330,
+      "height": 190
+    },
+    {
+      "id": "c06",
+      "type": "file",
+      "file": "wiki/concepts/2D graphs, JSON Canvas 1.0, SVG diagrams, and interactive visualizations.md",
+      "x": 820,
+      "y": 230,
+      "width": 330,
+      "height": 190
+    },
+    {
+      "id": "c07",
+      "type": "file",
+      "file": "wiki/concepts/3D WebGL, Three.js, React Three Fiber, and spatial codex views.md",
+      "x": 1180,
+      "y": 230,
+      "width": 330,
+      "height": 190
+    },
+    {
+      "id": "c08",
+      "type": "file",
+      "file": "wiki/concepts/CodeMirror 6 architecture, StateFields, ViewPlugins, and Live Preview.md",
+      "x": 0,
+      "y": 580,
+      "width": 330,
+      "height": 190
+    },
+    {
+      "id": "c09",
+      "type": "file",
+      "file": "wiki/concepts/Markdown post-processors, codeblock widgets, and Reading view parity.md",
+      "x": 360,
+      "y": 580,
+      "width": 330,
+      "height": 190
+    },
+    {
+      "id": "c10",
+      "type": "file",
+      "file": "wiki/concepts/Vault API, FileManager, atomic edits, and DataAdapter boundaries.md",
+      "x": 0,
+      "y": 810,
+      "width": 330,
+      "height": 190
+    },
+    {
+      "id": "c11",
+      "type": "file",
+      "file": "wiki/concepts/MetadataCache, link resolution, subpath deep-linking, and Obsidian URI.md",
+      "x": 360,
+      "y": 810,
+      "width": 330,
+      "height": 190
+    },
+    {
+      "id": "c12",
+      "type": "file",
+      "file": "wiki/concepts/UI frameworks in plugins Vanilla DOM, React, Svelte, and Vue.md",
+      "x": 820,
+      "y": 580,
+      "width": 330,
+      "height": 190
+    },
+    {
+      "id": "c13",
+      "type": "file",
+      "file": "wiki/concepts/Build toolchains, esbuild, Vite dual-target, hot-reload, and testing.md",
+      "x": 1180,
+      "y": 580,
+      "width": 330,
+      "height": 190
+    },
+    {
+      "id": "c14",
+      "type": "file",
+      "file": "wiki/concepts/Mobile compatibility, startup performance, and memory profiling.md",
+      "x": 820,
+      "y": 810,
+      "width": 330,
+      "height": 190
+    },
+    {
+      "id": "c15",
+      "type": "file",
+      "file": "wiki/concepts/Security, XSS prevention, Sync storage limits, and network disclosure.md",
+      "x": 1180,
+      "y": 810,
+      "width": 330,
+      "height": 190
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "c01",
+      "fromSide": "right",
+      "toNode": "c04",
+      "toSide": "left",
+      "label": "registers commands and settings"
+    },
+    {
+      "id": "e2",
+      "fromNode": "c01",
+      "fromSide": "right",
+      "toNode": "c02",
+      "toSide": "left",
+      "label": "registers custom views"
+    },
+    {
+      "id": "e3",
+      "fromNode": "c02",
+      "fromSide": "right",
+      "toNode": "c03",
+      "toSide": "left",
+      "label": "standalone pane vs Bases view"
+    },
+    {
+      "id": "e4",
+      "fromNode": "c02",
+      "fromSide": "bottom",
+      "toNode": "c06",
+      "toSide": "top",
+      "label": "2D graph or canvas"
+    },
+    {
+      "id": "e5",
+      "fromNode": "c02",
+      "fromSide": "bottom",
+      "toNode": "c07",
+      "toSide": "top",
+      "label": "3D WebGL codex"
+    },
+    {
+      "id": "e6",
+      "fromNode": "c08",
+      "fromSide": "right",
+      "toNode": "c09",
+      "toSide": "left",
+      "label": "Live Preview + Reading parity"
+    },
+    {
+      "id": "e7",
+      "fromNode": "c10",
+      "fromSide": "right",
+      "toNode": "c11",
+      "toSide": "left",
+      "label": "atomic files + link graph"
+    },
+    {
+      "id": "e8",
+      "fromNode": "c12",
+      "fromSide": "right",
+      "toNode": "c13",
+      "toSide": "left",
+      "label": "bundled with host externals"
+    },
+    {
+      "id": "e9",
+      "fromNode": "c14",
+      "fromSide": "right",
+      "toNode": "c15",
+      "toSide": "left",
+      "label": "mobile + Sync + XSS gates"
+    }
+  ]
+}

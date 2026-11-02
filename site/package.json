@@ -1,0 +1,13 @@
+{
+  "name": "obsidian-plugin-brain-site",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "setup": "git clone --depth 1 --branch v4.5.2 https://github.com/jackyzha0/quartz.git .quartz && npm --prefix .quartz ci",
+    "build": "test -n \"$QUARTZ_CONTENT\" && cp quartz.config.ts .quartz/quartz.config.ts && cd .quartz && npx quartz build -d \"$QUARTZ_CONTENT\" -o ../public && cd .. && node scripts/sanitize-public.mjs",
+    "sanitize": "node scripts/sanitize-public.mjs"
+  }
+}

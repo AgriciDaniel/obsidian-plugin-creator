@@ -1,0 +1,38 @@
+{
+  "allowed_actions": [
+    "regenerate sample vault",
+    "compare outputs",
+    "record drift"
+  ],
+  "blockers": [
+    "demo drift",
+    "missing fixture",
+    "uncited sample report"
+  ],
+  "evidence_paths": [
+    "examples/sample-vault/",
+    "references/orchestration/results/"
+  ],
+  "expected_outputs": [
+    "demo verification result",
+    "repro steps"
+  ],
+  "forbidden_actions": [
+    "hand-edit generated demo output",
+    "ignore nondeterministic files"
+  ],
+  "gates": [
+    "demo rebuild is deterministic"
+  ],
+  "inputs": [
+    "scripts/build_demo_vault.py",
+    "examples/sample-vault"
+  ],
+  "mission": "Build and verify deterministic demo vault behavior.",
+  "next_handoff": "release-gatekeeper",
+  "outputs": [
+    "demo verification result",
+    "repro steps"
+  ],
+  "role": "demo-verifier"
+}

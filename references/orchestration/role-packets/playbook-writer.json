@@ -1,0 +1,38 @@
+{
+  "allowed_actions": [
+    "read spec",
+    "read wiki/playbooks/",
+    "read source-ledger for citations"
+  ],
+  "blockers": [
+    "topic missing from PLAYBOOK_TOPICS",
+    "spec required for domain playbook missing"
+  ],
+  "evidence_paths": [
+    "wiki/deliverables/",
+    "wiki/playbooks/"
+  ],
+  "expected_outputs": [
+    "playbook markdown",
+    "optional PDF"
+  ],
+  "forbidden_actions": [
+    "fabricate citations",
+    "include any private brain skill references"
+  ],
+  "gates": [
+    "playbook cites at least one source-ledger entry per dated claim"
+  ],
+  "inputs": [
+    "specs/*.yaml",
+    "wiki/playbooks/",
+    "references/public-sources.json"
+  ],
+  "mission": "Render topic-specific playbook markdown from spec + audit state, with citation footnotes.",
+  "next_handoff": "release-gatekeeper",
+  "outputs": [
+    "playbook markdown",
+    "optional PDF"
+  ],
+  "role": "playbook-writer"
+}

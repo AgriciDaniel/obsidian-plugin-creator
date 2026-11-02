@@ -1,0 +1,10 @@
+{
+  "id": "spatial-graph-codex",
+  "name": "Spatial Graph Codex",
+  "version": "1.2.0",
+  "minAppVersion": "1.9.10",
+  "description": "Interactive 3D spatial graph, custom ItemView dashboard, and Live Preview decorations for vault notes.",
+  "author": "Reference Author",
+  "authorUrl": "https://github.com/example-author",
+  "isDesktopOnly": false
+}

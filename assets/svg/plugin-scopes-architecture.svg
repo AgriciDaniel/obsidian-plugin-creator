@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 560" role="img" aria-labelledby="scopes-title scopes-desc" font-family='"Segoe UI",Roboto,Arial,sans-serif'>
+  <title id="scopes-title">Obsidian Plugin Brain: Eight Engineering Scopes</title>
+  <desc id="scopes-desc">Architecture map of the eight Obsidian plugin scopes from Core Lifecycle and Dashboards/Bases to 3D WebGL Visuals, CodeMirror 6, Vault/MetadataCache, Frameworks/Toolchains, Mobile/Performance, and Security/Store Release.</desc>
+  <rect width="1120" height="560" fill="#0f1117"/>
+  <rect x="20" y="20" width="1080" height="520" rx="22" fill="#161925" stroke="#2d3348" stroke-width="2"/>
+  <text x="560" y="66" text-anchor="middle" fill="#f3f4f8" font-size="24" font-weight="700">Obsidian Plugin Brain: Eight Engineering Scopes &amp; Gate Architecture</text>
+  <text x="560" y="94" text-anchor="middle" fill="#9ca3af" font-size="14">16 Canon Pillars · Static Repo Analyzer · Live Source Ledger · 51-Item Brainstein SSS+ Contract</text>
+
+  <!-- Row 1 -->
+  <g transform="translate(52,126)">
+    <rect width="236" height="168" rx="14" fill="#1e2436" stroke="#7c3aed" stroke-width="2"/>
+    <text x="18" y="34" fill="#c4b5fd" font-size="15" font-weight="700">1. Core Lifecycle &amp; Gates</text>
+    <text x="18" y="60" fill="#e5e7eb" font-size="12">• Plugin &amp; Component tree</text>
+    <text x="18" y="82" fill="#e5e7eb" font-size="12">• registerEvent / DomEvent</text>
+    <text x="18" y="104" fill="#e5e7eb" font-size="12">• manifest.json + versions.json</text>
+    <text x="18" y="126" fill="#fca5a5" font-size="12">• Never detach leaves on unload</text>
+    <text x="18" y="150" fill="#9ca3af" font-size="11">Canon 001, 016</text>
+  </g>
+
+  <g transform="translate(312,126)">
+    <rect width="236" height="168" rx="14" fill="#1e2436" stroke="#3b82f6" stroke-width="2"/>
+    <text x="18" y="34" fill="#93c5fd" font-size="15" font-weight="700">2. Dashboards &amp; Bases</text>
+    <text x="18" y="60" fill="#e5e7eb" font-size="12">• ItemView / TextFileView</text>
+    <text x="18" y="82" fill="#e5e7eb" font-size="12">• DeferredView safe reveal</text>
+    <text x="18" y="104" fill="#e5e7eb" font-size="12">• Custom BasesView &amp; .base</text>
+    <text x="18" y="126" fill="#e5e7eb" font-size="12">• Modals, Suggests &amp; Settings</text>
+    <text x="18" y="150" fill="#9ca3af" font-size="11">Canon 002, 003, 004</text>
+  </g>
+
+  <g transform="translate(572,126)">
+    <rect width="236" height="168" rx="14" fill="#1e2436" stroke="#06b6d4" stroke-width="2"/>
+    <text x="18" y="34" fill="#67e8f9" font-size="15" font-weight="700">3. Visuals &amp; 3D WebGL</text>
+    <text x="18" y="60" fill="#e5e7eb" font-size="12">• Three.js / R3F spatial views</text>
+    <text x="18" y="82" fill="#e5e7eb" font-size="12">• ResizeObserver on contentEl</text>
+    <text x="18" y="104" fill="#e5e7eb" font-size="12">• Hidden-tab GPU throttling</text>
+    <text x="18" y="126" fill="#e5e7eb" font-size="12">• JSON Canvas 1.0 &amp; CSS tokens</text>
+    <text x="18" y="150" fill="#9ca3af" font-size="11">Canon 005, 006, 007</text>
+  </g>
+
+  <g transform="translate(832,126)">
+    <rect width="236" height="168" rx="14" fill="#1e2436" stroke="#10b981" stroke-width="2"/>
+    <text x="18" y="34" fill="#6ee7b7" font-size="15" font-weight="700">4. Editor &amp; Markdown</text>
+    <text x="18" y="60" fill="#e5e7eb" font-size="12">• CodeMirror 6 StateField</text>
+    <text x="18" y="82" fill="#e5e7eb" font-size="12">• ViewPlugin &amp; WidgetType</text>
+    <text x="18" y="104" fill="#e5e7eb" font-size="12">• Live Preview + Reading parity</text>
+    <text x="18" y="126" fill="#e5e7eb" font-size="12">• MarkdownRenderChild cleanup</text>
+    <text x="18" y="150" fill="#9ca3af" font-size="11">Canon 008, 009</text>
+  </g>
+
+  <!-- Row 2 -->
+  <g transform="translate(52,326)">
+    <rect width="236" height="168" rx="14" fill="#1e2436" stroke="#f59e0b" stroke-width="2"/>
+    <text x="18" y="34" fill="#fcd34d" font-size="15" font-weight="700">5. Vault &amp; Metadata</text>
+    <text x="18" y="60" fill="#e5e7eb" font-size="12">• Vault.process atomic edits</text>
+    <text x="18" y="82" fill="#e5e7eb" font-size="12">• FileManager.renameFile</text>
+    <text x="18" y="104" fill="#e5e7eb" font-size="12">• onLayoutReady create guard</text>
+    <text x="18" y="126" fill="#e5e7eb" font-size="12">• Subpath #Heading &amp; URI sync</text>
+    <text x="18" y="150" fill="#9ca3af" font-size="11">Canon 010, 011</text>
+  </g>
+
+  <g transform="translate(312,326)">
+    <rect width="236" height="168" rx="14" fill="#1e2436" stroke="#ec4899" stroke-width="2"/>
+    <text x="18" y="34" fill="#f9a8d4" font-size="15" font-weight="700">6. Frameworks &amp; Build</text>
+    <text x="18" y="60" fill="#e5e7eb" font-size="12">• Vanilla DOM, React, Svelte 5</text>
+    <text x="18" y="82" fill="#e5e7eb" font-size="12">• esbuild CJS + Vite preview</text>
+    <text x="18" y="104" fill="#fca5a5" font-size="12">• Externalize @codemirror/*</text>
+    <text x="18" y="126" fill="#e5e7eb" font-size="12">• Vitest + WebdriverIO E2E</text>
+    <text x="18" y="150" fill="#9ca3af" font-size="11">Canon 012, 013</text>
+  </g>
+
+  <g transform="translate(572,326)">
+    <rect width="236" height="168" rx="14" fill="#1e2436" stroke="#14b8a6" stroke-width="2"/>
+    <text x="18" y="34" fill="#5eead4" font-size="15" font-weight="700">7. Mobile &amp; Performance</text>
+    <text x="18" y="60" fill="#e5e7eb" font-size="12">• iOS WebKit &amp; Android WebView</text>
+    <text x="18" y="82" fill="#fca5a5" font-size="12">• Zero Node/Electron on mobile</text>
+    <text x="18" y="104" fill="#e5e7eb" font-size="12">• requestUrl CORS-safe HTTP</text>
+    <text x="18" y="126" fill="#e5e7eb" font-size="12">• Startup profiler &amp; heap checks</text>
+    <text x="18" y="150" fill="#9ca3af" font-size="11">Canon 014</text>
+  </g>
+
+  <g transform="translate(832,326)">
+    <rect width="236" height="168" rx="14" fill="#1e2436" stroke="#ef4444" stroke-width="2"/>
+    <text x="18" y="34" fill="#fca5a5" font-size="15" font-weight="700">8. Security &amp; Release</text>
+    <text x="18" y="60" fill="#fca5a5" font-size="12">• Zero innerHTML XSS sinks</text>
+    <text x="18" y="82" fill="#e5e7eb" font-size="12">• SecretStorage &amp; Sync budgets</text>
+    <text x="18" y="104" fill="#e5e7eb" font-size="12">• eslint-plugin-obsidianmd</text>
+    <text x="18" y="126" fill="#e5e7eb" font-size="12">• BRAT &amp; obsidian-releases PR</text>
+    <text x="18" y="150" fill="#9ca3af" font-size="11">Canon 015, 016</text>
+  </g>
+</svg>

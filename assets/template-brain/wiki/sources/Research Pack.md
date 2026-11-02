@@ -1,0 +1,263 @@
+---
+type: "source"
+title: "Research Pack"
+domain: "Obsidian plugin engineering"
+status: "active"
+created: "2026-11-01"
+updated: "2026-11-01"
+confidence: "practitioner"
+tags:
+  - "domain/architecting-building-styling-optimizing-testing-auditing-and-sh"
+  - "type/source"
+  - "confidence/practitioner"
+related:
+  - "[[Source SRC-01-001]]"
+  - "[[Source SRC-01-002]]"
+  - "[[Source SRC-01-003]]"
+  - "[[Source SRC-01-004]]"
+  - "[[Source SRC-01-005]]"
+  - "[[Source SRC-01-006]]"
+  - "[[Source SRC-01-007]]"
+  - "[[Source SRC-01-008]]"
+  - "[[Source SRC-01-009]]"
+  - "[[Source SRC-01-010]]"
+  - "[[Source SRC-01-011]]"
+  - "[[Source SRC-02-001]]"
+  - "[[Source SRC-02-002]]"
+  - "[[Source SRC-02-003]]"
+  - "[[Source SRC-02-004]]"
+  - "[[Source SRC-02-005]]"
+  - "[[Source SRC-02-006]]"
+  - "[[Source SRC-02-007]]"
+  - "[[Source SRC-02-008]]"
+  - "[[Source SRC-02-009]]"
+  - "[[Source src-03-jsoncanvas-spec-1-0]]"
+  - "[[Source src-03-obsidian-api-canvas-dts]]"
+  - "[[Source src-03-obsidian-css-canvas-vars]]"
+  - "[[Source src-03-obsidian-css-graph-vars]]"
+  - "[[Source src-03-obsidian-css-colors-vars]]"
+  - "[[Source src-03-d3-force]]"
+  - "[[Source src-03-d3-zoom]]"
+  - "[[Source src-03-cytoscape-js]]"
+  - "[[Source src-03-mdn-svg-viewbox]]"
+  - "[[Source src-03-mdn-device-pixel-ratio]]"
+  - "[[Source src-03-mdn-canvas-scale]]"
+  - "[[Source src-03-mdn-optimizing-canvas]]"
+  - "[[Source src-03-threejs-dispose-manual]]"
+  - "[[Source src-03-threejs-cleanup-manual]]"
+  - "[[Source src-03-threejs-webglrenderer]]"
+  - "[[Source src-03-threejs-gltfloader]]"
+  - "[[Source src-03-r3f-canvas-api]]"
+  - "[[Source src-03-r3f-scaling-performance]]"
+  - "[[Source src-03-r3f-performance-pitfalls]]"
+  - "[[Source src-03-mdn-resize-observer]]"
+  - "[[Source src-03-mdn-intersection-observer]]"
+  - "[[Source src-03-mdn-page-visibility]]"
+  - "[[Source src-03-mdn-webglcontextlost]]"
+  - "[[Source src-03-mdn-webglcontextrestored]]"
+  - "[[Source src-03-obsidian-dataadapter-resourcepath]]"
+  - "[[Source src-03-obsidian-html-elements]]"
+  - "[[Source src-03-obsidian-api-dts]]"
+  - "[[Source src-03-obsidian-views-guide]]"
+  - "[[Source src-03-obsidian-react-guide]]"
+  - "[[Source src-03-react-createroot-docs]]"
+  - "[[Source src-03-react-root-event-delegation]]"
+  - "[[Source src-03-obsidian-svelte-guide]]"
+  - "[[Source src-03-svelte-v5-imperative-api]]"
+  - "[[Source src-03-svelte-v5-migration]]"
+  - "[[Source src-03-svelte-scoped-styles]]"
+  - "[[Source src-03-vue-application-api]]"
+  - "[[Source src-03-vue-sfc-css-features]]"
+  - "[[Source SRC-04-001]]"
+  - "[[Source SRC-04-002]]"
+  - "[[Source SRC-04-003]]"
+  - "[[Source SRC-04-004]]"
+  - "[[Source SRC-04-005]]"
+  - "[[Source SRC-04-006]]"
+  - "[[Source SRC-04-007]]"
+  - "[[Source SRC-04-008]]"
+  - "[[Source SRC-04-009]]"
+  - "[[Source SRC-04-010]]"
+  - "[[Source SRC-04-011]]"
+  - "[[Source SRC-04-012]]"
+  - "[[Source SRC-04-013]]"
+  - "[[Source SRC-04-014]]"
+  - "[[Source SRC-04-015]]"
+  - "[[Source SRC-04-016]]"
+  - "[[Source SRC-04-017]]"
+  - "[[Source SRC-04-018]]"
+  - "[[Source SRC-04-019]]"
+  - "[[Source SRC-04-020]]"
+  - "[[Source SRC-04-021]]"
+  - "[[Source SRC-04-022]]"
+  - "[[Source SRC-04-023]]"
+  - "[[Source SRC-04-024]]"
+  - "[[Source SRC-04-025]]"
+  - "[[Source SRC-04-026]]"
+  - "[[Source SRC-04-027]]"
+  - "[[Source SRC-04-028]]"
+  - "[[Source SRC-04-029]]"
+  - "[[Source obs-sample-plugin-repo]]"
+  - "[[Source obs-sample-esbuild-config]]"
+  - "[[Source obs-sample-release-workflow]]"
+  - "[[Source obs-docs-build-plugin]]"
+  - "[[Source obs-docs-github-actions-release]]"
+  - "[[Source obs-docs-submit-plugin]]"
+  - "[[Source esbuild-api-docs]]"
+  - "[[Source vite-build-library-mode]]"
+  - "[[Source vitest-config-docs]]"
+  - "[[Source vitest-mocking-guide]]"
+  - "[[Source pjeby-hot-reload]]"
+  - "[[Source wdio-obsidian-service-docs]]"
+  - "[[Source obs-docs-mobile-development]]"
+  - "[[Source obs-api-dts]]"
+  - "[[Source obs-docs-platform-api]]"
+  - "[[Source obs-docs-requesturl-api]]"
+  - "[[Source obs-docs-optimize-load-time]]"
+  - "[[Source obs-docs-defer-views]]"
+  - "[[Source obs-docs-debounce-api]]"
+  - "[[Source chrome-devtools-heap-snapshots]]"
+  - "[[Source mdn-web-workers]]"
+  - "[[Source obs-docs-plugin-guidelines]]"
+  - "[[Source obs-docs-html-elements]]"
+  - "[[Source obs-docs-sanitize-html]]"
+  - "[[Source obs-eslint-plugin]]"
+  - "[[Source obs-help-sync-plans]]"
+  - "[[Source obs-help-sync-settings]]"
+  - "[[Source obs-help-data-storage]]"
+  - "[[Source mdn-indexeddb-api]]"
+  - "[[Source obs-docs-store-secrets]]"
+  - "[[Source obs-docs-developer-policies]]"
+  - "[[Source obs-help-plugin-security]]"
+  - "[[Source SRC-06-001]]"
+  - "[[Source SRC-06-002]]"
+  - "[[Source SRC-06-003]]"
+  - "[[Plugin Architecture Matrix]]"
+source_urls: []
+---
+
+# Research Pack
+
+Reviewed 2026-11-01. 121 source entries, 116 exact URLs; IDs can share an upstream work. Counts are coverage, not independent corroboration. This public edition includes original summaries and public references. Private research reports and full upstream page bodies are not distributed.
+
+- [[Source SRC-01-001]]: [Obsidian plugin guidelines](https://github.com/obsidianmd/obsidian-developer-docs/blob/1c26772ac13d6e9870c865936d389fdfe694e742/en/Plugins/Releasing/Plugin%20guidelines.md), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-01-002]]: [Obsidian public TypeScript API declarations](https://github.com/obsidianmd/obsidian-api/blob/9abd9605ce081383674aae1ed111c456edde0688/obsidian.d.ts), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-01-003]]: [Obsidian manifest specification](https://github.com/obsidianmd/obsidian-developer-docs/blob/1c26772ac13d6e9870c865936d389fdfe694e742/en/Reference/Manifest.md), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-01-004]]: [Submit a plugin to the Obsidian Community directory](https://github.com/obsidianmd/obsidian-developer-docs/blob/1c26772ac13d6e9870c865936d389fdfe694e742/en/Plugins/Releasing/Submit%20your%20plugin.md), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-01-005]]: [Obsidian Community directory developer policies](https://github.com/obsidianmd/obsidian-developer-docs/blob/1c26772ac13d6e9870c865936d389fdfe694e742/en/Community%20directory/Developer%20policies.md), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-01-006]]: [Official Obsidian ESLint configuration guide](https://github.com/obsidianmd/eslint-plugin/blob/837b01dc1647cb3f0c532becb60ea83bec137656/docs/configuration.md), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-01-007]]: [Official sample plugin esbuild configuration](https://github.com/obsidianmd/obsidian-sample-plugin/blob/07ceb81d1fb3384af611ebf665a1ec42a7e5926d/esbuild.config.mjs), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-01-008]]: [Obsidian mobile development](https://github.com/obsidianmd/obsidian-developer-docs/blob/1c26772ac13d6e9870c865936d389fdfe694e742/en/Plugins/Getting%20started/Mobile%20development.md), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-01-009]]: [Obsidian plugin submission requirements](https://github.com/obsidianmd/obsidian-developer-docs/blob/1c26772ac13d6e9870c865936d389fdfe694e742/en/Community%20directory/Submission%20requirements%20for%20plugins.md), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-01-010]]: [Obsidian plugin event lifecycle](https://github.com/obsidianmd/obsidian-developer-docs/blob/1c26772ac13d6e9870c865936d389fdfe694e742/en/Plugins/Events.md), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-01-011]]: [Obsidian command interfaces](https://github.com/obsidianmd/obsidian-developer-docs/blob/1c26772ac13d6e9870c865936d389fdfe694e742/en/Plugins/User%20interface/Commands.md), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-02-001]]: [Obsidian custom ItemView interfaces](https://github.com/obsidianmd/obsidian-developer-docs/blob/1c26772ac13d6e9870c865936d389fdfe694e742/en/Plugins/User%20interface/Views.md), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-02-002]]: [Obsidian deferred view lifecycle](https://github.com/obsidianmd/obsidian-developer-docs/blob/1c26772ac13d6e9870c865936d389fdfe694e742/en/Plugins/Guides/Defer%20views.md), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-02-003]]: [Build a custom Obsidian Bases view](https://github.com/obsidianmd/obsidian-developer-docs/blob/1c26772ac13d6e9870c865936d389fdfe694e742/en/Plugins/Guides/Build%20a%20Bases%20view.md), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-02-004]]: [Obsidian modals and suggestion interfaces](https://github.com/obsidianmd/obsidian-developer-docs/blob/1c26772ac13d6e9870c865936d389fdfe694e742/en/Plugins/User%20interface/Modals.md), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-02-005]]: [Obsidian plugin settings interfaces](https://github.com/obsidianmd/obsidian-developer-docs/blob/1c26772ac13d6e9870c865936d389fdfe694e742/en/Plugins/User%20interface/Settings.md), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-02-006]]: [Obsidian CSS variables and styling](https://github.com/obsidianmd/obsidian-developer-docs/blob/1c26772ac13d6e9870c865936d389fdfe694e742/en/Reference/CSS%20variables/About%20styling.md), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-02-007]]: [Obsidian SecretStorage and SecretComponent guide](https://github.com/obsidianmd/obsidian-developer-docs/blob/1c26772ac13d6e9870c865936d389fdfe694e742/en/Plugins/Guides/Store%20secrets.md), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-02-008]]: [Migrate Obsidian plugins to declarative settings](https://github.com/obsidianmd/obsidian-developer-docs/blob/1c26772ac13d6e9870c865936d389fdfe694e742/en/Plugins/Guides/Migrate%20to%20declarative%20settings.md), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-02-009]]: [Obsidian icons](https://github.com/obsidianmd/obsidian-developer-docs/blob/1c26772ac13d6e9870c865936d389fdfe694e742/en/Plugins/User%20interface/Icons.md), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-jsoncanvas-spec-1-0]]: [JSON Canvas Spec 1.0](https://jsoncanvas.org/spec/1.0/), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-obsidian-api-canvas-dts]]: [Obsidian API TypeScript Definitions: canvas.d.ts](https://github.com/obsidianmd/obsidian-api/blob/master/canvas.d.ts), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-obsidian-css-canvas-vars]]: [Obsidian Developer Documentation: Canvas CSS Variables](https://docs.obsidian.md/Reference/CSS+variables/Plugins/Canvas), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-obsidian-css-graph-vars]]: [Obsidian Developer Documentation: Graph CSS Variables](https://docs.obsidian.md/Reference/CSS+variables/Plugins/Graph), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-obsidian-css-colors-vars]]: [Obsidian Developer Documentation: Foundations Color CSS Variables](https://docs.obsidian.md/Reference/CSS+variables/Foundations/Colors), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-d3-force]]: [D3 by Observable: d3-force Force-Directed Graph Simulation](https://d3js.org/d3-force), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-d3-zoom]]: [D3 by Observable: d3-zoom Pan and Zoom Abstraction](https://d3js.org/d3-zoom), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-cytoscape-js]]: [Cytoscape.js Graph Theory Network Library Documentation](https://js.cytoscape.org/), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-mdn-svg-viewbox]]: [MDN Web Docs: SVG viewBox Attribute](https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Attribute/viewBox), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-mdn-device-pixel-ratio]]: [MDN Web Docs: Window.devicePixelRatio Property](https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-mdn-canvas-scale]]: [MDN Web Docs: CanvasRenderingContext2D.scale() and HiDPI Transforms](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/scale), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-mdn-optimizing-canvas]]: [MDN Web Docs: Optimizing HTML5 Canvas Performance](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Optimizing_canvas), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-threejs-dispose-manual]]: [Three.js Manual: How to Dispose of Objects](https://threejs.org/manual/pages/how-to-dispose-of-objects.html), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-threejs-cleanup-manual]]: [Three.js Manual: Freeing Resources and ResourceTracker Pattern](https://threejs.org/manual/pages/cleanup.html), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-threejs-webglrenderer]]: [Three.js API Documentation: WebGLRenderer](https://threejs.org/docs/pages/WebGLRenderer.html), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-threejs-gltfloader]]: [Three.js API Documentation: GLTFLoader](https://threejs.org/docs/pages/GLTFLoader.html), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-r3f-canvas-api]]: [React Three Fiber Documentation: Canvas API](https://r3f.docs.pmnd.rs/api/canvas), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-r3f-scaling-performance]]: [React Three Fiber Documentation: Scaling Performance](https://r3f.docs.pmnd.rs/advanced/scaling-performance), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-r3f-performance-pitfalls]]: [React Three Fiber Documentation: Performance Pitfalls](https://r3f.docs.pmnd.rs/advanced/pitfalls), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-mdn-resize-observer]]: [MDN Web Docs: ResizeObserver Interface](https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserver), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-mdn-intersection-observer]]: [MDN Web Docs: Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-mdn-page-visibility]]: [MDN Web Docs: Page Visibility API](https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-mdn-webglcontextlost]]: [MDN Web Docs: HTMLCanvasElement webglcontextlost Event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/webglcontextlost_event), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-mdn-webglcontextrestored]]: [MDN Web Docs: HTMLCanvasElement webglcontextrestored Event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/webglcontextrestored_event), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-obsidian-dataadapter-resourcepath]]: [Obsidian Developer Documentation: DataAdapter.getResourcePath and Vault.getResourcePath](https://docs.obsidian.md/Reference/TypeScript+API/DataAdapter/getResourcePath), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-obsidian-html-elements]]: [Obsidian Developer Documentation: HTML Elements](https://docs.obsidian.md/Plugins/User+interface/HTML+elements), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-obsidian-api-dts]]: [Obsidian API TypeScript Definitions: obsidian.d.ts (DOM, SVG, and Popout Window Helpers)](https://github.com/obsidianmd/obsidian-api/blob/master/obsidian.d.ts), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-obsidian-views-guide]]: [Obsidian Developer Documentation: Views (ItemView Lifecycle)](https://docs.obsidian.md/Plugins/User+interface/Views), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-obsidian-react-guide]]: [Obsidian Developer Documentation: Use React in Your Plugin](https://docs.obsidian.md/Plugins/Getting+started/Use+React+in+your+plugin), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-react-createroot-docs]]: [React Reference Documentation: createRoot (react-dom/client)](https://react.dev/reference/react-dom/client/createRoot), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-react-root-event-delegation]]: [React Architectural Change: Root Container Event Delegation (React 17+)](https://legacy.reactjs.org/blog/2020/08/10/react-v17-rc.html), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-obsidian-svelte-guide]]: [Obsidian Developer Documentation: Use Svelte in Your Plugin](https://docs.obsidian.md/Plugins/Getting+started/Use+Svelte+in+your+plugin), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-svelte-v5-imperative-api]]: [Svelte 5 Documentation: Imperative Component API (mount and unmount)](https://svelte.dev/docs/svelte/imperative-component-api), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-svelte-v5-migration]]: [Svelte 5 Documentation: Svelte 5 Migration Guide](https://svelte.dev/docs/svelte/v5-migration-guide), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-svelte-scoped-styles]]: [Svelte Documentation: Scoped Styles](https://svelte.dev/docs/svelte/scoped-styles), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-vue-application-api]]: [Vue 3 Documentation: Application API (createApp, mount, unmount)](https://vuejs.org/api/application.html), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source src-03-vue-sfc-css-features]]: [Vue 3 Documentation: Single-File Component CSS Features](https://vuejs.org/api/sfc-css-features.html), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-04-001]]: [Obsidian Developer Documentation - Editor](https://docs.obsidian.md/Plugins/Editor/Editor), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-04-002]]: [Obsidian Developer Documentation - Editor extensions](https://docs.obsidian.md/Plugins/Editor/Editor+extensions), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-04-003]]: [Obsidian Developer Documentation - Communicating with editor extensions](https://docs.obsidian.md/Plugins/Editor/Communicating+with+editor+extensions), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-04-004]]: [Obsidian Developer Documentation - State management](https://docs.obsidian.md/Plugins/Editor/State+management), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-04-005]]: [Obsidian Developer Documentation - State fields](https://docs.obsidian.md/Plugins/Editor/State+fields), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-04-006]]: [Obsidian Developer Documentation - View plugins](https://docs.obsidian.md/Plugins/Editor/View+plugins), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-04-007]]: [Obsidian Developer Documentation - Decorations](https://docs.obsidian.md/Plugins/Editor/Decorations), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-04-008]]: [Obsidian Developer Documentation - Viewport](https://docs.obsidian.md/Plugins/Editor/Viewport), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-04-009]]: [Obsidian Developer Documentation - Status bar](https://docs.obsidian.md/Plugins/User+interface/Status+bar), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-04-010]]: [CodeMirror 6 Documentation - System Guide](https://codemirror.net/docs/guide/), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-04-011]]: [CodeMirror 6 Documentation - Reference Manual](https://codemirror.net/docs/ref/), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-04-012]]: [CodeMirror 6 Example - Custom Gutters](https://codemirror.net/examples/gutter/), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-04-013]]: [CodeMirror 6 Example - Configuration and Compartments](https://codemirror.net/examples/config/), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-04-014]]: [CodeMirror 6 @codemirror/state Source - src/facet.ts](https://raw.githubusercontent.com/codemirror/state/main/src/facet.ts), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-04-015]]: [Obsidian Sample Plugin - esbuild.config.mjs](https://raw.githubusercontent.com/obsidianmd/obsidian-sample-plugin/master/esbuild.config.mjs), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-04-016]]: [Obsidian Developer Documentation - Markdown post processing](https://docs.obsidian.md/Plugins/Editor/Markdown+post+processing), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-04-017]]: [Obsidian TypeScript API Reference - MarkdownPostProcessorContext](https://docs.obsidian.md/Reference/TypeScript+API/MarkdownPostProcessorContext), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-04-018]]: [Obsidian TypeScript API Reference - MarkdownRenderer](https://docs.obsidian.md/Reference/TypeScript+API/MarkdownRenderer), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-04-019]]: [Obsidian Developer Documentation - Manage plugin lifecycle](https://docs.obsidian.md/Plugins/Guides/Manage+plugin+lifecycle), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-04-020]]: [Official eslint-plugin-obsidianmd Rule - no-plugin-as-component](https://raw.githubusercontent.com/obsidianmd/eslint-plugin/master/lib/rules/noPluginAsComponent.ts), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-04-021]]: [Obsidian Developer Documentation - Vault](https://docs.obsidian.md/Plugins/Vault), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-04-022]]: [Obsidian Developer Documentation - Plugin guidelines](https://docs.obsidian.md/Plugins/Releasing/Plugin+guidelines), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-04-023]]: [Obsidian TypeScript API Reference - FileManager](https://docs.obsidian.md/Reference/TypeScript+API/FileManager), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-04-024]]: [Obsidian TypeScript API Reference - DataAdapter](https://docs.obsidian.md/Reference/TypeScript+API/DataAdapter), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-04-025]]: [Official eslint-plugin-obsidianmd Rule - prefer-file-manager-trash-file](https://raw.githubusercontent.com/obsidianmd/eslint-plugin/master/lib/rules/preferFileManagerTrashFile.ts), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-04-026]]: [Obsidian Official TypeScript API Definitions - obsidian.d.ts](https://raw.githubusercontent.com/obsidianmd/obsidian-api/master/obsidian.d.ts), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-04-027]]: [Obsidian TypeScript API Reference - MetadataCache](https://docs.obsidian.md/Reference/TypeScript+API/MetadataCache), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-04-028]]: [Obsidian Developer Documentation - Optimize plugin load time](https://docs.obsidian.md/Plugins/Guides/Optimize+plugin+load+time), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-04-029]]: [Obsidian Developer Documentation - Events](https://docs.obsidian.md/Plugins/Events), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source obs-sample-plugin-repo]]: [Obsidian Sample Plugin Repository (package.json, tsconfig.json, version-bump.mjs, eslint.config.mts)](https://github.com/obsidianmd/obsidian-sample-plugin), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source obs-sample-esbuild-config]]: [Obsidian Sample Plugin esbuild.config.mjs](https://raw.githubusercontent.com/obsidianmd/obsidian-sample-plugin/master/esbuild.config.mjs), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source obs-sample-release-workflow]]: [Obsidian Sample Plugin GitHub Actions Release Workflow (release.yml)](https://raw.githubusercontent.com/obsidianmd/obsidian-sample-plugin/master/.github/workflows/release.yml), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source obs-docs-build-plugin]]: [Obsidian Developer Docs: Build a plugin](https://docs.obsidian.md/Plugins/Getting+started/Build+a+plugin), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source obs-docs-github-actions-release]]: [Obsidian Developer Docs: Release your plugin with GitHub Actions](https://docs.obsidian.md/Plugins/Releasing/Release+your+plugin+with+GitHub+Actions), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source obs-docs-submit-plugin]]: [Obsidian Developer Docs: Submit your plugin](https://docs.obsidian.md/Plugins/Releasing/Submit+your+plugin), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source esbuild-api-docs]]: [esbuild API Documentation (external, format, target, sourcemap, treeShaking)](https://esbuild.github.io/api/), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source vite-build-library-mode]]: [Vite Guide: Building for Production and Library Mode](https://vite.dev/guide/build), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source vitest-config-docs]]: [Vitest Configuration Reference (resolve.alias, environment)](https://vitest.dev/config/), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source vitest-mocking-guide]]: [Vitest Guide: Mocking Modules, Globals, and Timers](https://vitest.dev/guide/mocking), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source pjeby-hot-reload]]: [Hot-Reload Plugin for Obsidian Plugins (pjeby/hot-reload)](https://github.com/pjeby/hot-reload), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source wdio-obsidian-service-docs]]: [WebdriverIO Documentation: wdio-obsidian-service](https://webdriver.io/docs/wdio-obsidian-service), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source obs-docs-mobile-development]]: [Obsidian Developer Docs: Mobile development](https://docs.obsidian.md/Plugins/Getting+started/Mobile+development), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source obs-api-dts]]: [Obsidian Official TypeScript API Definitions (obsidian.d.ts)](https://raw.githubusercontent.com/obsidianmd/obsidian-api/master/obsidian.d.ts), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source obs-docs-platform-api]]: [Obsidian Developer Docs: Platform TypeScript API Reference](https://docs.obsidian.md/Reference/TypeScript+API/Platform), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source obs-docs-requesturl-api]]: [Obsidian Developer Docs: requestUrl TypeScript API Reference](https://docs.obsidian.md/Reference/TypeScript+API/requestUrl), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source obs-docs-optimize-load-time]]: [Obsidian Developer Docs: Optimize plugin load time](https://docs.obsidian.md/Plugins/Guides/Optimize+plugin+load+time), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source obs-docs-defer-views]]: [Obsidian Developer Docs: Defer views](https://docs.obsidian.md/Plugins/Guides/Defer+views), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source obs-docs-debounce-api]]: [Obsidian Developer Docs: debounce TypeScript API Reference](https://docs.obsidian.md/Reference/TypeScript+API/debounce), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source chrome-devtools-heap-snapshots]]: [Chrome DevTools Documentation: Record Heap Snapshots](https://developer.chrome.com/docs/devtools/memory-problems/heap-snapshots), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source mdn-web-workers]]: [MDN Web Docs: Using Web Workers (Embedded Blob URL Workers)](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source obs-docs-plugin-guidelines]]: [Obsidian Developer Docs: Plugin guidelines](https://docs.obsidian.md/Plugins/Releasing/Plugin+guidelines), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source obs-docs-html-elements]]: [Obsidian Developer Docs: HTML elements](https://docs.obsidian.md/Plugins/User+interface/HTML+elements), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source obs-docs-sanitize-html]]: [Obsidian Developer Docs: sanitizeHTMLToDom TypeScript API Reference](https://docs.obsidian.md/Reference/TypeScript+API/sanitizeHTMLToDom), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source obs-eslint-plugin]]: [Official ESLint Plugin for Obsidian Plugins (obsidianmd/eslint-plugin)](https://github.com/obsidianmd/eslint-plugin), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source obs-help-sync-plans]]: [Obsidian Help: Plans and storage limits (Obsidian Sync)](https://help.obsidian.md/sync/plans), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source obs-help-sync-settings]]: [Obsidian Help: Sync settings and selective syncing](https://help.obsidian.md/sync/settings), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source obs-help-data-storage]]: [Obsidian Help: How Obsidian stores data (Vault, Config Folder, Global Settings, IndexedDB)](https://obsidian.md/help/data-storage), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source mdn-indexeddb-api]]: [MDN Web Docs: IndexedDB API](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source obs-docs-store-secrets]]: [Obsidian Developer Docs: Store secrets (SecretStorage and SecretComponent)](https://docs.obsidian.md/Plugins/Guides/Store+secrets), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source obs-docs-developer-policies]]: [Obsidian Developer Docs: Community Directory Developer Policies](https://docs.obsidian.md/Community+directory/Developer+policies), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source obs-help-plugin-security]]: [Obsidian Help: Plugin security](https://help.obsidian.md/plugin-security), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-06-001]]: [Official sample plugin package and scripts](https://raw.githubusercontent.com/obsidianmd/obsidian-sample-plugin/07ceb81d1fb3384af611ebf665a1ec42a7e5926d/package.json), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-06-002]]: [Obsidian npm API package 1.14.4 metadata](https://registry.npmjs.org/obsidian/1.14.4), retrieved 2026-11-01, refresh due 2026-12-01.
+- [[Source SRC-06-003]]: [Official Obsidian ESLint package 0.4.2 metadata](https://registry.npmjs.org/eslint-plugin-obsidianmd/0.4.2), retrieved 2026-11-01, refresh due 2026-12-01.

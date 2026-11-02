@@ -1,0 +1,21 @@
+.__ROOT_CLASS__ {
+  padding: var(--size-4-4);
+  color: var(--text-normal);
+  background: var(--background-primary);
+}
+
+.__ROOT_CLASS__ canvas {
+  display: block;
+  width: 100%;
+  height: 240px;
+}
+
+.__ROOT_CLASS__ .creator-scene canvas {
+  height: 320px;
+}
+
+.__MARK_CLASS__ {
+  color: var(--text-accent);
+  background-color: var(--background-modifier-hover);
+  text-decoration: underline;
+}

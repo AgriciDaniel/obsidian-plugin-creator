@@ -1,0 +1,54 @@
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Install
+        run: python -m pip install -e .
+      - name: Compile
+        run: python -m compileall scripts obsidian_plugin_brain tests
+      - name: CLI smoke
+        run: obsidian-plugin-brain --help
+      - name: Template vault lint
+        run: python scripts/lint_vault.py --vault assets/template-brain --template
+      - name: Public distribution audit
+        run: python scripts/audit_brain.py --require market-ready --json
+      - name: Pipeline tests
+        run: python tests/test_pipeline.py
+      - name: Demo vault drift
+        run: |
+          python scripts/build_demo_vault.py
+          git diff --exit-code -- examples/sample-vault
+      - name: Release package and audit
+        run: python scripts/package_release.py --version 0.2.0
+
+  creator-builds:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6, verified 2026-11-01
+        with:
+          node-version: "24"
+      - name: Install the exact creator toolchain in a temporary folder
+        run: |
+          mkdir -p "$RUNNER_TEMP/creator-dependencies"
+          cp references/creator/toolchain/package.json references/creator/toolchain/package-lock.json "$RUNNER_TEMP/creator-dependencies/"
+          npm ci --prefix "$RUNNER_TEMP/creator-dependencies" --ignore-scripts --no-audit --no-fund
+      - name: Check all eight source starters
+        run: python scripts/verify_creator_builds.py --node-modules "$RUNNER_TEMP/creator-dependencies/node_modules" --out "$RUNNER_TEMP/creator-builds.json"

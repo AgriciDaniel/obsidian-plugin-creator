@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Obsidian Plugin Manifest (manifest.json)",
+  "description": "Selected documented manifest constraints; naming uniqueness and directory review require separate verification.",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "version",
+    "minAppVersion",
+    "description",
+    "author",
+    "isDesktopOnly"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^(?!.*obsidian)(?!.*plugin$)[a-z][a-z-]*$",
+      "minLength": 1,
+      "description": "Lowercase letters and hyphens; cannot contain obsidian or end with plugin."
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Human-readable display name without redundant 'Obsidian' or 'Plugin' words."
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$",
+      "description": "Exact X.Y.Z semantic version without leading 'v' or prerelease suffix for Community Store releases."
+    },
+    "minAppVersion": {
+      "type": "string",
+      "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$",
+      "description": "Minimum Obsidian desktop/mobile version required to load the plugin."
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Description of the plugin. Local editorial length recommendations are not schema limits."
+    },
+    "author": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authorUrl": {
+      "type": "string",
+      "format": "uri"
+    },
+    "fundingUrl": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "uri"
+        },
+        {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      ]
+    },
+    "isDesktopOnly": {
+      "type": "boolean"
+    }
+  }
+}

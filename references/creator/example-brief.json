@@ -1,0 +1,13 @@
+{
+  "id": "heading-compass",
+  "name": "Heading Compass",
+  "author": "Daniel Agrici",
+  "purpose": "Help a vault owner inspect cached note headings without changing note contents.",
+  "archetype": "vault-index",
+  "platforms": ["desktop", "ios", "android"],
+  "acceptance_criteria": [
+    "Show the number of notes with cached metadata and the total known heading count.",
+    "Report notes with missing cache data separately from notes with zero headings.",
+    "Leave every note unchanged and make no external network requests."
+  ]
+}

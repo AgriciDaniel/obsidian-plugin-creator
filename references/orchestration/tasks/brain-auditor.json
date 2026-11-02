@@ -1,0 +1,11 @@
+{
+  "created_at": "2026-11-01T17:44:15+00:00",
+  "description": "Score a brain repo against the 51-item brain-anatomy rubric and write a graded scorecard with critical/high/medium/low findings.",
+  "id": "brain-auditor",
+  "result": "Local and Brainstein audits run; actual results retained in references/verification/. Local completion work; no claim of a separately executed named role agent.",
+  "role": "brain-auditor",
+  "schema": "brainstein.task.v1",
+  "status": "completed",
+  "title": "brain-auditor gate work",
+  "updated_at": "2026-11-01"
+}

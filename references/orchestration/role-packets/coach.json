@@ -1,0 +1,38 @@
+{
+  "allowed_actions": [
+    "read audit JSON",
+    "read orchestration state",
+    "read home.md",
+    "format actions"
+  ],
+  "blockers": [
+    "no audit available",
+    "empty home.md and no orchestration tasks"
+  ],
+  "evidence_paths": [
+    "wiki/home.md"
+  ],
+  "expected_outputs": [
+    "coach report JSON",
+    "three-line coaching response"
+  ],
+  "forbidden_actions": [
+    "execute fixes",
+    "mutate audited repo"
+  ],
+  "gates": [
+    "actions are imperative, ranked, and cite evidence paths"
+  ],
+  "inputs": [
+    "wiki/home.md",
+    "wiki/audits/Latest Audit.md",
+    "references/orchestration/run.json"
+  ],
+  "mission": "Rank top blockers and recommend the single next action with rationale and file path.",
+  "next_handoff": "playbook-writer",
+  "outputs": [
+    "coach report JSON",
+    "three-line coaching response"
+  ],
+  "role": "coach"
+}

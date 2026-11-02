@@ -1,0 +1,11 @@
+{
+  "created_at": "2026-11-01T17:46:25+00:00",
+  "description": "",
+  "id": "t06-research-toolchains",
+  "result": "references/research/05-toolchains-mobile-security.json",
+  "role": "research-scout",
+  "schema": "brainstein.task.v1",
+  "status": "completed",
+  "title": "Shard 05: Bundlers, Mobile (iOS/Android), Performance, Security, Sync & Testing",
+  "updated_at": "2026-11-01"
+}

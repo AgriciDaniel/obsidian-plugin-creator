@@ -1,0 +1,39 @@
+{
+  "allowed_actions": [
+    "browse official/primary sources",
+    "record dated source targets",
+    "flag stale domains"
+  ],
+  "blockers": [
+    "no official sources",
+    "stale refresh_due",
+    "high-stakes source gaps"
+  ],
+  "evidence_paths": [
+    "references/public-sources.json",
+    "references/current-requirements.md",
+    ".raw/source-docs/"
+  ],
+  "expected_outputs": [
+    "source candidates",
+    "research gaps"
+  ],
+  "forbidden_actions": [
+    "silently fill claims from memory",
+    "use paid APIs without explicit cost cap"
+  ],
+  "gates": [
+    "sources are current and attributable"
+  ],
+  "inputs": [
+    "references/research-protocol.md",
+    "references/public-sources.json"
+  ],
+  "mission": "Locate current primary sources and record evidence requirements.",
+  "next_handoff": "source-ledger-auditor",
+  "outputs": [
+    "source candidates",
+    "research gaps"
+  ],
+  "role": "research-scout"
+}

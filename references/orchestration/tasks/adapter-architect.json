@@ -1,0 +1,11 @@
+{
+  "created_at": "2026-11-01T17:44:15+00:00",
+  "description": "Design domain adapter manifests, role scripts, and integration boundaries.",
+  "id": "adapter-architect",
+  "result": "Implemented importer, schemas, source-bound synthesis, reports, and negative tests. Local completion work; no claim of a separately executed named role agent.",
+  "role": "adapter-architect",
+  "schema": "brainstein.task.v1",
+  "status": "completed",
+  "title": "adapter-architect gate work",
+  "updated_at": "2026-11-01"
+}

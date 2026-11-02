@@ -1,0 +1,11 @@
+{
+  "created_at": "2026-11-01T17:46:25+00:00",
+  "description": "",
+  "id": "t01-spec",
+  "result": "",
+  "role": "spec-architect",
+  "schema": "brainstein.task.v1",
+  "status": "completed",
+  "title": "Author v3 fable-grade Obsidian Plugin Brain spec",
+  "updated_at": "2026-11-01T17:46:25+00:00"
+}

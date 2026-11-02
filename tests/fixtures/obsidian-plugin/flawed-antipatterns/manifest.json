@@ -1,0 +1,9 @@
+{
+  "id": "obsidian-bad-plugin",
+  "name": "Obsidian Bad Plugin",
+  "version": "v1.0",
+  "minAppVersion": "1.5.0",
+  "description": "Missing punctuation and bad patterns",
+  "author": "Test Author",
+  "isDesktopOnly": false
+}

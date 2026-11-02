@@ -1,0 +1,41 @@
+{
+  "allowed_actions": [
+    "run validate",
+    "run audit",
+    "run package scans",
+    "record release decision"
+  ],
+  "blockers": [
+    "critical audit failures",
+    "dirty tracked files",
+    "untracked release drift",
+    "secret scan hit"
+  ],
+  "evidence_paths": [
+    "dist/RELEASE_MANIFEST.json",
+    "dist/SHA256SUMS",
+    "references/orchestration/run.json"
+  ],
+  "expected_outputs": [
+    "release decision",
+    "blocking checklist"
+  ],
+  "forbidden_actions": [
+    "package market-ready with critical failures",
+    "bypass dirty tree or secret scans"
+  ],
+  "gates": [
+    "validate and audit pass at the requested maturity"
+  ],
+  "inputs": [
+    "RELEASE_CHECKLIST.md",
+    "references/release-checklist.md"
+  ],
+  "mission": "Decide release readiness from validation, audit, packaging, and checklist evidence.",
+  "next_handoff": "wizard-conductor",
+  "outputs": [
+    "release decision",
+    "blocking checklist"
+  ],
+  "role": "release-gatekeeper"
+}

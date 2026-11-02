@@ -1,0 +1,6 @@
+.spatial-graph-pane {
+  background-color: var(--background-primary);
+  color: var(--text-normal);
+  border: 1px solid var(--background-modifier-border);
+  font-family: var(--font-interface);
+}

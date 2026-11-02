@@ -1,0 +1,11 @@
+{
+  "created_at": "2026-11-01T17:44:15+00:00",
+  "description": "Keep agent runtime surfaces portable across supported assistants and custom skill roots.",
+  "id": "runtime-porter",
+  "result": "Editable source checkout and temporary-root install flow verified. Standalone wheels unsupported. Local completion work; no claim of a separately executed named role agent.",
+  "role": "runtime-porter",
+  "schema": "brainstein.task.v1",
+  "status": "completed",
+  "title": "runtime-porter gate work",
+  "updated_at": "2026-11-01"
+}

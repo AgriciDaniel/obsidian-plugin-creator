@@ -1,0 +1,4064 @@
+{
+  "version": 1,
+  "status": "reviewed-public-summary",
+  "domain": "Obsidian plugin engineering",
+  "retrieved": "2026-11-01",
+  "refresh_cadence": "Monthly and before releases; verify changes to moving sources.",
+  "evidence_boundary": "Public catalog of original paraphrases and official references. No private captures or internal review ledger is distributed. Entries can share an upstream origin and do not establish independent corroboration.",
+  "sources": [
+    {
+      "id": "SRC-01-001",
+      "title": "Obsidian plugin guidelines",
+      "url": "https://github.com/obsidianmd/obsidian-developer-docs/blob/1c26772ac13d6e9870c865936d389fdfe694e742/en/Plugins/Releasing/Plugin%20guidelines.md",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "001",
+        "002",
+        "005",
+        "016"
+      ],
+      "claims": [
+        "Use the plugin-provided this.app reference rather than the debugging global app object.",
+        "Release plugin resources on unload through registered lifecycle ownership where possible; do not detach workspace leaves in onunload.",
+        "Avoid retaining custom view instances on the Plugin class; locate live view instances through the workspace.",
+        "Construct user-facing DOM with DOM APIs or Obsidian helpers instead of interpolating user input into innerHTML, outerHTML, or insertAdjacentHTML.",
+        "Use CSS classes and Obsidian CSS variables instead of hardcoded visual styling in plugin TypeScript."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Use the plugin-provided this.app reference rather than the debugging global app object.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "Release plugin resources on unload through registered lifecycle ownership where possible; do not detach workspace leaves in onunload.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "Avoid retaining custom view instances on the Plugin class; locate live view instances through the workspace.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "Construct user-facing DOM with DOM APIs or Obsidian helpers instead of interpolating user input into innerHTML, outerHTML, or insertAdjacentHTML.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "Use CSS classes and Obsidian CSS variables instead of hardcoded visual styling in plugin TypeScript.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        }
+      ],
+      "supports_claims": [
+        "SRC-01-001-C01",
+        "SRC-01-001-C02",
+        "SRC-01-001-C03",
+        "SRC-01-001-C04",
+        "SRC-01-001-C05"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {
+        "commit": "1c26772ac13d6e9870c865936d389fdfe694e742",
+        "path": "en/Plugins/Releasing/Plugin guidelines.md",
+        "sha256": "94020df7f38c5404a4c3515cbdeac4629c45a7cd36819f8d08a1d0ae6948eaea",
+        "sections_or_symbols": [
+          "General",
+          "Security",
+          "Resource management",
+          "Workspace",
+          "Styling"
+        ]
+      }
+    },
+    {
+      "id": "SRC-01-002",
+      "title": "Obsidian public TypeScript API declarations",
+      "url": "https://github.com/obsidianmd/obsidian-api/blob/9abd9605ce081383674aae1ed111c456edde0688/obsidian.d.ts",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "001",
+        "002",
+        "003",
+        "004",
+        "016"
+      ],
+      "claims": [
+        "Component supports register, registerEvent, registerDomEvent, and registerInterval cleanup, as well as child component ownership through addChild and removeChild.",
+        "Plugin.registerBasesView(viewId, registration) returns a boolean and is marked since 1.10.0; false indicates Bases is disabled in the vault.",
+        "SecretStorage and SecretComponent are marked since 1.11.4; SecretStorage.getSecret(id) returns a string or null.",
+        "PluginSettingTab.getSettingDefinitions is marked since 1.13.0 in these public declarations.",
+        "requestUrl accepts a URL string or RequestUrlParam and returns RequestUrlResponsePromise."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Component supports register, registerEvent, registerDomEvent, and registerInterval cleanup, as well as child component ownership through addChild and removeChild.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "Plugin.registerBasesView(viewId, registration) returns a boolean and is marked since 1.10.0; false indicates Bases is disabled in the vault.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "SecretStorage and SecretComponent are marked since 1.11.4; SecretStorage.getSecret(id) returns a string or null.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "PluginSettingTab.getSettingDefinitions is marked since 1.13.0 in these public declarations.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "requestUrl accepts a URL string or RequestUrlParam and returns RequestUrlResponsePromise.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        }
+      ],
+      "supports_claims": [
+        "SRC-01-002-C01",
+        "SRC-01-002-C02",
+        "SRC-01-002-C03",
+        "SRC-01-002-C04",
+        "SRC-01-002-C05"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {
+        "commit": "9abd9605ce081383674aae1ed111c456edde0688",
+        "path": "obsidian.d.ts",
+        "sha256": "97c86417c893db691e401fdffd9026e348dc96da6bfcfa5d49a301d7fe7542a0",
+        "sections_or_symbols": [
+          "Component",
+          "Plugin.registerBasesView",
+          "SecretStorage",
+          "PluginSettingTab",
+          "requestUrl"
+        ]
+      }
+    },
+    {
+      "id": "SRC-01-003",
+      "title": "Obsidian manifest specification",
+      "url": "https://github.com/obsidianmd/obsidian-developer-docs/blob/1c26772ac13d6e9870c865936d389fdfe694e742/en/Reference/Manifest.md",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "001",
+        "016"
+      ],
+      "claims": [
+        "Required common manifest properties are author, minAppVersion, name, and version; plugin-specific required properties are description, id, and isDesktopOnly.",
+        "Plugin ids allow lowercase letters and hyphens, must not end with plugin, and must not contain obsidian.",
+        "Manifest versions use the x.y.z form of semantic versioning; minAppVersion records the minimum required app version.",
+        "For local development the manifest id should match the plugin folder name; the documentation warns that mismatches prevent some methods such as onExternalSettingsChange from being called."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Required common manifest properties are author, minAppVersion, name, and version; plugin-specific required properties are description, id, and isDesktopOnly.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "Plugin ids allow lowercase letters and hyphens, must not end with plugin, and must not contain obsidian.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "Manifest versions use the x.y.z form of semantic versioning; minAppVersion records the minimum required app version.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "For local development the manifest id should match the plugin folder name; the documentation warns that mismatches prevent some methods such as onExternalSettingsChange from being called.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        }
+      ],
+      "supports_claims": [
+        "SRC-01-003-C01",
+        "SRC-01-003-C02",
+        "SRC-01-003-C03",
+        "SRC-01-003-C04"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {
+        "commit": "1c26772ac13d6e9870c865936d389fdfe694e742",
+        "path": "en/Reference/Manifest.md",
+        "sha256": "e0d73638bfaa707d64c09f9b5680e0067d36822c7ba51b2cc9355b9cde6c6f02",
+        "sections_or_symbols": [
+          "Properties",
+          "Plugin-specific properties",
+          "name"
+        ]
+      }
+    },
+    {
+      "id": "SRC-01-004",
+      "title": "Submit a plugin to the Obsidian Community directory",
+      "url": "https://github.com/obsidianmd/obsidian-developer-docs/blob/1c26772ac13d6e9870c865936d389fdfe694e742/en/Plugins/Releasing/Submit%20your%20plugin.md",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "016"
+      ],
+      "claims": [
+        "The current submission guide directs authors to community.obsidian.md, sign in with an Obsidian account, and link their GitHub account before adding a plugin.",
+        "The repository root must contain README.md, LICENSE, and manifest.json before submission.",
+        "The GitHub release tag must match manifest.json version; release binary attachments are main.js, manifest.json, and optional styles.css.",
+        "The directory reads manifest.json at the default branch HEAD; users install release assets from the GitHub tag matching the manifest version.",
+        "Automated review errors must be resolved before a submitted plugin becomes installable from Obsidian."
+      ],
+      "structured_claims": [
+        {
+          "claim": "The current submission guide directs authors to community.obsidian.md, sign in with an Obsidian account, and link their GitHub account before adding a plugin.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "The repository root must contain README.md, LICENSE, and manifest.json before submission.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "The GitHub release tag must match manifest.json version; release binary attachments are main.js, manifest.json, and optional styles.css.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "The directory reads manifest.json at the default branch HEAD; users install release assets from the GitHub tag matching the manifest version.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "Automated review errors must be resolved before a submitted plugin becomes installable from Obsidian.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        }
+      ],
+      "supports_claims": [
+        "SRC-01-004-C01",
+        "SRC-01-004-C02",
+        "SRC-01-004-C03",
+        "SRC-01-004-C04",
+        "SRC-01-004-C05"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {
+        "commit": "1c26772ac13d6e9870c865936d389fdfe694e742",
+        "path": "en/Plugins/Releasing/Submit your plugin.md",
+        "sha256": "4e4308b75c293eaad00eb431accc45d46a676293a330fbeb833074ad6695c66a",
+        "sections_or_symbols": [
+          "Before you begin",
+          "Step 2: Create a release",
+          "Step 3: Submit your plugin to the community directory",
+          "Step 4: Address review feedback"
+        ]
+      }
+    },
+    {
+      "id": "SRC-01-005",
+      "title": "Obsidian Community directory developer policies",
+      "url": "https://github.com/obsidianmd/obsidian-developer-docs/blob/1c26772ac13d6e9870c865936d389fdfe694e742/en/Community%20directory/Developer%20policies.md",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "015",
+        "016"
+      ],
+      "claims": [
+        "Directory-listed plugins must not obscure their code purpose, add client-side telemetry, or install or update themselves or their dependencies.",
+        "Network use, required payment or accounts, external vault file access, in-plugin static advertising, and server-side telemetry require README disclosures; server-side telemetry also requires a privacy policy.",
+        "Directory policies require a license, respect for third-party code licenses, and compliance with the Obsidian trademark policy."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Directory-listed plugins must not obscure their code purpose, add client-side telemetry, or install or update themselves or their dependencies.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "Network use, required payment or accounts, external vault file access, in-plugin static advertising, and server-side telemetry require README disclosures; server-side telemetry also requires a privacy policy.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "Directory policies require a license, respect for third-party code licenses, and compliance with the Obsidian trademark policy.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        }
+      ],
+      "supports_claims": [
+        "SRC-01-005-C01",
+        "SRC-01-005-C02",
+        "SRC-01-005-C03"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {
+        "commit": "1c26772ac13d6e9870c865936d389fdfe694e742",
+        "path": "en/Community directory/Developer policies.md",
+        "sha256": "9c5766b4b55ca729c7cf8cd539313e040d87cc96890529e0b522aa1292616661",
+        "sections_or_symbols": [
+          "Policies",
+          "Disclosures",
+          "Copyright and licensing"
+        ]
+      }
+    },
+    {
+      "id": "SRC-01-006",
+      "title": "Official Obsidian ESLint configuration guide",
+      "url": "https://github.com/obsidianmd/eslint-plugin/blob/837b01dc1647cb3f0c532becb60ea83bec137656/docs/configuration.md",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "001",
+        "015",
+        "016"
+      ],
+      "claims": [
+        "The recommended ESLint config is an array of flat config objects; spread it into the top-level config array and supply TypeScript parser project options.",
+        "The recommended config includes ESLint core rules, typescript-eslint, Obsidian rules, security plugins, Obsidian globals, and package dependency checks.",
+        "The community scanner uses a configuration derived from the recommended config, ignores build and test files, and treats most non-security violations as warnings; local recommended config severities are not identical to scanner severities.",
+        "The documented scanner example keeps no-eval, no-implied-eval, no-unsanitized/method, no-unsanitized/property, obsidianmd/regex-lookbehind, and obsidianmd/no-forbidden-elements as errors."
+      ],
+      "structured_claims": [
+        {
+          "claim": "The recommended ESLint config is an array of flat config objects; spread it into the top-level config array and supply TypeScript parser project options.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "The recommended config includes ESLint core rules, typescript-eslint, Obsidian rules, security plugins, Obsidian globals, and package dependency checks.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "The community scanner uses a configuration derived from the recommended config, ignores build and test files, and treats most non-security violations as warnings; local recommended config severities are not identical to scanner severities.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "The documented scanner example keeps no-eval, no-implied-eval, no-unsanitized/method, no-unsanitized/property, obsidianmd/regex-lookbehind, and obsidianmd/no-forbidden-elements as errors.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        }
+      ],
+      "supports_claims": [
+        "SRC-01-006-C01",
+        "SRC-01-006-C02",
+        "SRC-01-006-C03",
+        "SRC-01-006-C04"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {
+        "commit": "837b01dc1647cb3f0c532becb60ea83bec137656",
+        "path": "docs/configuration.md",
+        "sha256": "d42e3fef2313642a00028960671397011aa28c6ef5e1ad3f9624a959cecf1f3c",
+        "sections_or_symbols": [
+          "Quick start",
+          "What the recommended config includes",
+          "Community plugin scanner configuration"
+        ]
+      }
+    },
+    {
+      "id": "SRC-01-007",
+      "title": "Official sample plugin esbuild configuration",
+      "url": "https://github.com/obsidianmd/obsidian-sample-plugin/blob/07ceb81d1fb3384af611ebf665a1ec42a7e5926d/esbuild.config.mjs",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "008",
+        "013",
+        "016"
+      ],
+      "claims": [
+        "The official sample builds src/main.ts into main.js using esbuild bundling and CommonJS output.",
+        "The sample external list includes obsidian, electron, named @codemirror and @lezer packages, and Node builtinModules so those imports are not bundled into main.js.",
+        "The sample production build disables inline sourcemaps, enables minification, and uses a one-shot rebuild; development uses context.watch."
+      ],
+      "structured_claims": [
+        {
+          "claim": "The official sample builds src/main.ts into main.js using esbuild bundling and CommonJS output.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "The sample external list includes obsidian, electron, named @codemirror and @lezer packages, and Node builtinModules so those imports are not bundled into main.js.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "The sample production build disables inline sourcemaps, enables minification, and uses a one-shot rebuild; development uses context.watch.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        }
+      ],
+      "supports_claims": [
+        "SRC-01-007-C01",
+        "SRC-01-007-C02",
+        "SRC-01-007-C03"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {
+        "commit": "07ceb81d1fb3384af611ebf665a1ec42a7e5926d",
+        "path": "esbuild.config.mjs",
+        "sha256": "ea90c00d05ec7b95e924ab8c2fa3fe70b817cce25ae8e0b1d464af06c779cf24",
+        "sections_or_symbols": [
+          "esbuild.context external list",
+          "format and outfile",
+          "production branch"
+        ]
+      }
+    },
+    {
+      "id": "SRC-01-008",
+      "title": "Obsidian mobile development",
+      "url": "https://github.com/obsidianmd/obsidian-developer-docs/blob/1c26772ac13d6e9870c865936d389fdfe694e742/en/Plugins/Getting%20started/Mobile%20development.md",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "014",
+        "016"
+      ],
+      "claims": [
+        "Node.js and Electron APIs are unavailable on mobile, including calls made indirectly by plugin dependencies.",
+        "The documented desktop-only manifest switch is isDesktopOnly: true when the plugin requires Node.js or Electron APIs.",
+        "Platform.isIosApp and Platform.isAndroidApp provide app platform detection.",
+        "The guide distinguishes desktop mobile emulation from inspecting Obsidian on an actual Android or iOS device.",
+        "The mobile guide warns that regular-expression lookbehind is unsupported on iOS versions below 16.4."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Node.js and Electron APIs are unavailable on mobile, including calls made indirectly by plugin dependencies.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "The documented desktop-only manifest switch is isDesktopOnly: true when the plugin requires Node.js or Electron APIs.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "Platform.isIosApp and Platform.isAndroidApp provide app platform detection.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "The guide distinguishes desktop mobile emulation from inspecting Obsidian on an actual Android or iOS device.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "The mobile guide warns that regular-expression lookbehind is unsupported on iOS versions below 16.4.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        }
+      ],
+      "supports_claims": [
+        "SRC-01-008-C01",
+        "SRC-01-008-C02",
+        "SRC-01-008-C03",
+        "SRC-01-008-C04",
+        "SRC-01-008-C05"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {
+        "commit": "1c26772ac13d6e9870c865936d389fdfe694e742",
+        "path": "en/Plugins/Getting started/Mobile development.md",
+        "sha256": "e421ddb11c0252128982bfe56d8ef641f2cadfcd1d65d7226e3f067c91840331",
+        "sections_or_symbols": [
+          "Platform-specific features",
+          "Disable your plugin on mobile devices",
+          "Troubleshooting",
+          "Inspecting the webview on the actual mobile device"
+        ]
+      }
+    },
+    {
+      "id": "SRC-01-009",
+      "title": "Obsidian plugin submission requirements",
+      "url": "https://github.com/obsidianmd/obsidian-developer-docs/blob/1c26772ac13d6e9870c865936d389fdfe694e742/en/Community%20directory/Submission%20requirements%20for%20plugins.md",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "016"
+      ],
+      "claims": [
+        "Set minAppVersion to the minimum app version the plugin actually supports; the guide recommends the latest stable build when the author cannot determine a suitable minimum.",
+        "Plugin descriptions must have at most 250 characters, end in a period, avoid emoji and special characters, and use appropriate capitalization.",
+        "Command ids should omit the plugin id because Obsidian prefixes it automatically.",
+        "Remove unused sample plugin code before submission and use fundingUrl for financial support links."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Set minAppVersion to the minimum app version the plugin actually supports; the guide recommends the latest stable build when the author cannot determine a suitable minimum.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "Plugin descriptions must have at most 250 characters, end in a period, avoid emoji and special characters, and use appropriate capitalization.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "Command ids should omit the plugin id because Obsidian prefixes it automatically.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "Remove unused sample plugin code before submission and use fundingUrl for financial support links.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        }
+      ],
+      "supports_claims": [
+        "SRC-01-009-C01",
+        "SRC-01-009-C02",
+        "SRC-01-009-C03",
+        "SRC-01-009-C04"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {
+        "commit": "1c26772ac13d6e9870c865936d389fdfe694e742",
+        "path": "en/Community directory/Submission requirements for plugins.md",
+        "sha256": "025a5ee9228bbb6ac36bb3e02bd250fd12a6ef320010cc98726356163e4f044e",
+        "sections_or_symbols": [
+          "Set an appropriate minAppVersion",
+          "Keep plugin descriptions short and simple",
+          "Don't include the plugin ID in the command ID",
+          "Remove all the sample code"
+        ]
+      }
+    },
+    {
+      "id": "SRC-01-010",
+      "title": "Obsidian plugin event lifecycle",
+      "url": "https://github.com/obsidianmd/obsidian-developer-docs/blob/1c26772ac13d6e9870c865936d389fdfe694e742/en/Plugins/Events.md",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "001"
+      ],
+      "claims": [
+        "Use Plugin.registerEvent with subscribed event references so event handlers detach during plugin unload.",
+        "Use registerInterval with window.setInterval for repeating work owned by the plugin lifecycle.",
+        "Obsidian exposes its internal Moment library through the obsidian module; the guide does not require a separate Moment runtime installation."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Use Plugin.registerEvent with subscribed event references so event handlers detach during plugin unload.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "Use registerInterval with window.setInterval for repeating work owned by the plugin lifecycle.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "Obsidian exposes its internal Moment library through the obsidian module; the guide does not require a separate Moment runtime installation.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        }
+      ],
+      "supports_claims": [
+        "SRC-01-010-C01",
+        "SRC-01-010-C02",
+        "SRC-01-010-C03"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {
+        "commit": "1c26772ac13d6e9870c865936d389fdfe694e742",
+        "path": "en/Plugins/Events.md",
+        "sha256": "6ddf91f3b8231d5b63fe4373e855f801651f4241de7f76bb56c0be900d57ef11",
+        "sections_or_symbols": [
+          "Timing events",
+          "event registration example"
+        ]
+      }
+    },
+    {
+      "id": "SRC-01-011",
+      "title": "Obsidian command interfaces",
+      "url": "https://github.com/obsidianmd/obsidian-developer-docs/blob/1c26772ac13d6e9870c865936d389fdfe694e742/en/Plugins/User%20interface/Commands.md",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "001"
+      ],
+      "claims": [
+        "Register commands through addCommand during onload and use checkCallback for conditionally available actions.",
+        "A conditional command must check its preconditions both during availability checking and during execution.",
+        "editorCallback receives the active editor and editor context; editor commands appear only when an editor is active.",
+        "Avoid default command hotkeys for distributed plugins because user and plugin keybindings can conflict."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Register commands through addCommand during onload and use checkCallback for conditionally available actions.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "A conditional command must check its preconditions both during availability checking and during execution.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "editorCallback receives the active editor and editor context; editor commands appear only when an editor is active.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "Avoid default command hotkeys for distributed plugins because user and plugin keybindings can conflict.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        }
+      ],
+      "supports_claims": [
+        "SRC-01-011-C01",
+        "SRC-01-011-C02",
+        "SRC-01-011-C03",
+        "SRC-01-011-C04"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {
+        "commit": "1c26772ac13d6e9870c865936d389fdfe694e742",
+        "path": "en/Plugins/User interface/Commands.md",
+        "sha256": "c7522fb4d6d3a1f7047674bd381f4a9c7d8b40ab428d52814cacbb542c5cabcb",
+        "sections_or_symbols": [
+          "Conditional commands",
+          "Editor commands",
+          "Hot keys"
+        ]
+      }
+    },
+    {
+      "id": "SRC-02-001",
+      "title": "Obsidian custom ItemView interfaces",
+      "url": "https://github.com/obsidianmd/obsidian-developer-docs/blob/1c26772ac13d6e9870c865936d389fdfe694e742/en/Plugins/User%20interface/Views.md",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "002"
+      ],
+      "claims": [
+        "A custom workspace view extends ItemView and provides a unique getViewType and a human-readable getDisplayText.",
+        "Register custom views with a factory passed to registerView; Obsidian may invoke that factory multiple times.",
+        "Build view content in onOpen and release view-owned resources in onClose.",
+        "Find view instances through workspace leaves rather than maintaining view references on the plugin class."
+      ],
+      "structured_claims": [
+        {
+          "claim": "A custom workspace view extends ItemView and provides a unique getViewType and a human-readable getDisplayText.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "Register custom views with a factory passed to registerView; Obsidian may invoke that factory multiple times.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "Build view content in onOpen and release view-owned resources in onClose.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "Find view instances through workspace leaves rather than maintaining view references on the plugin class.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        }
+      ],
+      "supports_claims": [
+        "SRC-02-001-C01",
+        "SRC-02-001-C02",
+        "SRC-02-001-C03",
+        "SRC-02-001-C04"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {
+        "commit": "1c26772ac13d6e9870c865936d389fdfe694e742",
+        "path": "en/Plugins/User interface/Views.md",
+        "sha256": "bcbf84705de901e196256baa4e2b3128fb14bdef55a03fc1c25a56f0a37d2cd7",
+        "sections_or_symbols": [
+          "custom ItemView example",
+          "registerView factory",
+          "warning about retained view references"
+        ]
+      }
+    },
+    {
+      "id": "SRC-02-002",
+      "title": "Obsidian deferred view lifecycle",
+      "url": "https://github.com/obsidianmd/obsidian-developer-docs/blob/1c26772ac13d6e9870c865936d389fdfe694e742/en/Plugins/Guides/Defer%20views.md",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "002"
+      ],
+      "claims": [
+        "Since Obsidian 1.7.2, startup views may be DeferredView instances until their tab becomes visible.",
+        "getLeavesOfType alone does not establish that leaf.view is an initialized custom view; perform an instanceof check.",
+        "Await workspace.revealLeaf before interacting with the revealed custom view and confirm its concrete class.",
+        "loadIfDeferred can initialize a hidden leaf but defeats the lazy-loading performance optimization; the guide recommends sparse use and shows a requireApiVersion guard."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Since Obsidian 1.7.2, startup views may be DeferredView instances until their tab becomes visible.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "getLeavesOfType alone does not establish that leaf.view is an initialized custom view; perform an instanceof check.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "Await workspace.revealLeaf before interacting with the revealed custom view and confirm its concrete class.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "loadIfDeferred can initialize a hidden leaf but defeats the lazy-loading performance optimization; the guide recommends sparse use and shows a requireApiVersion guard.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        }
+      ],
+      "supports_claims": [
+        "SRC-02-002-C01",
+        "SRC-02-002-C02",
+        "SRC-02-002-C03",
+        "SRC-02-002-C04"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {
+        "commit": "1c26772ac13d6e9870c865936d389fdfe694e742",
+        "path": "en/Plugins/Guides/Defer views.md",
+        "sha256": "b65c3228dd342f503c455d35e0840e4da98f0b44c501e941daae33bf67459528",
+        "sections_or_symbols": [
+          "Accessing leaf.view",
+          "Accessing your CustomView anywhere in the workspace",
+          "Accessing your CustomView without reveal (Advanced)"
+        ]
+      }
+    },
+    {
+      "id": "SRC-02-003",
+      "title": "Build a custom Obsidian Bases view",
+      "url": "https://github.com/obsidianmd/obsidian-developer-docs/blob/1c26772ac13d6e9870c865936d389fdfe694e742/en/Plugins/Guides/Build%20a%20Bases%20view.md",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "003"
+      ],
+      "claims": [
+        "Register a Bases view with registerBasesView(viewId, registration) and provide a factory receiving the query controller and parent element.",
+        "A custom Bases view extends BasesView, calls super(controller), and responds to configuration or query data changes in onDataUpdated.",
+        "Bases view registration options define controls whose user values are stored in the Base configuration.",
+        "Use this.config.getOrder, this.config.get, this.data.groupedData, and entry.getValue when presenting filtered property query results.",
+        "An unfiltered Base can include every vault file, so the guide recommends reusing DOM elements and avoiding unnecessary offscreen rendering for thousands of entries."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Register a Bases view with registerBasesView(viewId, registration) and provide a factory receiving the query controller and parent element.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "A custom Bases view extends BasesView, calls super(controller), and responds to configuration or query data changes in onDataUpdated.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "Bases view registration options define controls whose user values are stored in the Base configuration.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "Use this.config.getOrder, this.config.get, this.data.groupedData, and entry.getValue when presenting filtered property query results.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "An unfiltered Base can include every vault file, so the guide recommends reusing DOM elements and avoiding unnecessary offscreen rendering for thousands of entries.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        }
+      ],
+      "supports_claims": [
+        "SRC-02-003-C01",
+        "SRC-02-003-C02",
+        "SRC-02-003-C03",
+        "SRC-02-003-C04",
+        "SRC-02-003-C05"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {
+        "commit": "1c26772ac13d6e9870c865936d389fdfe694e742",
+        "path": "en/Plugins/Guides/Build a Bases view.md",
+        "sha256": "84856ec2261283cce306f4b375fa8e205cd75cc505c46658f3fe4c45a37280ad",
+        "sections_or_symbols": [
+          "Step 2: Create and register the Bases view",
+          "Step 3: Add configuration",
+          "Step 4: Display list items"
+        ]
+      }
+    },
+    {
+      "id": "SRC-02-004",
+      "title": "Obsidian modals and suggestion interfaces",
+      "url": "https://github.com/obsidianmd/obsidian-developer-docs/blob/1c26772ac13d6e9870c865936d389fdfe694e742/en/Plugins/User%20interface/Modals.md",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "004"
+      ],
+      "claims": [
+        "Subclass Modal to present an interaction and open it with open; use contentEl and Setting controls to collect user input.",
+        "SuggestModal implements a query-to-suggestions interaction through getSuggestions, renderSuggestion, and onChooseSuggestion.",
+        "FuzzySuggestModal supplies fuzzy matching around getItems, getItemText, and onChooseItem; renderSuggestion can customize presentation."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Subclass Modal to present an interaction and open it with open; use contentEl and Setting controls to collect user input.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "SuggestModal implements a query-to-suggestions interaction through getSuggestions, renderSuggestion, and onChooseSuggestion.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "FuzzySuggestModal supplies fuzzy matching around getItems, getItemText, and onChooseItem; renderSuggestion can customize presentation.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        }
+      ],
+      "supports_claims": [
+        "SRC-02-004-C01",
+        "SRC-02-004-C02",
+        "SRC-02-004-C03"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {
+        "commit": "1c26772ac13d6e9870c865936d389fdfe694e742",
+        "path": "en/Plugins/User interface/Modals.md",
+        "sha256": "6ec663c1fa46db18af62a736b0bc058f83e299cad1355332fec3494dc24b893e",
+        "sections_or_symbols": [
+          "Accept user input",
+          "Select from list of suggestions",
+          "Approximate string matching results"
+        ]
+      }
+    },
+    {
+      "id": "SRC-02-005",
+      "title": "Obsidian plugin settings interfaces",
+      "url": "https://github.com/obsidianmd/obsidian-developer-docs/blob/1c26772ac13d6e9870c865936d389fdfe694e742/en/Plugins/User%20interface/Settings.md",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "004"
+      ],
+      "claims": [
+        "Register a PluginSettingTab with the plugin and maintain a typed settings object loaded from persisted plugin data.",
+        "Current documentation supports declarative settings definitions, with definitions for controls and custom render callbacks.",
+        "A control definition binds a setting value for the declarative settings system; imperative render callbacks require their own persistence handling."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Register a PluginSettingTab with the plugin and maintain a typed settings object loaded from persisted plugin data.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "Current documentation supports declarative settings definitions, with definitions for controls and custom render callbacks.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "A control definition binds a setting value for the declarative settings system; imperative render callbacks require their own persistence handling.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        }
+      ],
+      "supports_claims": [
+        "SRC-02-005-C01",
+        "SRC-02-005-C02",
+        "SRC-02-005-C03"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {
+        "commit": "1c26772ac13d6e9870c865936d389fdfe694e742",
+        "path": "en/Plugins/User interface/Settings.md",
+        "sha256": "7c80bf5a951d7c12b2219a8e6857abee94c78d081bef6037b201d290debd3b14",
+        "sections_or_symbols": [
+          "Register a settings tab",
+          "Control types",
+          "Render callback"
+        ]
+      }
+    },
+    {
+      "id": "SRC-02-006",
+      "title": "Obsidian CSS variables and styling",
+      "url": "https://github.com/obsidianmd/obsidian-developer-docs/blob/1c26772ac13d6e9870c865936d389fdfe694e742/en/Reference/CSS%20variables/About%20styling.md",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "005"
+      ],
+      "claims": [
+        "Obsidian exposes CSS variables for consistent interface styling across the app.",
+        "Using built-in CSS variables for plugin elements supports native-looking interfaces compatible with community themes.",
+        "Ship plugin CSS classes in styles.css and reference variables such as --background-secondary instead of fixed theme-specific colors."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Obsidian exposes CSS variables for consistent interface styling across the app.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "Using built-in CSS variables for plugin elements supports native-looking interfaces compatible with community themes.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "Ship plugin CSS classes in styles.css and reference variables such as --background-secondary instead of fixed theme-specific colors.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        }
+      ],
+      "supports_claims": [
+        "SRC-02-006-C01",
+        "SRC-02-006-C02",
+        "SRC-02-006-C03"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {
+        "commit": "1c26772ac13d6e9870c865936d389fdfe694e742",
+        "path": "en/Reference/CSS variables/About styling.md",
+        "sha256": "749a48698f49985ed9e800602389692c71ed13512c5327b5160d97a036bc98a1",
+        "sections_or_symbols": [
+          "For plugins",
+          "For themes and snippets"
+        ]
+      }
+    },
+    {
+      "id": "SRC-02-007",
+      "title": "Obsidian SecretStorage and SecretComponent guide",
+      "url": "https://github.com/obsidianmd/obsidian-developer-docs/blob/1c26772ac13d6e9870c865936d389fdfe694e742/en/Plugins/Guides/Store%20secrets.md",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "004",
+        "015"
+      ],
+      "claims": [
+        "Store a secret identifier in plugin settings instead of a raw API key or token in data.json.",
+        "SecretComponent lets users select or create a named secret, while app.secretStorage.getSecret retrieves its string value or null at runtime.",
+        "The guide describes secret values as local storage keyed to the vault and does not establish an operating-system keychain or end-to-end encrypted secret store."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Store a secret identifier in plugin settings instead of a raw API key or token in data.json.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "SecretComponent lets users select or create a named secret, while app.secretStorage.getSecret retrieves its string value or null at runtime.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "The guide describes secret values as local storage keyed to the vault and does not establish an operating-system keychain or end-to-end encrypted secret store.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        }
+      ],
+      "supports_claims": [
+        "SRC-02-007-C01",
+        "SRC-02-007-C02",
+        "SRC-02-007-C03"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {
+        "commit": "1c26772ac13d6e9870c865936d389fdfe694e742",
+        "path": "en/Plugins/Guides/Store secrets.md",
+        "sha256": "0a4c5b43d9e0f7b9d965f9a5a26a026b74e5dd72822525f987ef839d68c32117",
+        "sections_or_symbols": [
+          "Why use SecretStorage?",
+          "Step 2: Add the SecretComponent to your settings tab",
+          "Step 3: Retrieve the secret value"
+        ]
+      }
+    },
+    {
+      "id": "SRC-02-008",
+      "title": "Migrate Obsidian plugins to declarative settings",
+      "url": "https://github.com/obsidianmd/obsidian-developer-docs/blob/1c26772ac13d6e9870c865936d389fdfe694e742/en/Plugins/Guides/Migrate%20to%20declarative%20settings.md",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "004"
+      ],
+      "claims": [
+        "The declarative PluginSettingTab.getSettingDefinitions API requires Obsidian 1.13.0 or later.",
+        "For minAppVersion at least 1.13.0, the documented migration implements getSettingDefinitions and removes display; dual support retains display for older app versions.",
+        "getSettingDefinitions also runs for search indexing when the tab is registered, so the guide requires cheap definitions without I/O or network work.",
+        "Use update to refresh declarative settings; custom render callbacks do not automatically save values and validate callbacks do not repair previously stored invalid settings."
+      ],
+      "structured_claims": [
+        {
+          "claim": "The declarative PluginSettingTab.getSettingDefinitions API requires Obsidian 1.13.0 or later.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "For minAppVersion at least 1.13.0, the documented migration implements getSettingDefinitions and removes display; dual support retains display for older app versions.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "getSettingDefinitions also runs for search indexing when the tab is registered, so the guide requires cheap definitions without I/O or network work.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "Use update to refresh declarative settings; custom render callbacks do not automatically save values and validate callbacks do not repair previously stored invalid settings.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        }
+      ],
+      "supports_claims": [
+        "SRC-02-008-C01",
+        "SRC-02-008-C02",
+        "SRC-02-008-C03",
+        "SRC-02-008-C04"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {
+        "commit": "1c26772ac13d6e9870c865936d389fdfe694e742",
+        "path": "en/Plugins/Guides/Migrate to declarative settings.md",
+        "sha256": "3e9db360e3696f33e50b753eb2002bc4ad86287d76b4ddad40ee0903410bc9aa",
+        "sections_or_symbols": [
+          "Choosing a path",
+          "Path B: dual support",
+          "Common pitfalls"
+        ]
+      }
+    },
+    {
+      "id": "SRC-02-009",
+      "title": "Obsidian icons",
+      "url": "https://github.com/obsidianmd/obsidian-developer-docs/blob/1c26772ac13d6e9870c865936d389fdfe694e742/en/Plugins/User%20interface/Icons.md",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "005"
+      ],
+      "claims": [
+        "Use setIcon to insert an available named icon into a custom interface element.",
+        "Set --icon-size with a documented size variable to control icon dimensions.",
+        "addIcon registers custom SVG content without the surrounding svg tag; the guide specifies a 0 0 100 100 view box for that custom icon content."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Use setIcon to insert an available named icon into a custom interface element.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "Set --icon-size with a documented size variable to control icon dimensions.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        },
+        {
+          "claim": "addIcon registers custom SVG content without the surrounding svg tag; the guide specifies a 0 0 100 100 view box for that custom icon content.",
+          "confidence": "evidence-based",
+          "source_relationship": "single authoritative source; not independent corroboration"
+        }
+      ],
+      "supports_claims": [
+        "SRC-02-009-C01",
+        "SRC-02-009-C02",
+        "SRC-02-009-C03"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {
+        "commit": "1c26772ac13d6e9870c865936d389fdfe694e742",
+        "path": "en/Plugins/User interface/Icons.md",
+        "sha256": "26130301cf7df9315714ba7a038032ab6de2426e1f52e5b54128e8d85d15217d",
+        "sections_or_symbols": [
+          "Use icons",
+          "Add your own icon"
+        ]
+      }
+    },
+    {
+      "id": "src-03-jsoncanvas-spec-1-0",
+      "title": "JSON Canvas Spec 1.0",
+      "url": "https://jsoncanvas.org/spec/1.0/",
+      "source_type": "standards",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "006"
+      ],
+      "claims": [
+        "JSON Canvas 1.0 represents an infinite canvas as optional nodes and edges arrays; nodes carry IDs, types, geometry, and optional colors.",
+        "The specification distinguishes text, file, link, and group nodes; edges connect node IDs and may specify sides, ends, colors, and labels."
+      ],
+      "structured_claims": [
+        {
+          "claim": "JSON Canvas 1.0 represents an infinite canvas as optional nodes and edges arrays; nodes carry IDs, types, geometry, and optional colors.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        },
+        {
+          "claim": "The specification distinguishes text, file, link, and group nodes; edges connect node IDs and may specify sides, ends, colors, and labels.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-jsoncanvas-spec-1-0-C01",
+        "src-03-jsoncanvas-spec-1-0-C02"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "src-03-obsidian-api-canvas-dts",
+      "title": "Obsidian API TypeScript Definitions: canvas.d.ts",
+      "url": "https://github.com/obsidianmd/obsidian-api/blob/master/canvas.d.ts",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "006"
+      ],
+      "claims": [
+        "The official canvas.d.ts defines serialized CanvasData, node variants, and CanvasEdgeData. These types describe persisted JSON rather than a public interactive Canvas controller."
+      ],
+      "structured_claims": [
+        {
+          "claim": "The official canvas.d.ts defines serialized CanvasData, node variants, and CanvasEdgeData. These types describe persisted JSON rather than a public interactive Canvas controller.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-obsidian-api-canvas-dts-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "src-03-obsidian-css-canvas-vars",
+      "title": "Obsidian Developer Documentation: Canvas CSS Variables",
+      "url": "https://docs.obsidian.md/Reference/CSS+variables/Plugins/Canvas",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "006"
+      ],
+      "claims": [
+        "The Canvas CSS reference exposes canvas background, card label, dot pattern, and six preset color variables."
+      ],
+      "structured_claims": [
+        {
+          "claim": "The Canvas CSS reference exposes canvas background, card label, dot pattern, and six preset color variables.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-obsidian-css-canvas-vars-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "src-03-obsidian-css-graph-vars",
+      "title": "Obsidian Developer Documentation: Graph CSS Variables",
+      "url": "https://docs.obsidian.md/Reference/CSS+variables/Plugins/Graph",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "006",
+        "007"
+      ],
+      "claims": [
+        "The Graph CSS reference provides semantic variables for graph text, lines, and node categories."
+      ],
+      "structured_claims": [
+        {
+          "claim": "The Graph CSS reference provides semantic variables for graph text, lines, and node categories.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-obsidian-css-graph-vars-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "src-03-obsidian-css-colors-vars",
+      "title": "Obsidian Developer Documentation: Foundations Color CSS Variables",
+      "url": "https://docs.obsidian.md/Reference/CSS+variables/Foundations/Colors",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "006",
+        "007",
+        "012"
+      ],
+      "claims": [
+        "Obsidian documents semantic background, border, interactive, and text colors for themed interfaces.",
+        "The current color reference marks legacy RGB and HSL variables deprecated as of Obsidian 1.13 and recommends color-mix with the corresponding color variables."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Obsidian documents semantic background, border, interactive, and text colors for themed interfaces.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        },
+        {
+          "claim": "The current color reference marks legacy RGB and HSL variables deprecated as of Obsidian 1.13 and recommends color-mix with the corresponding color variables.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-obsidian-css-colors-vars-C01",
+        "src-03-obsidian-css-colors-vars-C02"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "src-03-d3-force",
+      "title": "D3 by Observable: d3-force Force-Directed Graph Simulation",
+      "url": "https://d3js.org/d3-force",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "006"
+      ],
+      "claims": [
+        "d3-force exposes a simulation that updates node positions through forces. simulation.stop() stops its internal timer."
+      ],
+      "structured_claims": [
+        {
+          "claim": "d3-force exposes a simulation that updates node positions through forces. simulation.stop() stops its internal timer.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-d3-force-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "src-03-d3-zoom",
+      "title": "D3 by Observable: d3-zoom Pan and Zoom Abstraction",
+      "url": "https://d3js.org/d3-zoom",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "006"
+      ],
+      "claims": [
+        "d3-zoom provides pan and zoom behavior for HTML, SVG, or Canvas, with scale and translation bounds and an event filter."
+      ],
+      "structured_claims": [
+        {
+          "claim": "d3-zoom provides pan and zoom behavior for HTML, SVG, or Canvas, with scale and translation bounds and an event filter.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-d3-zoom-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "src-03-cytoscape-js",
+      "title": "Cytoscape.js Graph Theory Network Library Documentation",
+      "url": "https://js.cytoscape.org/",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "006"
+      ],
+      "claims": [
+        "Cytoscape.js supports graph visualization, analysis, layouts, and styling. cy.resize() updates container sizing and cy.destroy() releases the instance."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Cytoscape.js supports graph visualization, analysis, layouts, and styling. cy.resize() updates container sizing and cy.destroy() releases the instance.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-cytoscape-js-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "src-03-mdn-svg-viewbox",
+      "title": "MDN Web Docs: SVG viewBox Attribute",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Attribute/viewBox",
+      "source_type": "standards",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "006"
+      ],
+      "claims": [
+        "SVG viewBox defines a user coordinate rectangle whose mapping to the viewport controls how the graphic scales."
+      ],
+      "structured_claims": [
+        {
+          "claim": "SVG viewBox defines a user coordinate rectangle whose mapping to the viewport controls how the graphic scales.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-mdn-svg-viewbox-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "src-03-mdn-device-pixel-ratio",
+      "title": "MDN Web Docs: Window.devicePixelRatio Property",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio",
+      "source_type": "standards",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "006",
+        "007"
+      ],
+      "claims": [
+        "devicePixelRatio gives the ratio of physical pixels to CSS pixels; MDN demonstrates increasing a Canvas backing resolution for sharper output on high density displays."
+      ],
+      "structured_claims": [
+        {
+          "claim": "devicePixelRatio gives the ratio of physical pixels to CSS pixels; MDN demonstrates increasing a Canvas backing resolution for sharper output on high density displays.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-mdn-device-pixel-ratio-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "src-03-mdn-canvas-scale",
+      "title": "MDN Web Docs: CanvasRenderingContext2D.scale() and HiDPI Transforms",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/scale",
+      "source_type": "standards",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "006"
+      ],
+      "claims": [
+        "CanvasRenderingContext2D.scale changes the current transformation matrix; repeated scaling is cumulative."
+      ],
+      "structured_claims": [
+        {
+          "claim": "CanvasRenderingContext2D.scale changes the current transformation matrix; repeated scaling is cumulative.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-mdn-canvas-scale-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "src-03-mdn-optimizing-canvas",
+      "title": "MDN Web Docs: Optimizing HTML5 Canvas Performance",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Optimizing_canvas",
+      "source_type": "standards",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "006"
+      ],
+      "claims": [
+        "MDN recommends techniques including prerendering repeated content, layered canvases, and batching drawing operations where appropriate."
+      ],
+      "structured_claims": [
+        {
+          "claim": "MDN recommends techniques including prerendering repeated content, layered canvases, and batching drawing operations where appropriate.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-mdn-optimizing-canvas-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "src-03-threejs-dispose-manual",
+      "title": "Three.js Manual: How to Dispose of Objects",
+      "url": "https://threejs.org/manual/pages/how-to-dispose-of-objects.html",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "007"
+      ],
+      "claims": [
+        "Removing a Three.js object from a scene does not dispose its geometry, materials, or textures. Applications must release GPU resources explicitly.",
+        "Disposing a material does not dispose its textures. ImageBitmap sources require their own close() handling when no longer shared.",
+        "Controls and render targets may also require disposal; renderer.info can help inspect remaining GPU allocations."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Removing a Three.js object from a scene does not dispose its geometry, materials, or textures. Applications must release GPU resources explicitly.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        },
+        {
+          "claim": "Disposing a material does not dispose its textures. ImageBitmap sources require their own close() handling when no longer shared.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        },
+        {
+          "claim": "Controls and render targets may also require disposal; renderer.info can help inspect remaining GPU allocations.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-threejs-dispose-manual-C01",
+        "src-03-threejs-dispose-manual-C02",
+        "src-03-threejs-dispose-manual-C03"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "src-03-threejs-cleanup-manual",
+      "title": "Three.js Manual: Freeing Resources and ResourceTracker Pattern",
+      "url": "https://threejs.org/manual/pages/cleanup.html",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "007"
+      ],
+      "claims": [
+        "The Three.js cleanup guide demonstrates tracking disposable resources explicitly, including objects removed from the scene."
+      ],
+      "structured_claims": [
+        {
+          "claim": "The Three.js cleanup guide demonstrates tracking disposable resources explicitly, including objects removed from the scene.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-threejs-cleanup-manual-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "src-03-threejs-webglrenderer",
+      "title": "Three.js API Documentation: WebGLRenderer",
+      "url": "https://threejs.org/docs/pages/WebGLRenderer.html",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "007"
+      ],
+      "claims": [
+        "WebGLRenderer exposes setPixelRatio, setSize, dispose, and forceContextLoss. The current renderer uses WebGL 2."
+      ],
+      "structured_claims": [
+        {
+          "claim": "WebGLRenderer exposes setPixelRatio, setSize, dispose, and forceContextLoss. The current renderer uses WebGL 2.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-threejs-webglrenderer-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "src-03-threejs-gltfloader",
+      "title": "Three.js API Documentation: GLTFLoader",
+      "url": "https://threejs.org/docs/pages/GLTFLoader.html",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "007"
+      ],
+      "claims": [
+        "GLTFLoader loads glTF assets and supports separately configured decoders. Its documentation warns that image bitmaps require special disposal handling."
+      ],
+      "structured_claims": [
+        {
+          "claim": "GLTFLoader loads glTF assets and supports separately configured decoders. Its documentation warns that image bitmaps require special disposal handling.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-threejs-gltfloader-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "src-03-r3f-canvas-api",
+      "title": "React Three Fiber Documentation: Canvas API",
+      "url": "https://r3f.docs.pmnd.rs/api/canvas",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "007"
+      ],
+      "claims": [
+        "React Three Fiber Canvas exposes frameloop, pixel ratio, renderer options, and fallback content; it sizes its rendering surface to its parent."
+      ],
+      "structured_claims": [
+        {
+          "claim": "React Three Fiber Canvas exposes frameloop, pixel ratio, renderer options, and fallback content; it sizes its rendering surface to its parent.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-r3f-canvas-api-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "src-03-r3f-scaling-performance",
+      "title": "React Three Fiber Documentation: Scaling Performance",
+      "url": "https://r3f.docs.pmnd.rs/advanced/scaling-performance",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "007"
+      ],
+      "claims": [
+        "React Three Fiber supports demand rendering through frameloop=\"demand\" and invalidate(); its performance guide discusses resource reuse and adaptive pixel ratios."
+      ],
+      "structured_claims": [
+        {
+          "claim": "React Three Fiber supports demand rendering through frameloop=\"demand\" and invalidate(); its performance guide discusses resource reuse and adaptive pixel ratios.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-r3f-scaling-performance-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "src-03-r3f-performance-pitfalls",
+      "title": "React Three Fiber Documentation: Performance Pitfalls",
+      "url": "https://r3f.docs.pmnd.rs/advanced/pitfalls",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "007"
+      ],
+      "claims": [
+        "React Three Fiber recommends mutating object refs for rapid animation updates instead of scheduling React state updates in useFrame, and reusing resources rather than allocating every frame."
+      ],
+      "structured_claims": [
+        {
+          "claim": "React Three Fiber recommends mutating object refs for rapid animation updates instead of scheduling React state updates in useFrame, and reusing resources rather than allocating every frame.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-r3f-performance-pitfalls-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "src-03-mdn-resize-observer",
+      "title": "MDN Web Docs: ResizeObserver Interface",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserver",
+      "source_type": "standards",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "006",
+        "007"
+      ],
+      "claims": [
+        "ResizeObserver reports changes in an observed element size and supports disconnect() to stop observation."
+      ],
+      "structured_claims": [
+        {
+          "claim": "ResizeObserver reports changes in an observed element size and supports disconnect() to stop observation.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-mdn-resize-observer-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "src-03-mdn-intersection-observer",
+      "title": "MDN Web Docs: Intersection Observer API",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API",
+      "source_type": "standards",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "006",
+        "007"
+      ],
+      "claims": [
+        "IntersectionObserver reports changes in geometric intersection with a viewport or ancestor. Geometric intersection alone does not prove that a workspace tab is actually visible."
+      ],
+      "structured_claims": [
+        {
+          "claim": "IntersectionObserver reports changes in geometric intersection with a viewport or ancestor. Geometric intersection alone does not prove that a workspace tab is actually visible.",
+          "confidence": "practitioner",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-mdn-intersection-observer-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "src-03-mdn-page-visibility",
+      "title": "MDN Web Docs: Page Visibility API",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API",
+      "source_type": "standards",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "007"
+      ],
+      "claims": [
+        "The Page Visibility API exposes document visibility state and a visibilitychange event. It does not measure visibility of individual Obsidian panes."
+      ],
+      "structured_claims": [
+        {
+          "claim": "The Page Visibility API exposes document visibility state and a visibilitychange event. It does not measure visibility of individual Obsidian panes.",
+          "confidence": "practitioner",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-mdn-page-visibility-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "src-03-mdn-webglcontextlost",
+      "title": "MDN Web Docs: HTMLCanvasElement webglcontextlost Event",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/webglcontextlost_event",
+      "source_type": "standards",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "007"
+      ],
+      "claims": [
+        "webglcontextlost is dispatched on a canvas when its drawing context is lost; the event can be canceled to permit restoration."
+      ],
+      "structured_claims": [
+        {
+          "claim": "webglcontextlost is dispatched on a canvas when its drawing context is lost; the event can be canceled to permit restoration.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-mdn-webglcontextlost-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "src-03-mdn-webglcontextrestored",
+      "title": "MDN Web Docs: HTMLCanvasElement webglcontextrestored Event",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/webglcontextrestored_event",
+      "source_type": "standards",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "007"
+      ],
+      "claims": [
+        "After WebGL context restoration, resources created before the loss are invalid and must be created again."
+      ],
+      "structured_claims": [
+        {
+          "claim": "After WebGL context restoration, resources created before the loss are invalid and must be created again.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-mdn-webglcontextrestored-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "src-03-obsidian-dataadapter-resourcepath",
+      "title": "Obsidian Developer Documentation: DataAdapter.getResourcePath and Vault.getResourcePath",
+      "url": "https://docs.obsidian.md/Reference/TypeScript+API/DataAdapter/getResourcePath",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "007"
+      ],
+      "claims": [
+        "DataAdapter.getResourcePath(normalizedPath) returns a URL for loading a resource into DOM elements. This API reference alone does not establish release distribution support for extra asset files."
+      ],
+      "structured_claims": [
+        {
+          "claim": "DataAdapter.getResourcePath(normalizedPath) returns a URL for loading a resource into DOM elements. This API reference alone does not establish release distribution support for extra asset files.",
+          "confidence": "practitioner",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-obsidian-dataadapter-resourcepath-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "src-03-obsidian-html-elements",
+      "title": "Obsidian Developer Documentation: HTML Elements",
+      "url": "https://docs.obsidian.md/Plugins/User+interface/HTML+elements",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "012"
+      ],
+      "claims": [
+        "Obsidian provides createEl, createDiv, createSpan, and empty helpers for constructing and clearing DOM elements; text can be supplied without parsing HTML."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Obsidian provides createEl, createDiv, createSpan, and empty helpers for constructing and clearing DOM elements; text can be supplied without parsing HTML.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-obsidian-html-elements-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "src-03-obsidian-api-dts",
+      "title": "Obsidian API TypeScript Definitions: obsidian.d.ts (DOM, SVG, and Popout Window Helpers)",
+      "url": "https://github.com/obsidianmd/obsidian-api/blob/master/obsidian.d.ts",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "006",
+        "007",
+        "012"
+      ],
+      "claims": [
+        "The public typings include createFragment, DOM creation options, and document/window helpers for DOM nodes. Use the owning document and window when handling popout views."
+      ],
+      "structured_claims": [
+        {
+          "claim": "The public typings include createFragment, DOM creation options, and document/window helpers for DOM nodes. Use the owning document and window when handling popout views.",
+          "confidence": "practitioner",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-obsidian-api-dts-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "src-03-obsidian-views-guide",
+      "title": "Obsidian Developer Documentation: Views (ItemView Lifecycle)",
+      "url": "https://docs.obsidian.md/Plugins/User+interface/Views",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "007",
+        "012"
+      ],
+      "claims": [
+        "The Views guide registers an ItemView factory, builds content in onOpen, and assigns resource cleanup to onClose; it warns against retaining view references in the plugin."
+      ],
+      "structured_claims": [
+        {
+          "claim": "The Views guide registers an ItemView factory, builds content in onOpen, and assigns resource cleanup to onClose; it warns against retaining view references in the plugin.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-obsidian-views-guide-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "src-03-obsidian-react-guide",
+      "title": "Obsidian Developer Documentation: Use React in Your Plugin",
+      "url": "https://docs.obsidian.md/Plugins/Getting+started/Use+React+in+your+plugin",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "012"
+      ],
+      "claims": [
+        "The official React guide mounts a createRoot tree in ItemView.onOpen and unmounts it in onClose. It also demonstrates an App context hook."
+      ],
+      "structured_claims": [
+        {
+          "claim": "The official React guide mounts a createRoot tree in ItemView.onOpen and unmounts it in onClose. It also demonstrates an App context hook.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-obsidian-react-guide-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "src-03-react-createroot-docs",
+      "title": "React Reference Documentation: createRoot (react-dom/client)",
+      "url": "https://react.dev/reference/react-dom/client/createRoot",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "012"
+      ],
+      "claims": [
+        "React createRoot mounts a tree in a DOM container; root.unmount removes that tree and lets its components clean up effects and subscriptions."
+      ],
+      "structured_claims": [
+        {
+          "claim": "React createRoot mounts a tree in a DOM container; root.unmount removes that tree and lets its components clean up effects and subscriptions.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-react-createroot-docs-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "src-03-react-root-event-delegation",
+      "title": "React Architectural Change: Root Container Event Delegation (React 17+)",
+      "url": "https://legacy.reactjs.org/blog/2020/08/10/react-v17-rc.html",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "012"
+      ],
+      "claims": [
+        "The React 17 announcement explains that delegated event listeners moved from document to the root DOM container."
+      ],
+      "structured_claims": [
+        {
+          "claim": "The React 17 announcement explains that delegated event listeners moved from document to the root DOM container.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-react-root-event-delegation-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "src-03-obsidian-svelte-guide",
+      "title": "Obsidian Developer Documentation: Use Svelte in Your Plugin",
+      "url": "https://docs.obsidian.md/Plugins/Getting+started/Use+Svelte+in+your+plugin",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "012"
+      ],
+      "claims": [
+        "The official Svelte guide configures esbuild-svelte and Svelte checking, then mounts a component in ItemView.onOpen and unmounts it in onClose."
+      ],
+      "structured_claims": [
+        {
+          "claim": "The official Svelte guide configures esbuild-svelte and Svelte checking, then mounts a component in ItemView.onOpen and unmounts it in onClose.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-obsidian-svelte-guide-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "src-03-svelte-v5-imperative-api",
+      "title": "Svelte 5 Documentation: Imperative Component API (mount and unmount)",
+      "url": "https://svelte.dev/docs/svelte/imperative-component-api",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "012"
+      ],
+      "claims": [
+        "Svelte exposes mount and unmount for imperative component lifecycles; these replace class instantiation and $destroy for current Svelte components."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Svelte exposes mount and unmount for imperative component lifecycles; these replace class instantiation and $destroy for current Svelte components.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-svelte-v5-imperative-api-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "src-03-svelte-v5-migration",
+      "title": "Svelte 5 Documentation: Svelte 5 Migration Guide",
+      "url": "https://svelte.dev/docs/svelte/v5-migration-guide",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "012"
+      ],
+      "claims": [
+        "Svelte 5 replaces class-based component instantiation with mount or hydrate. Its migration guide documents changes to component instance APIs."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Svelte 5 replaces class-based component instantiation with mount or hydrate. Its migration guide documents changes to component instance APIs.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-svelte-v5-migration-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "src-03-svelte-scoped-styles",
+      "title": "Svelte Documentation: Scoped Styles",
+      "url": "https://svelte.dev/docs/svelte/scoped-styles",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "012"
+      ],
+      "claims": [
+        "Svelte scopes component styles with generated class names. Scoped CSS still requires care with global selectors and inherited properties."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Svelte scopes component styles with generated class names. Scoped CSS still requires care with global selectors and inherited properties.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-svelte-scoped-styles-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "src-03-vue-application-api",
+      "title": "Vue 3 Documentation: Application API (createApp, mount, unmount)",
+      "url": "https://vuejs.org/api/application.html",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "012"
+      ],
+      "claims": [
+        "Vue createApp creates an application instance that supports provide, mount, and unmount for host-managed component lifecycles."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Vue createApp creates an application instance that supports provide, mount, and unmount for host-managed component lifecycles.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-vue-application-api-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "src-03-vue-sfc-css-features",
+      "title": "Vue 3 Documentation: Single-File Component CSS Features",
+      "url": "https://vuejs.org/api/sfc-css-features.html",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "012"
+      ],
+      "claims": [
+        "Vue scoped styles use generated data attributes; deep and global selectors can intentionally cross component boundaries."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Vue scoped styles use generated data attributes; deep and global selectors can intentionally cross component boundaries.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "src-03-vue-sfc-css-features-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "SRC-04-001",
+      "title": "Obsidian Developer Documentation - Editor",
+      "url": "https://docs.obsidian.md/Plugins/Editor/Editor",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "008",
+        "010"
+      ],
+      "claims": [
+        "The Obsidian Editor abstraction exposes selections, cursors, and text replacement without requiring direct CodeMirror access."
+      ],
+      "structured_claims": [
+        {
+          "claim": "The Obsidian Editor abstraction exposes selections, cursors, and text replacement without requiring direct CodeMirror access.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "SRC-04-001-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "SRC-04-002",
+      "title": "Obsidian Developer Documentation - Editor extensions",
+      "url": "https://docs.obsidian.md/Plugins/Editor/Editor+extensions",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "008",
+        "009"
+      ],
+      "claims": [
+        "Obsidian editor extensions use CodeMirror 6 and are registered with registerEditorExtension. Reading view customization instead uses Markdown post processing."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Obsidian editor extensions use CodeMirror 6 and are registered with registerEditorExtension. Reading view customization instead uses Markdown post processing.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "SRC-04-002-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "SRC-04-003",
+      "title": "Obsidian Developer Documentation - Communicating with editor extensions",
+      "url": "https://docs.obsidian.md/Plugins/Editor/Communicating+with+editor+extensions",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "008"
+      ],
+      "claims": [
+        "The communication guide describes obtaining the underlying CodeMirror view through a property absent from the public Editor typings. Treat this access as an explicitly documented integration caveat.",
+        "CodeMirror view plugins can be queried through EditorView.plugin and custom state can be changed through dispatched effects."
+      ],
+      "structured_claims": [
+        {
+          "claim": "The communication guide describes obtaining the underlying CodeMirror view through a property absent from the public Editor typings. Treat this access as an explicitly documented integration caveat.",
+          "confidence": "practitioner",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        },
+        {
+          "claim": "CodeMirror view plugins can be queried through EditorView.plugin and custom state can be changed through dispatched effects.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "SRC-04-003-C01",
+        "SRC-04-003-C02"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "SRC-04-004",
+      "title": "Obsidian Developer Documentation - State management",
+      "url": "https://docs.obsidian.md/Plugins/Editor/State+management",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "008"
+      ],
+      "claims": [
+        "CodeMirror represents state as immutable values and applies document and selection changes through transactions."
+      ],
+      "structured_claims": [
+        {
+          "claim": "CodeMirror represents state as immutable values and applies document and selection changes through transactions.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "SRC-04-004-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "SRC-04-005",
+      "title": "Obsidian Developer Documentation - State fields",
+      "url": "https://docs.obsidian.md/Plugins/Editor/State+fields",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "008"
+      ],
+      "claims": [
+        "StateField defines custom editor state with create and update functions; StateEffect carries typed effects in transactions."
+      ],
+      "structured_claims": [
+        {
+          "claim": "StateField defines custom editor state with create and update functions; StateEffect carries typed effects in transactions.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "SRC-04-005-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "SRC-04-006",
+      "title": "Obsidian Developer Documentation - View plugins",
+      "url": "https://docs.obsidian.md/Plugins/Editor/View+plugins",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "008"
+      ],
+      "claims": [
+        "A CodeMirror ViewPlugin can maintain per-view state and implement update and destroy lifecycle methods. Layout-affecting decorations require the appropriate state-based provider."
+      ],
+      "structured_claims": [
+        {
+          "claim": "A CodeMirror ViewPlugin can maintain per-view state and implement update and destroy lifecycle methods. Layout-affecting decorations require the appropriate state-based provider.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "SRC-04-006-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "SRC-04-007",
+      "title": "Obsidian Developer Documentation - Decorations",
+      "url": "https://docs.obsidian.md/Plugins/Editor/Decorations",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "008"
+      ],
+      "claims": [
+        "CodeMirror decorations support marks, widgets, replacement ranges, and line styling. A view plugin can limit scanning to visible ranges."
+      ],
+      "structured_claims": [
+        {
+          "claim": "CodeMirror decorations support marks, widgets, replacement ranges, and line styling. A view plugin can limit scanning to visible ranges.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "SRC-04-007-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "SRC-04-008",
+      "title": "Obsidian Developer Documentation - Viewport",
+      "url": "https://docs.obsidian.md/Plugins/Editor/Viewport",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "008"
+      ],
+      "claims": [
+        "CodeMirror renders a viewport rather than all document content into DOM; extensions must account for visible range and viewport changes."
+      ],
+      "structured_claims": [
+        {
+          "claim": "CodeMirror renders a viewport rather than all document content into DOM; extensions must account for visible range and viewport changes.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "SRC-04-008-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "SRC-04-009",
+      "title": "Obsidian Developer Documentation - Status bar",
+      "url": "https://docs.obsidian.md/Plugins/User+interface/Status+bar",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "008"
+      ],
+      "claims": [
+        "addStatusBarItem creates a status bar element that is cleaned up with the plugin. Obsidian status bar items are unavailable on mobile."
+      ],
+      "structured_claims": [
+        {
+          "claim": "addStatusBarItem creates a status bar element that is cleaned up with the plugin. Obsidian status bar items are unavailable on mobile.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "SRC-04-009-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "SRC-04-010",
+      "title": "CodeMirror 6 Documentation - System Guide",
+      "url": "https://codemirror.net/docs/guide/",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "008"
+      ],
+      "claims": [
+        "CodeMirror separates immutable editor state from the DOM-facing EditorView; application code should update editor state through transactions."
+      ],
+      "structured_claims": [
+        {
+          "claim": "CodeMirror separates immutable editor state from the DOM-facing EditorView; application code should update editor state through transactions.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "SRC-04-010-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "SRC-04-011",
+      "title": "CodeMirror 6 Documentation - Reference Manual",
+      "url": "https://codemirror.net/docs/ref/",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "008"
+      ],
+      "claims": [
+        "CodeMirror decoration providers that run after viewport computation cannot introduce block widgets or replacements spanning line breaks.",
+        "WidgetType supports DOM creation, equality comparison, and destruction; requestMeasure can notify the editor when layout needs measuring."
+      ],
+      "structured_claims": [
+        {
+          "claim": "CodeMirror decoration providers that run after viewport computation cannot introduce block widgets or replacements spanning line breaks.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        },
+        {
+          "claim": "WidgetType supports DOM creation, equality comparison, and destruction; requestMeasure can notify the editor when layout needs measuring.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "SRC-04-011-C01",
+        "SRC-04-011-C02"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "SRC-04-012",
+      "title": "CodeMirror 6 Example - Custom Gutters",
+      "url": "https://codemirror.net/examples/gutter/",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "008"
+      ],
+      "claims": [
+        "CodeMirror custom gutters use gutter and GutterMarker; markers can define their DOM and equality behavior."
+      ],
+      "structured_claims": [
+        {
+          "claim": "CodeMirror custom gutters use gutter and GutterMarker; markers can define their DOM and equality behavior.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "SRC-04-012-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "SRC-04-013",
+      "title": "CodeMirror 6 Example - Configuration and Compartments",
+      "url": "https://codemirror.net/examples/config/",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "008"
+      ],
+      "claims": [
+        "CodeMirror Compartment wraps an extension so a transaction can reconfigure that part of an editor configuration."
+      ],
+      "structured_claims": [
+        {
+          "claim": "CodeMirror Compartment wraps an extension so a transaction can reconfigure that part of an editor configuration.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "SRC-04-013-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "SRC-04-014",
+      "title": "CodeMirror 6 @codemirror/state Source - src/facet.ts",
+      "url": "https://raw.githubusercontent.com/codemirror/state/main/src/facet.ts",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "008"
+      ],
+      "claims": [
+        "The CodeMirror state source validates extension identity and reports that duplicate module instances can break instanceof checks."
+      ],
+      "structured_claims": [
+        {
+          "claim": "The CodeMirror state source validates extension identity and reports that duplicate module instances can break instanceof checks.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "SRC-04-014-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "SRC-04-015",
+      "title": "Obsidian Sample Plugin - esbuild.config.mjs",
+      "url": "https://raw.githubusercontent.com/obsidianmd/obsidian-sample-plugin/master/esbuild.config.mjs",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "008"
+      ],
+      "claims": [
+        "The official sample esbuild configuration externalizes Obsidian, Electron, named CodeMirror and Lezer packages, and Node built-ins rather than bundling them."
+      ],
+      "structured_claims": [
+        {
+          "claim": "The official sample esbuild configuration externalizes Obsidian, Electron, named CodeMirror and Lezer packages, and Node built-ins rather than bundling them.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "SRC-04-015-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "SRC-04-016",
+      "title": "Obsidian Developer Documentation - Markdown post processing",
+      "url": "https://docs.obsidian.md/Plugins/Editor/Markdown+post+processing",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "009"
+      ],
+      "claims": [
+        "Markdown post processors modify rendered sections, while registerMarkdownCodeBlockProcessor handles fenced blocks of a named language. Editor-mode behavior requires its own extension.",
+        "The post processing guide describes async processing and print-mode differences; rendered export behavior still needs application testing."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Markdown post processors modify rendered sections, while registerMarkdownCodeBlockProcessor handles fenced blocks of a named language. Editor-mode behavior requires its own extension.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        },
+        {
+          "claim": "The post processing guide describes async processing and print-mode differences; rendered export behavior still needs application testing.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "SRC-04-016-C01",
+        "SRC-04-016-C02"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "SRC-04-017",
+      "title": "Obsidian TypeScript API Reference - MarkdownPostProcessorContext",
+      "url": "https://docs.obsidian.md/Reference/TypeScript+API/MarkdownPostProcessorContext",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "009"
+      ],
+      "claims": [
+        "MarkdownPostProcessorContext provides sourcePath, addChild, and getSectionInfo; getSectionInfo can return null and should be checked before use."
+      ],
+      "structured_claims": [
+        {
+          "claim": "MarkdownPostProcessorContext provides sourcePath, addChild, and getSectionInfo; getSectionInfo can return null and should be checked before use.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "SRC-04-017-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "SRC-04-018",
+      "title": "Obsidian TypeScript API Reference - MarkdownRenderer",
+      "url": "https://docs.obsidian.md/Reference/TypeScript+API/MarkdownRenderer",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "009"
+      ],
+      "claims": [
+        "MarkdownRenderer.render accepts an App, Markdown text, target element, source path, and owning Component; the older renderMarkdown entry is deprecated."
+      ],
+      "structured_claims": [
+        {
+          "claim": "MarkdownRenderer.render accepts an App, Markdown text, target element, source path, and owning Component; the older renderMarkdown entry is deprecated.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "SRC-04-018-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "SRC-04-019",
+      "title": "Obsidian Developer Documentation - Manage plugin lifecycle",
+      "url": "https://docs.obsidian.md/Plugins/Guides/Manage+plugin+lifecycle",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "009",
+        "011"
+      ],
+      "claims": [
+        "Component registration helpers attach child components, event handlers, DOM listeners, and intervals to an owner lifecycle."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Component registration helpers attach child components, event handlers, DOM listeners, and intervals to an owner lifecycle.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "SRC-04-019-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "SRC-04-020",
+      "title": "Official eslint-plugin-obsidianmd Rule - no-plugin-as-component",
+      "url": "https://raw.githubusercontent.com/obsidianmd/eslint-plugin/master/lib/rules/noPluginAsComponent.ts",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "009"
+      ],
+      "claims": [
+        "The official no-plugin-as-component rule checks MarkdownRenderer.render component ownership, including Plugin instances and inline unowned Component construction. The source rule alone does not establish configured lint severity."
+      ],
+      "structured_claims": [
+        {
+          "claim": "The official no-plugin-as-component rule checks MarkdownRenderer.render component ownership, including Plugin instances and inline unowned Component construction. The source rule alone does not establish configured lint severity.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "SRC-04-020-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "SRC-04-021",
+      "title": "Obsidian Developer Documentation - Vault",
+      "url": "https://docs.obsidian.md/Plugins/Vault",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "010"
+      ],
+      "claims": [
+        "Use cachedRead for display-only reads and read when content will be edited. Vault.process supplies an atomic synchronous read-modify-write operation.",
+        "The Vault API works with visible vault files; DataAdapter provides lower-level access, including hidden paths."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Use cachedRead for display-only reads and read when content will be edited. Vault.process supplies an atomic synchronous read-modify-write operation.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        },
+        {
+          "claim": "The Vault API works with visible vault files; DataAdapter provides lower-level access, including hidden paths.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "SRC-04-021-C01",
+        "SRC-04-021-C02"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "SRC-04-022",
+      "title": "Obsidian Developer Documentation - Plugin guidelines",
+      "url": "https://docs.obsidian.md/Plugins/Releasing/Plugin+guidelines",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "008",
+        "009",
+        "010"
+      ],
+      "claims": [
+        "Plugin guidelines prefer Editor APIs for editing the active note, processFrontMatter for frontmatter, and Vault APIs for normal vault files.",
+        "Guidelines recommend direct file lookup APIs, normalizePath for user paths, and safe DOM construction instead of assigning untrusted HTML."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Plugin guidelines prefer Editor APIs for editing the active note, processFrontMatter for frontmatter, and Vault APIs for normal vault files.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        },
+        {
+          "claim": "Guidelines recommend direct file lookup APIs, normalizePath for user paths, and safe DOM construction instead of assigning untrusted HTML.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "SRC-04-022-C01",
+        "SRC-04-022-C02"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "SRC-04-023",
+      "title": "Obsidian TypeScript API Reference - FileManager",
+      "url": "https://docs.obsidian.md/Reference/TypeScript+API/FileManager",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "010",
+        "011"
+      ],
+      "claims": [
+        "FileManager.renameFile updates links according to user preferences; generateMarkdownLink also follows link format preferences.",
+        "FileManager.processFrontMatter atomically reads, modifies, and saves frontmatter, and callers must handle errors."
+      ],
+      "structured_claims": [
+        {
+          "claim": "FileManager.renameFile updates links according to user preferences; generateMarkdownLink also follows link format preferences.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        },
+        {
+          "claim": "FileManager.processFrontMatter atomically reads, modifies, and saves frontmatter, and callers must handle errors.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "SRC-04-023-C01",
+        "SRC-04-023-C02"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "SRC-04-024",
+      "title": "Obsidian TypeScript API Reference - DataAdapter",
+      "url": "https://docs.obsidian.md/Reference/TypeScript+API/DataAdapter",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "010"
+      ],
+      "claims": [
+        "DataAdapter provides lower-level file operations using normalized paths; prefer the higher-level Vault API for normal indexed files."
+      ],
+      "structured_claims": [
+        {
+          "claim": "DataAdapter provides lower-level file operations using normalized paths; prefer the higher-level Vault API for normal indexed files.",
+          "confidence": "practitioner",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "SRC-04-024-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "SRC-04-025",
+      "title": "Official eslint-plugin-obsidianmd Rule - prefer-file-manager-trash-file",
+      "url": "https://raw.githubusercontent.com/obsidianmd/eslint-plugin/master/lib/rules/preferFileManagerTrashFile.ts",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "010"
+      ],
+      "claims": [
+        "The prefer-file-manager-trash-file rule recommends FileManager.trashFile over Vault.trash and Vault.delete to respect user deletion settings. This rule source does not establish its configured severity."
+      ],
+      "structured_claims": [
+        {
+          "claim": "The prefer-file-manager-trash-file rule recommends FileManager.trashFile over Vault.trash and Vault.delete to respect user deletion settings. This rule source does not establish its configured severity.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "SRC-04-025-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "SRC-04-026",
+      "title": "Obsidian Official TypeScript API Definitions - obsidian.d.ts",
+      "url": "https://raw.githubusercontent.com/obsidianmd/obsidian-api/master/obsidian.d.ts",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "008",
+        "009",
+        "010",
+        "011"
+      ],
+      "claims": [
+        "The official typings expose editorLivePreviewField, editorInfoField, link parsing helpers, and APIs for opening files with editor state. Minimum supported versions must be checked against the target typings."
+      ],
+      "structured_claims": [
+        {
+          "claim": "The official typings expose editorLivePreviewField, editorInfoField, link parsing helpers, and APIs for opening files with editor state. Minimum supported versions must be checked against the target typings.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "SRC-04-026-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "SRC-04-027",
+      "title": "Obsidian TypeScript API Reference - MetadataCache",
+      "url": "https://docs.obsidian.md/Reference/TypeScript+API/MetadataCache",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "011"
+      ],
+      "claims": [
+        "MetadataCache provides resolved and unresolved link maps, getFileCache, and getFirstLinkpathDest. Its changed event does not cover renames, so rename handling requires a Vault event."
+      ],
+      "structured_claims": [
+        {
+          "claim": "MetadataCache provides resolved and unresolved link maps, getFileCache, and getFirstLinkpathDest. Its changed event does not cover renames, so rename handling requires a Vault event.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "SRC-04-027-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "SRC-04-028",
+      "title": "Obsidian Developer Documentation - Optimize plugin load time",
+      "url": "https://docs.obsidian.md/Plugins/Guides/Optimize+plugin+load+time",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "010",
+        "011"
+      ],
+      "claims": [
+        "Keep onload limited to essential registrations, use a production bundle, and defer substantial startup work through onLayoutReady. Vault create events also fire for existing files during initialization."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Keep onload limited to essential registrations, use a production bundle, and defer substantial startup work through onLayoutReady. Vault create events also fire for existing files during initialization.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "SRC-04-028-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "SRC-04-029",
+      "title": "Obsidian Developer Documentation - Events",
+      "url": "https://docs.obsidian.md/Plugins/Events",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "010",
+        "011"
+      ],
+      "claims": [
+        "Use registerEvent for event references and registerInterval for repeating timers so plugin unload releases them."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Use registerEvent for event references and registerInterval for repeating timers so plugin unload releases them.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "SRC-04-029-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "obs-sample-plugin-repo",
+      "title": "Obsidian Sample Plugin Repository (package.json, tsconfig.json, version-bump.mjs, eslint.config.mts)",
+      "url": "https://github.com/obsidianmd/obsidian-sample-plugin",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "013",
+        "014"
+      ],
+      "claims": [
+        "The official sample repository provides TypeScript development scripts, a manifest, build configuration, and a release workflow for a plugin project."
+      ],
+      "structured_claims": [
+        {
+          "claim": "The official sample repository provides TypeScript development scripts, a manifest, build configuration, and a release workflow for a plugin project.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "obs-sample-plugin-repo-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "obs-sample-esbuild-config",
+      "title": "Obsidian Sample Plugin esbuild.config.mjs",
+      "url": "https://raw.githubusercontent.com/obsidianmd/obsidian-sample-plugin/master/esbuild.config.mjs",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "013",
+        "014"
+      ],
+      "claims": [
+        "The official sample bundles src/main.ts into a CommonJS main.js targeting ES2021, externalizes host-provided modules, and enables minification for production."
+      ],
+      "structured_claims": [
+        {
+          "claim": "The official sample bundles src/main.ts into a CommonJS main.js targeting ES2021, externalizes host-provided modules, and enables minification for production.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "obs-sample-esbuild-config-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "obs-sample-release-workflow",
+      "title": "Obsidian Sample Plugin GitHub Actions Release Workflow (release.yml)",
+      "url": "https://raw.githubusercontent.com/obsidianmd/obsidian-sample-plugin/master/.github/workflows/release.yml",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "013"
+      ],
+      "claims": [
+        "The retrieved official sample workflow builds on tag pushes, generates build provenance attestations, and creates a draft release attaching main.js, manifest.json, and optional styles.css."
+      ],
+      "structured_claims": [
+        {
+          "claim": "The retrieved official sample workflow builds on tag pushes, generates build provenance attestations, and creates a draft release attaching main.js, manifest.json, and optional styles.css.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "obs-sample-release-workflow-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "obs-docs-build-plugin",
+      "title": "Obsidian Developer Docs: Build a plugin",
+      "url": "https://docs.obsidian.md/Plugins/Getting+started/Build+a+plugin",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "013"
+      ],
+      "claims": [
+        "The getting started guide recommends a separate development vault and explains installing a local plugin with manifest.json and main.js."
+      ],
+      "structured_claims": [
+        {
+          "claim": "The getting started guide recommends a separate development vault and explains installing a local plugin with manifest.json and main.js.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "obs-docs-build-plugin-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "obs-docs-github-actions-release",
+      "title": "Obsidian Developer Docs: Release your plugin with GitHub Actions",
+      "url": "https://docs.obsidian.md/Plugins/Releasing/Release+your+plugin+with+GitHub+Actions",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "013"
+      ],
+      "claims": [
+        "The release guide packages main.js, manifest.json, and optional styles.css as release assets and uses the manifest version for the release tag."
+      ],
+      "structured_claims": [
+        {
+          "claim": "The release guide packages main.js, manifest.json, and optional styles.css as release assets and uses the manifest version for the release tag.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "obs-docs-github-actions-release-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "obs-docs-submit-plugin",
+      "title": "Obsidian Developer Docs: Submit your plugin",
+      "url": "https://docs.obsidian.md/Plugins/Releasing/Submit+your+plugin",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "013",
+        "015"
+      ],
+      "claims": [
+        "Current submission documentation describes submission through the Community directory and automated scanning. Repository metadata and a valid built release are required."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Current submission documentation describes submission through the Community directory and automated scanning. Repository metadata and a valid built release are required.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "obs-docs-submit-plugin-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "esbuild-api-docs",
+      "title": "esbuild API Documentation (external, format, target, sourcemap, treeShaking)",
+      "url": "https://esbuild.github.io/api/",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "013"
+      ],
+      "claims": [
+        "esbuild external excludes matching imports from a bundle; sourcemap and minify options control production artifact composition."
+      ],
+      "structured_claims": [
+        {
+          "claim": "esbuild external excludes matching imports from a bundle; sourcemap and minify options control production artifact composition.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "esbuild-api-docs-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "vite-build-library-mode",
+      "title": "Vite Guide: Building for Production and Library Mode",
+      "url": "https://vite.dev/guide/build",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "013"
+      ],
+      "claims": [
+        "Vite library mode supports explicit library entry points, output formats, and external dependencies. An Obsidian adapter configuration is an engineering choice, not a first-party Vite plugin guarantee."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Vite library mode supports explicit library entry points, output formats, and external dependencies. An Obsidian adapter configuration is an engineering choice, not a first-party Vite plugin guarantee.",
+          "confidence": "practitioner",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "vite-build-library-mode-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "vitest-config-docs",
+      "title": "Vitest Configuration Reference (resolve.alias, environment)",
+      "url": "https://vitest.dev/config/",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "013"
+      ],
+      "claims": [
+        "Vitest configuration supports test environments and module aliasing for host dependencies that are unavailable in a unit test runtime."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Vitest configuration supports test environments and module aliasing for host dependencies that are unavailable in a unit test runtime.",
+          "confidence": "practitioner",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "vitest-config-docs-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "vitest-mocking-guide",
+      "title": "Vitest Guide: Mocking Modules, Globals, and Timers",
+      "url": "https://vitest.dev/guide/mocking",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "013"
+      ],
+      "claims": [
+        "Vitest provides module mocking and fake timers for isolated tests. Mock results do not establish real Obsidian runtime behavior."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Vitest provides module mocking and fake timers for isolated tests. Mock results do not establish real Obsidian runtime behavior.",
+          "confidence": "practitioner",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "vitest-mocking-guide-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "pjeby-hot-reload",
+      "title": "Hot-Reload Plugin for Obsidian Plugins (pjeby/hot-reload)",
+      "url": "https://github.com/pjeby/hot-reload",
+      "source_type": "practitioner",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "013",
+        "014"
+      ],
+      "claims": [
+        "The Hot Reload maintainer documents reloading development plugins when built files change, with eligibility determined by a git directory or .hotreload marker."
+      ],
+      "structured_claims": [
+        {
+          "claim": "The Hot Reload maintainer documents reloading development plugins when built files change, with eligibility determined by a git directory or .hotreload marker.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "pjeby-hot-reload-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "wdio-obsidian-service-docs",
+      "title": "WebdriverIO Documentation: wdio-obsidian-service",
+      "url": "https://webdriver.io/docs/wdio-obsidian-service",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "013",
+        "014"
+      ],
+      "claims": [
+        "wdio-obsidian-service integrates WebdriverIO with Obsidian application sessions and exposes options for application versions, plugins, and a test vault."
+      ],
+      "structured_claims": [
+        {
+          "claim": "wdio-obsidian-service integrates WebdriverIO with Obsidian application sessions and exposes options for application versions, plugins, and a test vault.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "wdio-obsidian-service-docs-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "obs-docs-mobile-development",
+      "title": "Obsidian Developer Docs: Mobile development",
+      "url": "https://docs.obsidian.md/Plugins/Getting+started/Mobile+development",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "014"
+      ],
+      "claims": [
+        "Node.js and Electron APIs are unavailable on mobile. Plugins requiring these APIs must declare desktop-only support.",
+        "The guide documents desktop mobile-layout emulation and separate real-device debugging procedures for Android and iOS; emulation is not physical-device validation."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Node.js and Electron APIs are unavailable on mobile. Plugins requiring these APIs must declare desktop-only support.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        },
+        {
+          "claim": "The guide documents desktop mobile-layout emulation and separate real-device debugging procedures for Android and iOS; emulation is not physical-device validation.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "obs-docs-mobile-development-C01",
+        "obs-docs-mobile-development-C02"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "obs-api-dts",
+      "title": "Obsidian Official TypeScript API Definitions (obsidian.d.ts)",
+      "url": "https://raw.githubusercontent.com/obsidianmd/obsidian-api/master/obsidian.d.ts",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "014",
+        "015"
+      ],
+      "claims": [
+        "The official typings define Platform checks, requestUrl, debounce, sanitizeHTMLToDom, SecretStorage, and plugin data APIs. Availability must be matched to the supported app version."
+      ],
+      "structured_claims": [
+        {
+          "claim": "The official typings define Platform checks, requestUrl, debounce, sanitizeHTMLToDom, SecretStorage, and plugin data APIs. Availability must be matched to the supported app version.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "obs-api-dts-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "obs-docs-platform-api",
+      "title": "Obsidian Developer Docs: Platform TypeScript API Reference",
+      "url": "https://docs.obsidian.md/Reference/TypeScript+API/Platform",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "014"
+      ],
+      "claims": [
+        "Platform exposes runtime and device flags including desktop, mobile, iOS, and Android variants; use the documented flag appropriate to the condition."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Platform exposes runtime and device flags including desktop, mobile, iOS, and Android variants; use the documented flag appropriate to the condition.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "obs-docs-platform-api-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "obs-docs-requesturl-api",
+      "title": "Obsidian Developer Docs: requestUrl TypeScript API Reference",
+      "url": "https://docs.obsidian.md/Reference/TypeScript+API/requestUrl",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "014",
+        "015"
+      ],
+      "claims": [
+        "requestUrl performs HTTP or HTTPS requests without browser CORS restrictions. Its signature accepts a URL string or RequestUrlParam."
+      ],
+      "structured_claims": [
+        {
+          "claim": "requestUrl performs HTTP or HTTPS requests without browser CORS restrictions. Its signature accepts a URL string or RequestUrlParam.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "obs-docs-requesturl-api-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "obs-docs-optimize-load-time",
+      "title": "Obsidian Developer Docs: Optimize plugin load time",
+      "url": "https://docs.obsidian.md/Plugins/Guides/Optimize+plugin+load+time",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "014"
+      ],
+      "claims": [
+        "Obsidian loads enabled plugins before users can interact; keep onload and view construction lightweight and defer expensive startup work.",
+        "Vault create events fire for existing files during initialization; check layout readiness or register the create handler inside onLayoutReady."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Obsidian loads enabled plugins before users can interact; keep onload and view construction lightweight and defer expensive startup work.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        },
+        {
+          "claim": "Vault create events fire for existing files during initialization; check layout readiness or register the create handler inside onLayoutReady.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "obs-docs-optimize-load-time-C01",
+        "obs-docs-optimize-load-time-C02"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "obs-docs-defer-views",
+      "title": "Obsidian Developer Docs: Defer views",
+      "url": "https://docs.obsidian.md/Plugins/Guides/Defer+views",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "014"
+      ],
+      "claims": [
+        "Obsidian defers background views at startup. Check view types before accessing custom instances and load a deferred view only when needed."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Obsidian defers background views at startup. Check view types before accessing custom instances and load a deferred view only when needed.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "obs-docs-defer-views-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "obs-docs-debounce-api",
+      "title": "Obsidian Developer Docs: debounce TypeScript API Reference",
+      "url": "https://docs.obsidian.md/Reference/TypeScript+API/debounce",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "014"
+      ],
+      "claims": [
+        "Obsidian debounce returns a Debouncer that can cancel or immediately run a pending invocation."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Obsidian debounce returns a Debouncer that can cancel or immediately run a pending invocation.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "obs-docs-debounce-api-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "chrome-devtools-heap-snapshots",
+      "title": "Chrome DevTools Documentation: Record Heap Snapshots",
+      "url": "https://developer.chrome.com/docs/devtools/memory-problems/heap-snapshots",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "014"
+      ],
+      "claims": [
+        "Chrome heap snapshots support comparison and retained-object inspection for diagnosing JavaScript and detached DOM memory retention."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Chrome heap snapshots support comparison and retained-object inspection for diagnosing JavaScript and detached DOM memory retention.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "chrome-devtools-heap-snapshots-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "mdn-web-workers",
+      "title": "MDN Web Docs: Using Web Workers (Embedded Blob URL Workers)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "013",
+        "014"
+      ],
+      "claims": [
+        "Workers can be terminated explicitly; MDN also demonstrates embedding worker source in a Blob and obtaining an object URL. This does not verify that a particular Obsidian desktop or mobile runtime supports that deployment path."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Workers can be terminated explicitly; MDN also demonstrates embedding worker source in a Blob and obtaining an object URL. This does not verify that a particular Obsidian desktop or mobile runtime supports that deployment path.",
+          "confidence": "practitioner",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "mdn-web-workers-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "obs-docs-plugin-guidelines",
+      "title": "Obsidian Developer Docs: Plugin guidelines",
+      "url": "https://docs.obsidian.md/Plugins/Releasing/Plugin+guidelines",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "014",
+        "015"
+      ],
+      "claims": [
+        "Plugin guidelines reject unsafe insertion of untrusted HTML, retaining custom view instances on the Plugin, and detaching custom leaves during onunload.",
+        "Use Vault.configDir rather than a hardcoded configuration path and normalize user-provided vault paths."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Plugin guidelines reject unsafe insertion of untrusted HTML, retaining custom view instances on the Plugin, and detaching custom leaves during onunload.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        },
+        {
+          "claim": "Use Vault.configDir rather than a hardcoded configuration path and normalize user-provided vault paths.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "obs-docs-plugin-guidelines-C01",
+        "obs-docs-plugin-guidelines-C02"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "obs-docs-html-elements",
+      "title": "Obsidian Developer Docs: HTML elements",
+      "url": "https://docs.obsidian.md/Plugins/User+interface/HTML+elements",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "015"
+      ],
+      "claims": [
+        "Obsidian DOM helpers create elements and accept text content and CSS classes without requiring HTML string parsing."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Obsidian DOM helpers create elements and accept text content and CSS classes without requiring HTML string parsing.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "obs-docs-html-elements-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "obs-docs-sanitize-html",
+      "title": "Obsidian Developer Docs: sanitizeHTMLToDom TypeScript API Reference",
+      "url": "https://docs.obsidian.md/Reference/TypeScript+API/sanitizeHTMLToDom",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "015"
+      ],
+      "claims": [
+        "sanitizeHTMLToDom converts an HTML string into a sanitized DocumentFragment. Sanitization does not by itself establish every caller interaction is safe."
+      ],
+      "structured_claims": [
+        {
+          "claim": "sanitizeHTMLToDom converts an HTML string into a sanitized DocumentFragment. Sanitization does not by itself establish every caller interaction is safe.",
+          "confidence": "practitioner",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "obs-docs-sanitize-html-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "obs-eslint-plugin",
+      "title": "Official ESLint Plugin for Obsidian Plugins (obsidianmd/eslint-plugin)",
+      "url": "https://github.com/obsidianmd/eslint-plugin",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "013",
+        "014",
+        "015"
+      ],
+      "claims": [
+        "The official ESLint plugin documents Obsidian-specific checks and a recommended configuration. Authors must run the actual configured version rather than infer a full scan result from text matches."
+      ],
+      "structured_claims": [
+        {
+          "claim": "The official ESLint plugin documents Obsidian-specific checks and a recommended configuration. Authors must run the actual configured version rather than infer a full scan result from text matches.",
+          "confidence": "practitioner",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "obs-eslint-plugin-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "obs-help-sync-plans",
+      "title": "Obsidian Help: Plans and storage limits (Obsidian Sync)",
+      "url": "https://help.obsidian.md/sync/plans",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "015"
+      ],
+      "claims": [
+        "As retrieved on 2026-11-01, Sync Standard permits files up to 5 MB and 1 GB storage; Sync Plus permits files up to 200 MB and storage tiers from 10 GB to 100 GB.",
+        "Version history and attachments count toward storage. Reaching the account limit stops file syncing and prompts pruning."
+      ],
+      "structured_claims": [
+        {
+          "claim": "As retrieved on 2026-11-01, Sync Standard permits files up to 5 MB and 1 GB storage; Sync Plus permits files up to 200 MB and storage tiers from 10 GB to 100 GB.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        },
+        {
+          "claim": "Version history and attachments count toward storage. Reaching the account limit stops file syncing and prompts pruning.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "obs-help-sync-plans-C01",
+        "obs-help-sync-plans-C02"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "obs-help-sync-settings",
+      "title": "Obsidian Help: Sync settings and selective syncing",
+      "url": "https://help.obsidian.md/sync/settings",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "015"
+      ],
+      "claims": [
+        "Dot-prefixed hidden files and folders are excluded from Obsidian Sync except the active configuration folder. Community plugin syncing requires enabling its configuration options.",
+        "The help page distinguishes device-specific Sync settings from synced vault configuration and links onExternalSettingsChange for plugin settings refresh."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Dot-prefixed hidden files and folders are excluded from Obsidian Sync except the active configuration folder. Community plugin syncing requires enabling its configuration options.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        },
+        {
+          "claim": "The help page distinguishes device-specific Sync settings from synced vault configuration and links onExternalSettingsChange for plugin settings refresh.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "obs-help-sync-settings-C01",
+        "obs-help-sync-settings-C02"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "obs-help-data-storage",
+      "title": "Obsidian Help: How Obsidian stores data (Vault, Config Folder, Global Settings, IndexedDB)",
+      "url": "https://obsidian.md/help/data-storage",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "014",
+        "015"
+      ],
+      "claims": [
+        "Obsidian uses IndexedDB for local backend state, including metadata cache and Sync connection state.",
+        "The help page warns that Apple Lockdown Mode can prevent database persistence unless Obsidian is excluded, requiring reindexing on launch."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Obsidian uses IndexedDB for local backend state, including metadata cache and Sync connection state.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        },
+        {
+          "claim": "The help page warns that Apple Lockdown Mode can prevent database persistence unless Obsidian is excluded, requiring reindexing on launch.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "obs-help-data-storage-C01",
+        "obs-help-data-storage-C02"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "mdn-indexeddb-api",
+      "title": "MDN Web Docs: IndexedDB API",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API",
+      "source_type": "api-docs",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "015"
+      ],
+      "claims": [
+        "IndexedDB provides asynchronous transactions for substantial structured client-side data and follows the same-origin policy. Exact Obsidian vault-origin isolation must be tested rather than assumed."
+      ],
+      "structured_claims": [
+        {
+          "claim": "IndexedDB provides asynchronous transactions for substantial structured client-side data and follows the same-origin policy. Exact Obsidian vault-origin isolation must be tested rather than assumed.",
+          "confidence": "practitioner",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "mdn-indexeddb-api-C01"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "obs-docs-store-secrets",
+      "title": "Obsidian Developer Docs: Store secrets (SecretStorage and SecretComponent)",
+      "url": "https://docs.obsidian.md/Plugins/Guides/Store+secrets",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "015"
+      ],
+      "claims": [
+        "SecretComponent stores the selected secret name in plugin settings; app.secretStorage.getSecret retrieves the value.",
+        "The guide describes actual secret storage as local storage keyed to the vault. It does not promise an OS keychain, encryption at rest, or access isolation from other enabled plugins."
+      ],
+      "structured_claims": [
+        {
+          "claim": "SecretComponent stores the selected secret name in plugin settings; app.secretStorage.getSecret retrieves the value.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        },
+        {
+          "claim": "The guide describes actual secret storage as local storage keyed to the vault. It does not promise an OS keychain, encryption at rest, or access isolation from other enabled plugins.",
+          "confidence": "practitioner",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "obs-docs-store-secrets-C01",
+        "obs-docs-store-secrets-C02"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "obs-docs-developer-policies",
+      "title": "Obsidian Developer Docs: Community Directory Developer Policies",
+      "url": "https://docs.obsidian.md/Community+directory/Developer+policies",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "015"
+      ],
+      "claims": [
+        "Community directory policies prohibit code obfuscation, client-side telemetry, dynamic network ads, and self-installation or self-updates.",
+        "README disclosures are required for network services, access outside vaults, payment or account requirements, in-plugin static ads, and server-side telemetry with a privacy policy."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Community directory policies prohibit code obfuscation, client-side telemetry, dynamic network ads, and self-installation or self-updates.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        },
+        {
+          "claim": "README disclosures are required for network services, access outside vaults, payment or account requirements, in-plugin static ads, and server-side telemetry with a privacy policy.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "obs-docs-developer-policies-C01",
+        "obs-docs-developer-policies-C02"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "obs-help-plugin-security",
+      "title": "Obsidian Help: Plugin security",
+      "url": "https://help.obsidian.md/plugin-security",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "015"
+      ],
+      "claims": [
+        "Obsidian cannot reliably restrict enabled plugins to individual permissions; plugins inherit its access. Restricted mode prevents third-party plugin execution.",
+        "The help page states that every plugin version is scanned and directory pages display safety scorecards; manual reviews continue for popular, featured, and flagged plugins."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Obsidian cannot reliably restrict enabled plugins to individual permissions; plugins inherit its access. Restricted mode prevents third-party plugin execution.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        },
+        {
+          "claim": "The help page states that every plugin version is scanned and directory pages display safety scorecards; manual reviews continue for popular, featured, and flagged plugins.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "obs-help-plugin-security-C01",
+        "obs-help-plugin-security-C02"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "SRC-06-001",
+      "title": "Official sample plugin package and scripts",
+      "url": "https://raw.githubusercontent.com/obsidianmd/obsidian-sample-plugin/07ceb81d1fb3384af611ebf665a1ec42a7e5926d/package.json",
+      "source_type": "official",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "013",
+        "016"
+      ],
+      "claims": [
+        "The official sample plugin builds with TypeScript checks followed by esbuild.",
+        "The sample package defines an ESLint command and uses the Obsidian API as a development dependency."
+      ],
+      "structured_claims": [
+        {
+          "claim": "The official sample plugin builds with TypeScript checks followed by esbuild.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        },
+        {
+          "claim": "The sample package defines an ESLint command and uses the Obsidian API as a development dependency.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "SRC-06-001-C01",
+        "SRC-06-001-C02"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "SRC-06-002",
+      "title": "Obsidian npm API package 1.14.4 metadata",
+      "url": "https://registry.npmjs.org/obsidian/1.14.4",
+      "source_type": "vendor",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "008",
+        "013"
+      ],
+      "claims": [
+        "Obsidian API package 1.14.4 declares peer versions @codemirror/view 6.43.13 and @codemirror/state 6.7.6.",
+        "Package metadata records dependency compatibility declarations; it does not establish runtime compatibility of a generated plugin."
+      ],
+      "structured_claims": [
+        {
+          "claim": "Obsidian API package 1.14.4 declares peer versions @codemirror/view 6.43.13 and @codemirror/state 6.7.6.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        },
+        {
+          "claim": "Package metadata records dependency compatibility declarations; it does not establish runtime compatibility of a generated plugin.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "SRC-06-002-C01",
+        "SRC-06-002-C02"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    },
+    {
+      "id": "SRC-06-003",
+      "title": "Official Obsidian ESLint package 0.4.2 metadata",
+      "url": "https://registry.npmjs.org/eslint-plugin-obsidianmd/0.4.2",
+      "source_type": "vendor",
+      "retrieved": "2026-11-01",
+      "refresh_due": "2026-12-01",
+      "confidence": "evidence-based",
+      "canon_targets": [
+        "013",
+        "016"
+      ],
+      "claims": [
+        "The 0.4.2 Obsidian ESLint package declares an Obsidian peer dependency of 1.8.7 and an @eslint/js peer range of ^9.30.1.",
+        "Its declared peer versions require deliberate resolution when a project targets a newer Obsidian API package."
+      ],
+      "structured_claims": [
+        {
+          "claim": "The 0.4.2 Obsidian ESLint package declares an Obsidian peer dependency of 1.8.7 and an @eslint/js peer range of ^9.30.1.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        },
+        {
+          "claim": "Its declared peer versions require deliberate resolution when a project targets a newer Obsidian API package.",
+          "confidence": "evidence-based",
+          "source_relationship": "Single-source paraphrase; independent corroboration is not established."
+        }
+      ],
+      "supports_claims": [
+        "SRC-06-003-C01",
+        "SRC-06-003-C02"
+      ],
+      "distribution": "Original editorial paraphrases with links to the identified upstream work.",
+      "upstream_reference": {}
+    }
+  ]
+}

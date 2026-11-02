@@ -1,0 +1,11 @@
+{
+  "created_at": "2026-11-01T17:44:15+00:00",
+  "description": "Review secret exposure, unsafe automation, provenance, and advisory boundaries.",
+  "id": "security-reviewer",
+  "result": "Static importer boundaries and negative cases reviewed. Real plugin security remains unverified. Local completion work; no claim of a separately executed named role agent.",
+  "role": "security-reviewer",
+  "schema": "brainstein.task.v1",
+  "status": "completed",
+  "title": "security-reviewer gate work",
+  "updated_at": "2026-11-01"
+}

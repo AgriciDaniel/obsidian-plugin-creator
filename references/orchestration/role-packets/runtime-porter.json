@@ -1,0 +1,43 @@
+{
+  "allowed_actions": [
+    "check install targets",
+    "compare instruction surfaces",
+    "document unknown runtime custom paths"
+  ],
+  "blockers": [
+    "install target failure",
+    "missing managed block",
+    "runtime docs mismatch"
+  ],
+  "evidence_paths": [
+    "AGENTS.md",
+    "CLAUDE.md",
+    "GEMINI.md",
+    "SKILL.md",
+    "brainstein/install.py"
+  ],
+  "expected_outputs": [
+    "runtime parity notes",
+    "install surface findings"
+  ],
+  "forbidden_actions": [
+    "claim untested runtime conventions",
+    "overwrite existing non-Brainstein aliases"
+  ],
+  "gates": [
+    "portable instructions remain consistent"
+  ],
+  "inputs": [
+    "AGENTS.md",
+    "CLAUDE.md",
+    "GEMINI.md",
+    "SKILL.md"
+  ],
+  "mission": "Keep agent runtime surfaces portable across supported assistants and custom skill roots.",
+  "next_handoff": "security-reviewer",
+  "outputs": [
+    "runtime parity notes",
+    "install surface findings"
+  ],
+  "role": "runtime-porter"
+}

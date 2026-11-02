@@ -1,0 +1,54 @@
+filters:
+  and:
+    - file.inFolder("wiki")
+    - file.ext == "md"
+    - 'file.name != "_index"'
+properties:
+  type:
+    displayName: Type
+  status:
+    displayName: Status
+  confidence:
+    displayName: Confidence
+  updated:
+    displayName: Updated
+views:
+  - type: table
+    name: Notes by status
+    filters: 'type != "meta"'
+    order:
+      - file.name
+      - type
+      - confidence
+      - updated
+    groupBy:
+      property: status
+      direction: ASC
+  - type: table
+    name: Seeds needing substance
+    filters: 'status == "seed"'
+    order:
+      - file.name
+      - type
+      - updated
+  - type: table
+    name: Contested and low-confidence claims
+    filters:
+      or:
+        - 'confidence == "contested"'
+        - 'confidence == "folklore"'
+    order:
+      - file.name
+      - type
+      - confidence
+      - updated
+  - type: table
+    name: Recently updated
+    limit: 15
+    order:
+      - file.name
+      - status
+      - confidence
+    groupBy:
+      property: updated
+      direction: DESC

@@ -1,0 +1,23 @@
+{
+  "name": "spatial-graph-codex",
+  "version": "1.2.0",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "build": "node esbuild.config.mjs production",
+    "dev": "node esbuild.config.mjs"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "three": "^0.172.0"
+  },
+  "devDependencies": {
+    "@codemirror/state": "^6.5.0",
+    "@codemirror/view": "^6.35.0",
+    "esbuild": "^0.25.0",
+    "eslint-plugin-obsidianmd": "^0.1.9",
+    "obsidian": "latest",
+    "typescript": "^5.7.0"
+  }
+}

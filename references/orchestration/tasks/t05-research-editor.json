@@ -1,0 +1,11 @@
+{
+  "created_at": "2026-11-01T17:46:25+00:00",
+  "description": "",
+  "id": "t05-research-editor",
+  "result": "references/research/04-editor-vault-metadata.json",
+  "role": "research-scout",
+  "schema": "brainstein.task.v1",
+  "status": "completed",
+  "title": "Shard 04: CodeMirror 6, Markdown Pipeline, Vault, FileManager & MetadataCache",
+  "updated_at": "2026-11-01"
+}

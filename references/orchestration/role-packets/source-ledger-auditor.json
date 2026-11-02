@@ -1,0 +1,38 @@
+{
+  "allowed_actions": [
+    "validate ledger schema",
+    "check retrieval dates",
+    "compare source hashes"
+  ],
+  "blockers": [
+    "invalid JSON",
+    "missing official sources",
+    "hash mismatch"
+  ],
+  "evidence_paths": [
+    "references/public-sources.json",
+    ".raw/.manifest.json"
+  ],
+  "expected_outputs": [
+    "ledger findings",
+    "blocking source issues"
+  ],
+  "forbidden_actions": [
+    "accept placeholder URLs",
+    "accept prose-only evidence"
+  ],
+  "gates": [
+    "ledger is valid JSON with useful source metadata"
+  ],
+  "inputs": [
+    "references/public-sources.json",
+    "references/source-manifest-template.md"
+  ],
+  "mission": "Verify source-ledger entries, retrieval dates, source types, and hash references.",
+  "next_handoff": "adapter-architect",
+  "outputs": [
+    "ledger findings",
+    "blocking source issues"
+  ],
+  "role": "source-ledger-auditor"
+}

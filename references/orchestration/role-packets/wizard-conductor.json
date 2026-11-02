@@ -1,0 +1,39 @@
+{
+  "allowed_actions": [
+    "read orchestration state",
+    "create tasks",
+    "record gates",
+    "summarize blockers"
+  ],
+  "blockers": [
+    "missing role results",
+    "critical audit failures"
+  ],
+  "evidence_paths": [
+    "references/orchestration/run.json",
+    "references/orchestration/tasks/*.json"
+  ],
+  "expected_outputs": [
+    "updated run state",
+    "next task recommendation"
+  ],
+  "forbidden_actions": [
+    "invent research evidence",
+    "mark gates passed without evidence"
+  ],
+  "gates": [
+    "all required roles have explicit task status"
+  ],
+  "inputs": [
+    "run.json",
+    "tasks/*.json",
+    "results/*.json"
+  ],
+  "mission": "Coordinate the run, assign tasks, and keep the orchestration ledger current.",
+  "next_handoff": "release-gatekeeper",
+  "outputs": [
+    "updated run state",
+    "next task recommendation"
+  ],
+  "role": "wizard-conductor"
+}

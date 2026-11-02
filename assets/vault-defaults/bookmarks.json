@@ -1,0 +1,662 @@
+{
+  "items": [
+    {
+      "type": "group",
+      "ctime": 1793577600000,
+      "title": "Plugin Creator graph views",
+      "items": [
+        {
+          "type": "graph",
+          "ctime": 1793577600000,
+          "title": "The whole brain",
+          "options": {
+            "collapse-filter": false,
+            "search": "path:\"wiki/\"",
+            "showTags": false,
+            "showAttachments": false,
+            "hideUnresolved": true,
+            "showOrphans": true,
+            "colorGroups": [
+              {
+                "query": "tag:#type/meta OR tag:#type/hot OR tag:#type/index OR tag:#type/overview OR tag:#type/log OR tag:#type/hub OR tag:#type/dashboard",
+                "color": {
+                  "a": 1,
+                  "rgb": 11043583
+                }
+              },
+              {
+                "query": "tag:#type/flow",
+                "color": {
+                  "a": 1,
+                  "rgb": 6674100
+                }
+              },
+              {
+                "query": "tag:#type/concept",
+                "color": {
+                  "a": 1,
+                  "rgb": 8239089
+                }
+              },
+              {
+                "query": "tag:#type/source",
+                "color": {
+                  "a": 1,
+                  "rgb": 11836381
+                }
+              },
+              {
+                "query": "tag:#type/decision",
+                "color": {
+                  "a": 1,
+                  "rgb": 15252340
+                }
+              },
+              {
+                "query": "tag:#type/deliverable OR tag:#type/report",
+                "color": {
+                  "a": 1,
+                  "rgb": 15114436
+                }
+              },
+              {
+                "query": "tag:#type/account OR tag:#type/platform OR tag:#type/entity",
+                "color": {
+                  "a": 1,
+                  "rgb": 9545176
+                }
+              },
+              {
+                "query": "tag:#type/question OR tag:#type/gap",
+                "color": {
+                  "a": 1,
+                  "rgb": 15570576
+                }
+              },
+              {
+                "query": "tag:#type/experiment",
+                "color": {
+                  "a": 1,
+                  "rgb": 12242060
+                }
+              },
+              {
+                "query": "tag:#domain/architecting-building-styling-optimizing-testing-auditing-and-sh",
+                "color": {
+                  "a": 1,
+                  "rgb": 9669279
+                }
+              }
+            ],
+            "showArrow": false,
+            "textFadeMultiplier": 0.2,
+            "nodeSizeMultiplier": 1.1,
+            "lineSizeMultiplier": 0.85,
+            "centerStrength": 0.5,
+            "repelStrength": 11,
+            "linkDistance": 155,
+            "collapse-color-groups": false
+          }
+        },
+        {
+          "type": "graph",
+          "ctime": 1793577600000,
+          "title": "Creator playbooks",
+          "options": {
+            "collapse-filter": false,
+            "search": "path:\"wiki/\" file:\"Plugin\"",
+            "showTags": false,
+            "showAttachments": false,
+            "hideUnresolved": true,
+            "showOrphans": true,
+            "colorGroups": [
+              {
+                "query": "tag:#type/meta OR tag:#type/hot OR tag:#type/index OR tag:#type/overview OR tag:#type/log OR tag:#type/hub OR tag:#type/dashboard",
+                "color": {
+                  "a": 1,
+                  "rgb": 11043583
+                }
+              },
+              {
+                "query": "tag:#type/flow",
+                "color": {
+                  "a": 1,
+                  "rgb": 6674100
+                }
+              },
+              {
+                "query": "tag:#type/concept",
+                "color": {
+                  "a": 1,
+                  "rgb": 8239089
+                }
+              },
+              {
+                "query": "tag:#type/source",
+                "color": {
+                  "a": 1,
+                  "rgb": 11836381
+                }
+              },
+              {
+                "query": "tag:#type/decision",
+                "color": {
+                  "a": 1,
+                  "rgb": 15252340
+                }
+              },
+              {
+                "query": "tag:#type/deliverable OR tag:#type/report",
+                "color": {
+                  "a": 1,
+                  "rgb": 15114436
+                }
+              },
+              {
+                "query": "tag:#type/account OR tag:#type/platform OR tag:#type/entity",
+                "color": {
+                  "a": 1,
+                  "rgb": 9545176
+                }
+              },
+              {
+                "query": "tag:#type/question OR tag:#type/gap",
+                "color": {
+                  "a": 1,
+                  "rgb": 15570576
+                }
+              },
+              {
+                "query": "tag:#type/experiment",
+                "color": {
+                  "a": 1,
+                  "rgb": 12242060
+                }
+              },
+              {
+                "query": "tag:#domain/architecting-building-styling-optimizing-testing-auditing-and-sh",
+                "color": {
+                  "a": 1,
+                  "rgb": 9669279
+                }
+              }
+            ],
+            "showArrow": false,
+            "textFadeMultiplier": 0.2,
+            "nodeSizeMultiplier": 1.1,
+            "lineSizeMultiplier": 0.85,
+            "centerStrength": 0.5,
+            "repelStrength": 11,
+            "linkDistance": 155,
+            "collapse-color-groups": false
+          }
+        },
+        {
+          "type": "graph",
+          "ctime": 1793577600000,
+          "title": "Concepts and architecture",
+          "options": {
+            "collapse-filter": false,
+            "search": "path:\"wiki/\" tag:#type/concept",
+            "showTags": false,
+            "showAttachments": false,
+            "hideUnresolved": true,
+            "showOrphans": true,
+            "colorGroups": [
+              {
+                "query": "tag:#type/meta OR tag:#type/hot OR tag:#type/index OR tag:#type/overview OR tag:#type/log OR tag:#type/hub OR tag:#type/dashboard",
+                "color": {
+                  "a": 1,
+                  "rgb": 11043583
+                }
+              },
+              {
+                "query": "tag:#type/flow",
+                "color": {
+                  "a": 1,
+                  "rgb": 6674100
+                }
+              },
+              {
+                "query": "tag:#type/concept",
+                "color": {
+                  "a": 1,
+                  "rgb": 8239089
+                }
+              },
+              {
+                "query": "tag:#type/source",
+                "color": {
+                  "a": 1,
+                  "rgb": 11836381
+                }
+              },
+              {
+                "query": "tag:#type/decision",
+                "color": {
+                  "a": 1,
+                  "rgb": 15252340
+                }
+              },
+              {
+                "query": "tag:#type/deliverable OR tag:#type/report",
+                "color": {
+                  "a": 1,
+                  "rgb": 15114436
+                }
+              },
+              {
+                "query": "tag:#type/account OR tag:#type/platform OR tag:#type/entity",
+                "color": {
+                  "a": 1,
+                  "rgb": 9545176
+                }
+              },
+              {
+                "query": "tag:#type/question OR tag:#type/gap",
+                "color": {
+                  "a": 1,
+                  "rgb": 15570576
+                }
+              },
+              {
+                "query": "tag:#type/experiment",
+                "color": {
+                  "a": 1,
+                  "rgb": 12242060
+                }
+              },
+              {
+                "query": "tag:#domain/architecting-building-styling-optimizing-testing-auditing-and-sh",
+                "color": {
+                  "a": 1,
+                  "rgb": 9669279
+                }
+              }
+            ],
+            "showArrow": false,
+            "textFadeMultiplier": 0.2,
+            "nodeSizeMultiplier": 1.1,
+            "lineSizeMultiplier": 0.85,
+            "centerStrength": 0.5,
+            "repelStrength": 11,
+            "linkDistance": 155,
+            "collapse-color-groups": false
+          }
+        },
+        {
+          "type": "graph",
+          "ctime": 1793577600000,
+          "title": "Source notes",
+          "options": {
+            "collapse-filter": false,
+            "search": "path:\"wiki/\" tag:#type/source",
+            "showTags": false,
+            "showAttachments": false,
+            "hideUnresolved": true,
+            "showOrphans": true,
+            "colorGroups": [
+              {
+                "query": "tag:#type/meta OR tag:#type/hot OR tag:#type/index OR tag:#type/overview OR tag:#type/log OR tag:#type/hub OR tag:#type/dashboard",
+                "color": {
+                  "a": 1,
+                  "rgb": 11043583
+                }
+              },
+              {
+                "query": "tag:#type/flow",
+                "color": {
+                  "a": 1,
+                  "rgb": 6674100
+                }
+              },
+              {
+                "query": "tag:#type/concept",
+                "color": {
+                  "a": 1,
+                  "rgb": 8239089
+                }
+              },
+              {
+                "query": "tag:#type/source",
+                "color": {
+                  "a": 1,
+                  "rgb": 11836381
+                }
+              },
+              {
+                "query": "tag:#type/decision",
+                "color": {
+                  "a": 1,
+                  "rgb": 15252340
+                }
+              },
+              {
+                "query": "tag:#type/deliverable OR tag:#type/report",
+                "color": {
+                  "a": 1,
+                  "rgb": 15114436
+                }
+              },
+              {
+                "query": "tag:#type/account OR tag:#type/platform OR tag:#type/entity",
+                "color": {
+                  "a": 1,
+                  "rgb": 9545176
+                }
+              },
+              {
+                "query": "tag:#type/question OR tag:#type/gap",
+                "color": {
+                  "a": 1,
+                  "rgb": 15570576
+                }
+              },
+              {
+                "query": "tag:#type/experiment",
+                "color": {
+                  "a": 1,
+                  "rgb": 12242060
+                }
+              },
+              {
+                "query": "tag:#domain/architecting-building-styling-optimizing-testing-auditing-and-sh",
+                "color": {
+                  "a": 1,
+                  "rgb": 9669279
+                }
+              }
+            ],
+            "showArrow": false,
+            "textFadeMultiplier": 0.2,
+            "nodeSizeMultiplier": 1.1,
+            "lineSizeMultiplier": 0.85,
+            "centerStrength": 0.5,
+            "repelStrength": 11,
+            "linkDistance": 155,
+            "collapse-color-groups": false
+          }
+        },
+        {
+          "type": "graph",
+          "ctime": 1793577600000,
+          "title": "Decisions and outputs",
+          "options": {
+            "collapse-filter": false,
+            "search": "path:\"wiki/\" (tag:#type/decision OR tag:#type/deliverable OR tag:#type/report)",
+            "showTags": false,
+            "showAttachments": false,
+            "hideUnresolved": true,
+            "showOrphans": true,
+            "colorGroups": [
+              {
+                "query": "tag:#type/meta OR tag:#type/hot OR tag:#type/index OR tag:#type/overview OR tag:#type/log OR tag:#type/hub OR tag:#type/dashboard",
+                "color": {
+                  "a": 1,
+                  "rgb": 11043583
+                }
+              },
+              {
+                "query": "tag:#type/flow",
+                "color": {
+                  "a": 1,
+                  "rgb": 6674100
+                }
+              },
+              {
+                "query": "tag:#type/concept",
+                "color": {
+                  "a": 1,
+                  "rgb": 8239089
+                }
+              },
+              {
+                "query": "tag:#type/source",
+                "color": {
+                  "a": 1,
+                  "rgb": 11836381
+                }
+              },
+              {
+                "query": "tag:#type/decision",
+                "color": {
+                  "a": 1,
+                  "rgb": 15252340
+                }
+              },
+              {
+                "query": "tag:#type/deliverable OR tag:#type/report",
+                "color": {
+                  "a": 1,
+                  "rgb": 15114436
+                }
+              },
+              {
+                "query": "tag:#type/account OR tag:#type/platform OR tag:#type/entity",
+                "color": {
+                  "a": 1,
+                  "rgb": 9545176
+                }
+              },
+              {
+                "query": "tag:#type/question OR tag:#type/gap",
+                "color": {
+                  "a": 1,
+                  "rgb": 15570576
+                }
+              },
+              {
+                "query": "tag:#type/experiment",
+                "color": {
+                  "a": 1,
+                  "rgb": 12242060
+                }
+              },
+              {
+                "query": "tag:#domain/architecting-building-styling-optimizing-testing-auditing-and-sh",
+                "color": {
+                  "a": 1,
+                  "rgb": 9669279
+                }
+              }
+            ],
+            "showArrow": false,
+            "textFadeMultiplier": 0.2,
+            "nodeSizeMultiplier": 1.1,
+            "lineSizeMultiplier": 0.85,
+            "centerStrength": 0.5,
+            "repelStrength": 11,
+            "linkDistance": 155,
+            "collapse-color-groups": false
+          }
+        },
+        {
+          "type": "graph",
+          "ctime": 1793577600000,
+          "title": "Questions and experiments",
+          "options": {
+            "collapse-filter": false,
+            "search": "path:\"wiki/\" (tag:#type/question OR tag:#type/gap OR tag:#type/experiment)",
+            "showTags": false,
+            "showAttachments": false,
+            "hideUnresolved": true,
+            "showOrphans": true,
+            "colorGroups": [
+              {
+                "query": "tag:#type/meta OR tag:#type/hot OR tag:#type/index OR tag:#type/overview OR tag:#type/log OR tag:#type/hub OR tag:#type/dashboard",
+                "color": {
+                  "a": 1,
+                  "rgb": 11043583
+                }
+              },
+              {
+                "query": "tag:#type/flow",
+                "color": {
+                  "a": 1,
+                  "rgb": 6674100
+                }
+              },
+              {
+                "query": "tag:#type/concept",
+                "color": {
+                  "a": 1,
+                  "rgb": 8239089
+                }
+              },
+              {
+                "query": "tag:#type/source",
+                "color": {
+                  "a": 1,
+                  "rgb": 11836381
+                }
+              },
+              {
+                "query": "tag:#type/decision",
+                "color": {
+                  "a": 1,
+                  "rgb": 15252340
+                }
+              },
+              {
+                "query": "tag:#type/deliverable OR tag:#type/report",
+                "color": {
+                  "a": 1,
+                  "rgb": 15114436
+                }
+              },
+              {
+                "query": "tag:#type/account OR tag:#type/platform OR tag:#type/entity",
+                "color": {
+                  "a": 1,
+                  "rgb": 9545176
+                }
+              },
+              {
+                "query": "tag:#type/question OR tag:#type/gap",
+                "color": {
+                  "a": 1,
+                  "rgb": 15570576
+                }
+              },
+              {
+                "query": "tag:#type/experiment",
+                "color": {
+                  "a": 1,
+                  "rgb": 12242060
+                }
+              },
+              {
+                "query": "tag:#domain/architecting-building-styling-optimizing-testing-auditing-and-sh",
+                "color": {
+                  "a": 1,
+                  "rgb": 9669279
+                }
+              }
+            ],
+            "showArrow": false,
+            "textFadeMultiplier": 0.2,
+            "nodeSizeMultiplier": 1.1,
+            "lineSizeMultiplier": 0.85,
+            "centerStrength": 0.5,
+            "repelStrength": 11,
+            "linkDistance": 155,
+            "collapse-color-groups": false
+          }
+        },
+        {
+          "type": "graph",
+          "ctime": 1793577600000,
+          "title": "Show tag connections",
+          "options": {
+            "collapse-filter": false,
+            "search": "path:\"wiki/\"",
+            "showTags": true,
+            "showAttachments": false,
+            "hideUnresolved": true,
+            "showOrphans": true,
+            "colorGroups": [
+              {
+                "query": "tag:#type/meta OR tag:#type/hot OR tag:#type/index OR tag:#type/overview OR tag:#type/log OR tag:#type/hub OR tag:#type/dashboard",
+                "color": {
+                  "a": 1,
+                  "rgb": 11043583
+                }
+              },
+              {
+                "query": "tag:#type/flow",
+                "color": {
+                  "a": 1,
+                  "rgb": 6674100
+                }
+              },
+              {
+                "query": "tag:#type/concept",
+                "color": {
+                  "a": 1,
+                  "rgb": 8239089
+                }
+              },
+              {
+                "query": "tag:#type/source",
+                "color": {
+                  "a": 1,
+                  "rgb": 11836381
+                }
+              },
+              {
+                "query": "tag:#type/decision",
+                "color": {
+                  "a": 1,
+                  "rgb": 15252340
+                }
+              },
+              {
+                "query": "tag:#type/deliverable OR tag:#type/report",
+                "color": {
+                  "a": 1,
+                  "rgb": 15114436
+                }
+              },
+              {
+                "query": "tag:#type/account OR tag:#type/platform OR tag:#type/entity",
+                "color": {
+                  "a": 1,
+                  "rgb": 9545176
+                }
+              },
+              {
+                "query": "tag:#type/question OR tag:#type/gap",
+                "color": {
+                  "a": 1,
+                  "rgb": 15570576
+                }
+              },
+              {
+                "query": "tag:#type/experiment",
+                "color": {
+                  "a": 1,
+                  "rgb": 12242060
+                }
+              },
+              {
+                "query": "tag:#domain/architecting-building-styling-optimizing-testing-auditing-and-sh",
+                "color": {
+                  "a": 1,
+                  "rgb": 9669279
+                }
+              }
+            ],
+            "showArrow": false,
+            "textFadeMultiplier": 0.2,
+            "nodeSizeMultiplier": 1.1,
+            "lineSizeMultiplier": 0.85,
+            "centerStrength": 0.5,
+            "repelStrength": 11,
+            "linkDistance": 155,
+            "collapse-color-groups": false
+          }
+        }
+      ]
+    }
+  ]
+}

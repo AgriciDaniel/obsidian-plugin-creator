@@ -1,0 +1,15 @@
+{
+  "schema": "obsidian-plugin-creator.completion.v1",
+  "date": "2026-11-01",
+  "version": "0.2.0",
+  "status": "local-build-complete",
+  "plan": "docs/CREATOR_PLAN.md",
+  "creator_playbooks": 9,
+  "reusable_contracts": 8,
+  "starter_archetypes": 8,
+  "source_entries": 121,
+  "source_claims": 200,
+  "build_evidence": "references/verification/creator-builds.json",
+  "source_creation_boundary": "New artifact under explicit workspace only; no overwrite, active installation, network, note mutation, or publication.",
+  "remaining": ["actual Obsidian runtime", "physical devices", "real-vault performance", "product-specific acceptance", "actual security review", "public directory outcome", "commercial validation", "upstream lint dependency maintenance"]
+}

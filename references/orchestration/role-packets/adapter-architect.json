@@ -1,0 +1,39 @@
+{
+  "allowed_actions": [
+    "design schemas",
+    "map importers",
+    "define synthesis and report modules"
+  ],
+  "blockers": [
+    "missing importer",
+    "missing synthesis module",
+    "missing report renderer"
+  ],
+  "evidence_paths": [
+    "references/adapter-manifest.json",
+    "scripts/",
+    "tests/fixtures/"
+  ],
+  "expected_outputs": [
+    "adapter backlog",
+    "manifest updates"
+  ],
+  "forbidden_actions": [
+    "call generic scripts domain-adapted",
+    "ignore fixtures or tests"
+  ],
+  "gates": [
+    "domain adapters are mapped to scripts and evidence"
+  ],
+  "inputs": [
+    "references/adapter-plan.md",
+    "references/adapter-manifest.json"
+  ],
+  "mission": "Design domain adapter manifests, role scripts, and integration boundaries.",
+  "next_handoff": "vault-architect",
+  "outputs": [
+    "adapter backlog",
+    "manifest updates"
+  ],
+  "role": "adapter-architect"
+}

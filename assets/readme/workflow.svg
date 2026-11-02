@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="248" viewBox="0 0 1200 248" role="img" aria-labelledby="title desc">
+  <title id="title">From idea to plugin</title>
+  <desc id="desc">Four stages in a pixel workshop: idea, plan, build, and refine. Define the task, shape the experience, make a first slice, and check it in practice.</desc>
+  <defs>
+    <style>
+      .charge{transform-origin:26px 173px;animation:charge 12s linear infinite}
+      .stage-1 .charge{animation-delay:-9s}.stage-2 .charge{animation-delay:-6s}.stage-3 .charge{animation-delay:-3s}
+      .next{animation:signal 2.4s ease-in-out infinite}
+      @keyframes charge{0%{opacity:1;transform:scaleX(0)}23%{opacity:1;transform:scaleX(1)}26%,100%{opacity:0;transform:scaleX(1)}}
+      @keyframes signal{0%,100%{opacity:.4}50%{opacity:1}}
+      @media(prefers-reduced-motion:reduce){*{animation:none!important}}
+    </style>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#27213d" stroke-width="1"/>
+    </pattern>
+    <g id="panel" shape-rendering="crispEdges">
+      <path d="M8 0H248V8H256V176H248V184H8V176H0V8H8Z" fill="#211b33" stroke="#50416b" stroke-width="2"/>
+      <path d="M12 180H244" stroke="#b08bea" stroke-width="4"/>
+    </g>
+    <g id="next" fill="#df9760" shape-rendering="crispEdges">
+      <path d="M0 0H12V6H18V12H24V18H18V24H12V30H0V24H6V18H12V12H6V6H0Z"/>
+    </g>
+  </defs>
+  <path d="M8 0H1192V8H1200V240H1192V248H8V240H0V8H8Z" fill="#151022"/>
+  <path d="M8 8H1192V240H8Z" fill="url(#grid)"/>
+  <g class="stage stage-0" transform="translate(28 32)"><use href="#panel"/>
+    <g fill="#df9760" shape-rendering="crispEdges">
+      <path d="M32 28H56V34H62V58H56V64H50V76H38V64H32V58H26V34H32Z"/>
+      <path d="M38 82H50V88H38Z"/><path d="M40 12H46V20H40ZM10 36H18V42H10ZM70 36H78V42H70Z"/>
+    </g>
+    <text x="86" y="48" fill="#d1b3ff" font-family="monospace" font-size="14">01</text>
+    <text x="86" y="76" fill="#fff0d8" font-family="monospace" font-weight="bold" font-size="26">IDEA</text>
+    <text x="26" y="124" fill="#e1d5ee" font-family="monospace" font-size="17">Define the task.</text>
+    <text x="26" y="150" fill="#b6a6c9" font-family="monospace" font-size="15">Who is it for?</text>
+    <rect class="charge" x="26" y="172" width="204" height="2" fill="#df9760"/>
+  </g>
+  <use class="next" href="#next" x="291" y="109"/>
+  <g class="stage stage-1" transform="translate(324 32)"><use href="#panel"/>
+    <g fill="none" stroke="#b08bea" stroke-width="6" shape-rendering="crispEdges">
+      <path d="M28 24H62V80H28Z"/><path d="M38 38H52M38 50H54M38 62H48" stroke="#e8cda6" stroke-width="4"/>
+    </g>
+    <text x="86" y="48" fill="#d1b3ff" font-family="monospace" font-size="14">02</text>
+    <text x="86" y="76" fill="#fff0d8" font-family="monospace" font-weight="bold" font-size="26">PLAN</text>
+    <text x="26" y="124" fill="#e1d5ee" font-family="monospace" font-size="17">Shape the experience.</text>
+    <text x="26" y="150" fill="#b6a6c9" font-family="monospace" font-size="15">Choose a first slice.</text>
+    <rect class="charge" x="26" y="172" width="204" height="2" fill="#b08bea"/>
+  </g>
+  <use class="next" href="#next" x="587" y="109"/>
+  <g class="stage stage-2" transform="translate(620 32)"><use href="#panel"/>
+    <g shape-rendering="crispEdges">
+      <path d="M28 24H64V60H28Z" fill="#b08bea"/><path d="M22 66H48V88H22Z" fill="#df9760"/><path d="M54 66H74V88H54Z" fill="#7f64b3"/>
+      <path d="M42 30H50V38H58V46H50V54H42V46H34V38H42Z" fill="#211b33"/>
+    </g>
+    <text x="86" y="48" fill="#d1b3ff" font-family="monospace" font-size="14">03</text>
+    <text x="86" y="76" fill="#fff0d8" font-family="monospace" font-weight="bold" font-size="26">BUILD</text>
+    <text x="26" y="124" fill="#e1d5ee" font-family="monospace" font-size="17">Make it useful.</text>
+    <text x="26" y="150" fill="#b6a6c9" font-family="monospace" font-size="15">Complete the feature.</text>
+    <rect class="charge" x="26" y="172" width="204" height="2" fill="#b08bea"/>
+  </g>
+  <use class="next" href="#next" x="883" y="109"/>
+  <g class="stage stage-3" transform="translate(916 32)"><use href="#panel"/>
+    <g fill="#b08bea" shape-rendering="crispEdges">
+      <path d="M40 22H52V34H64V46H70V64H58V76H46V88H40V76H28V64H22V46H28V34H40Z"/>
+      <path d="M40 34H46V70H40Z" fill="#e9d6ff"/><path d="M28 46H34V58H28Z" fill="#d2b0ff"/>
+    </g>
+    <text x="86" y="48" fill="#d1b3ff" font-family="monospace" font-size="14">04</text>
+    <text x="86" y="76" fill="#fff0d8" font-family="monospace" font-weight="bold" font-size="24">REFINE</text>
+    <text x="26" y="124" fill="#e1d5ee" font-family="monospace" font-size="17">Check it in practice.</text>
+    <text x="26" y="150" fill="#b6a6c9" font-family="monospace" font-size="15">Keep the evidence.</text>
+    <rect class="charge" x="26" y="172" width="204" height="2" fill="#df9760"/>
+  </g>
+</svg>

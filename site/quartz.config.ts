@@ -1,0 +1,108 @@
+// Quartz v4.5.2 configuration. `npm run build` copies this file into the
+// Quartz checkout at site/.quartz, so the imports resolve there.
+import { QuartzConfig } from "./quartz/cfg"
+import * as Plugin from "./quartz/plugins"
+
+const config: QuartzConfig = {
+  configuration: {
+    pageTitle: "Obsidian Plugin Brain",
+    pageTitleSuffix: "",
+    enableSPA: true,
+    enablePopovers: true,
+    analytics: null,
+    locale: "en-US",
+    baseUrl: "",
+    ignorePatterns: [
+      ".raw",
+      ".raw/**",
+      "**/.raw",
+      "**/.raw/**",
+      ".obsidian",
+      ".obsidian/**",
+      "**/.obsidian",
+      "**/.obsidian/**",
+      "_templates",
+      "_templates/**",
+      "**/_templates",
+      "**/_templates/**",
+      "home.md",
+      "home.md/**",
+      "**/home.md",
+      "**/home.md/**",
+      "activity.md",
+      "activity.md/**",
+      "**/activity.md",
+      "**/activity.md/**",
+      "references/public-sources.json",
+      "references/public-sources.json/**",
+      "**/references/public-sources.json",
+      "**/references/public-sources.json/**",
+      "references/public-sources.json",
+      "references/public-sources.json/**",
+      "**/references/public-sources.json",
+      "**/references/public-sources.json/**"
+    ],
+    defaultDateType: "modified",
+    theme: {
+      fontOrigin: "googleFonts",
+      cdnCaching: true,
+      typography: {
+        header: "Inter",
+        body: "Source Sans Pro",
+        code: "IBM Plex Mono",
+      },
+      colors: {
+        lightMode: {
+          light: "#ffffff",
+          lightgray: "#f5f5f5",
+          gray: "#e5e7eb",
+          darkgray: "#4b5563",
+          dark: "#111827",
+          secondary: "#2563eb",
+          tertiary: "#16a34a",
+          highlight: "rgba(250, 204, 21, 0.25)",
+          textHighlight: "#fff7cc",
+        },
+        darkMode: {
+          light: "#111827",
+          lightgray: "#1f2937",
+          gray: "#374151",
+          darkgray: "#d1d5db",
+          dark: "#f9fafb",
+          secondary: "#60a5fa",
+          tertiary: "#4ade80",
+          highlight: "rgba(250, 204, 21, 0.18)",
+          textHighlight: "#3b2f00",
+        },
+      },
+    },
+  },
+  plugins: {
+    transformers: [
+      Plugin.FrontMatter(),
+      Plugin.CreatedModifiedDate({ priority: ["frontmatter", "filesystem"] }),
+      Plugin.SyntaxHighlighting({ theme: { light: "github-light", dark: "github-dark" }, keepBackground: false }),
+      Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
+      Plugin.GitHubFlavoredMarkdown(),
+      Plugin.TableOfContents(),
+      Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
+      Plugin.Description(),
+      Plugin.Latex({ renderEngine: "katex" }),
+    ],
+    filters: [Plugin.RemoveDrafts()],
+    emitters: [
+      Plugin.AliasRedirects(),
+      Plugin.ComponentResources(),
+      Plugin.ContentPage(),
+      Plugin.FolderPage(),
+      Plugin.TagPage(),
+      Plugin.ContentIndex({ enableSiteMap: true, enableRSS: true }),
+      Plugin.Assets(),
+      Plugin.Static(),
+      Plugin.Favicon(),
+      Plugin.NotFoundPage(),
+    ],
+  },
+}
+
+export default config

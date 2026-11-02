@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="170" viewBox="0 0 560 170" role="img" aria-labelledby="title desc">
+<title id="title">Build A First Slice</title><desc id="desc">Start making something useful. Open the linked creator guide.</desc>
+<style>.light{animation:light 3s ease-in-out infinite}@keyframes light{0%,100%{opacity:.4}50%{opacity:1}}@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<path d="M8 0H552V8H560V162H552V170H8V162H0V8H8Z" fill="#1b142b"/>
+<path d="M10 1H550M1 10V160M559 10V160M10 169H550" stroke="#76578f" fill="none"/>
+<path d="M25 30H57L65 38V76H33L25 68ZM37 43H45V50H52V58H45V65H37V58H30V50H37Z" transform="translate(13 24)" fill="#c39cef" fill-rule="evenodd" shape-rendering="crispEdges"/>
+<text x="104" y="46" fill="#c39cef" font-family="monospace" font-size="14">QUEST 03</text>
+<text x="104" y="80" fill="#f7ead6" font-family="monospace" font-size="23" font-weight="bold">BUILD A FIRST SLICE</text>
+<text x="104" y="111" fill="#c6b5d8" font-family="monospace" font-size="17">Start making something useful.</text>
+<path class="light" d="M512 130H530M523 124L530 130L523 136" fill="none" stroke="#c39cef" stroke-width="3"/>
+<path d="M24 148H486" stroke="#463054"/><rect class="light" x="24" y="145" width="24" height="5" fill="#c39cef"/>
+</svg>

@@ -1,0 +1,40 @@
+{
+  "allowed_actions": [
+    "read repo files",
+    "run audit-brain",
+    "compute rubric weights",
+    "summarize findings"
+  ],
+  "blockers": [
+    "audit-brain CLI not available",
+    "rubric schema drift"
+  ],
+  "evidence_paths": [
+    "wiki/rubric/Brain Anatomy Rubric.md",
+    "wiki/audits/Latest Audit.md"
+  ],
+  "expected_outputs": [
+    "scorecard JSON",
+    "findings markdown summary"
+  ],
+  "forbidden_actions": [
+    "mutate audited repo",
+    "auto-fix without operator approval"
+  ],
+  "gates": [
+    "scorecard schema matches brainstein.brain-anatomy.v2"
+  ],
+  "inputs": [
+    "references/public-sources.json",
+    "references/adapter-manifest.json",
+    "wiki/",
+    "specs/*.yaml"
+  ],
+  "mission": "Score a brain repo against the 51-item brain-anatomy rubric and write a graded scorecard with critical/high/medium/low findings.",
+  "next_handoff": "coach",
+  "outputs": [
+    "scorecard JSON",
+    "findings markdown summary"
+  ],
+  "role": "brain-auditor"
+}

@@ -1,0 +1,38 @@
+{
+  "allowed_actions": [
+    "read product docs",
+    "draft specs",
+    "list acceptance criteria"
+  ],
+  "blockers": [
+    "missing required spec fields",
+    "ambiguous buyer or deliverables"
+  ],
+  "evidence_paths": [
+    "specs/*.yaml",
+    "references/product-spec.md"
+  ],
+  "expected_outputs": [
+    "spec deltas",
+    "acceptance criteria"
+  ],
+  "forbidden_actions": [
+    "omit buyer or safety fields",
+    "write domain claims without source requirements"
+  ],
+  "gates": [
+    "spec is deterministic and scaffoldable"
+  ],
+  "inputs": [
+    "README.md",
+    "PRODUCT.md",
+    "specs/*.yaml"
+  ],
+  "mission": "Convert product intent into concrete brain specs and acceptance criteria.",
+  "next_handoff": "research-scout",
+  "outputs": [
+    "spec deltas",
+    "acceptance criteria"
+  ],
+  "role": "spec-architect"
+}

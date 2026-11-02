@@ -1,0 +1,11 @@
+{
+  "created_at": "2026-11-01T17:44:15+00:00",
+  "description": "Build and verify deterministic demo vault behavior.",
+  "id": "demo-verifier",
+  "result": "Fixed-date demo and retained hashes verified with actual regeneration. Local completion work; no claim of a separately executed named role agent.",
+  "role": "demo-verifier",
+  "schema": "brainstein.task.v1",
+  "status": "completed",
+  "title": "demo-verifier gate work",
+  "updated_at": "2026-11-01"
+}

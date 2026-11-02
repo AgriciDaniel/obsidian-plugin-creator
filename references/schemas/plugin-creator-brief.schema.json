@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Obsidian Plugin Creator brief",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "author", "purpose", "archetype", "platforms", "acceptance_criteria"],
+  "properties": {
+    "id": {"type": "string", "maxLength": 80, "pattern": "^(?!.*obsidian)(?!.*plugin$)[a-z]+(?:-[a-z]+)*$"},
+    "name": {"type": "string", "minLength": 1, "maxLength": 100},
+    "author": {"type": "string", "minLength": 1, "maxLength": 5000},
+    "purpose": {"type": "string", "minLength": 1, "maxLength": 5000},
+    "archetype": {"enum": ["command", "dashboard", "bases", "editor", "markdown", "canvas", "webgl", "vault-index"]},
+    "platforms": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"enum": ["desktop", "ios", "android"]}},
+    "acceptance_criteria": {"type": "array", "minItems": 1, "maxItems": 30, "items": {"type": "string", "minLength": 1, "maxLength": 1000}}
+  },
+  "$comment": "The runtime validator additionally rejects control characters, long dashes, whitespace-only strings, and redundant Obsidian/Plugin display-name words."
+}

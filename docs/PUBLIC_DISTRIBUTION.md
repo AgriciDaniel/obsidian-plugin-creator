@@ -56,5 +56,6 @@ source-note update, fresh catalog hashes, and repeated checks.
 A generated starter is not an implemented arbitrary plugin. Actual Obsidian
 behavior, physical-device compatibility, accessibility, integration security,
 and directory acceptance require evidence for the specific plugin artifact.
-The public edition's own hosted CI remains unverified until it is published and
-runs there. Canonical private CI results are not public-edition CI results.
+The public edition has its own [hosted verification](VERIFICATION.md). The final
+release notes identify the exact release commit and its CI run. Results from
+the original source repository are separate from public-edition CI results.

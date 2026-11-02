@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/AgriciDaniel/obsidian-plugin-creator-public/schemas/obsidian-versions.schema.json",
+  "$id": "https://github.com/AgriciDaniel/obsidian-plugin-creator/schemas/obsidian-versions.schema.json",
   "title": "Obsidian Plugin Version Compatibility Map (versions.json)",
   "description": "Maps each released plugin version (X.Y.Z) to its minimum required Obsidian application version (X.Y.Z).",
   "type": "object",

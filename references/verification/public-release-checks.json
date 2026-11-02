@@ -238,9 +238,9 @@
       "delivery": "Reviewed generic defaults copied only into newly created working vaults; no private state is shipped."
     },
     "hosted_ci": {
-      "repository": "AgriciDaniel/obsidian-plugin-creator-public",
+      "repository": "AgriciDaniel/obsidian-plugin-creator",
       "head_sha": "8c0b858563218454652034f3f64b425b716928cb",
-      "url": "https://github.com/AgriciDaniel/obsidian-plugin-creator-public/actions/runs/41485543731",
+      "url": "https://github.com/AgriciDaniel/obsidian-plugin-creator/actions/runs/41485543731",
       "conclusion": "success",
       "jobs": [
         {

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "obsidian-plugin-brain"
-version = "0.2.0"
+version = "0.2.1"
 description = "Obsidian Plugin Creator source-backed brain, project artifacts, and review tools."
 readme = "README.md"
 requires-python = ">=3.11"
@@ -13,9 +13,9 @@ authors = [{name = "Daniel Agrici"}]
 dependencies = []
 
 [project.urls]
-Homepage = "https://github.com/AgriciDaniel/obsidian-plugin-creator-public"
-Repository = "https://github.com/AgriciDaniel/obsidian-plugin-creator-public"
-Issues = "https://github.com/AgriciDaniel/obsidian-plugin-creator-public/issues"
+Homepage = "https://github.com/AgriciDaniel/obsidian-plugin-creator"
+Repository = "https://github.com/AgriciDaniel/obsidian-plugin-creator"
+Issues = "https://github.com/AgriciDaniel/obsidian-plugin-creator/issues"
 
 [project.scripts]
 obsidian-plugin-brain = "obsidian_plugin_brain.cli:main"

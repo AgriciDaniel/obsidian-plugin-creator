@@ -36,5 +36,5 @@ runtimes that load project-level `AGENTS.md` instructions.
 python3 -m compileall scripts obsidian_plugin_brain tests
 python3 tests/test_pipeline.py
 python3 scripts/audit_brain.py --json
-python3 scripts/package_release.py --version 0.2.0
+python3 scripts/package_release.py --version 0.2.1
 ```

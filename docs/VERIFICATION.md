@@ -1,10 +1,14 @@
 # Verification
 
-Public edition 0.2.0, checked on 2026-11-02. This record applies to the clean
-public source edition. Its [initial hosted CI run](https://github.com/AgriciDaniel/obsidian-plugin-creator-public/actions/runs/41485543731) passed both
+Public edition 0.2.1, checked on 2026-11-02. This record applies to the clean
+public source edition. Its [initial hosted CI run](https://github.com/AgriciDaniel/obsidian-plugin-creator/actions/runs/41485543731) passed both
 `test` and `creator-builds` on source commit `8c0b858563218454652034f3f64b425b716928cb`. The
-[GitHub release](https://github.com/AgriciDaniel/obsidian-plugin-creator-public/releases/tag/v0.2.0)
+[GitHub release](https://github.com/AgriciDaniel/obsidian-plugin-creator/releases/tag/v0.2.1)
 identifies the final release commit and its own CI run.
+
+Version 0.2.1 updates repository URLs and package version metadata. The record
+`references/verification/public-release-checks.json` retains the earlier 0.2.0
+source/build observations. Release notes link CI for the exact patch commit.
 
 ## Observed local checks
 
@@ -52,7 +56,7 @@ python3 -m compileall -q scripts obsidian_plugin_brain tests
 python3 tests/test_pipeline.py
 python3 scripts/build_demo_vault.py --check
 python3 scripts/audit_brain.py --require market-ready --json
-python3 scripts/package_release.py --version 0.2.0
+python3 scripts/package_release.py --version 0.2.1
 ```
 
 The market-ready term belongs to the internal rubric. Public publication still

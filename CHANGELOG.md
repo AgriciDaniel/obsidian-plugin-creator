@@ -2,6 +2,15 @@
 
 All notable changes to Obsidian Plugin Brain are documented in this file. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this repository adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.1] - 2026-11-02
+
+### Changed
+
+- The public repository now uses `AgriciDaniel/obsidian-plugin-creator`.
+- Updated source, schema, plugin, documentation, and download links to the canonical repository URL.
+- Aligned package version metadata with the patch release.
+- Preserved the original v0.2.0 tag and downloads with their existing checksums.
+
 ## [0.2.0] - 2026-11-02
 
 ### Added

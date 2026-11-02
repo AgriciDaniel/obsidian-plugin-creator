@@ -6,7 +6,7 @@ title: "Obsidian Plugin Creator"
 domain: "Architecting, building, styling, optimizing, testing, auditing, and shipping Obsidian plugins across all plugin scopes: core commands, multi-pane dashboards and Bases views, 2D and 3D WebGL visuals and canvases, CodeMirror 6 editor extensions, Markdown processors, vault and MetadataCache engines, mobile compatibility, and Community Store releases."
 buyer: "Indie makers, developer-creators, tool builders, and AI engineering teams who build vault-specific or Community Store Obsidian plugins and need source-cited official APIs, review rules, and scope-specific architecture patterns instead of outdated forum folklore."
 owner: "Daniel Agrici"
-repo_url: "https://github.com/AgriciDaniel/obsidian-plugin-creator-public"
+repo_url: "https://github.com/AgriciDaniel/obsidian-plugin-creator"
 license_name: "Apache-2.0"
 research_refresh_cadence: "monthly for docs.obsidian.md, obsidian.md/changelog, obsidian-api typings, eslint-plugin rules, and obsidian-releases submission policies; on-release for major Obsidian desktop and mobile updates"
 workflows:

@@ -33,7 +33,7 @@ jobs:
           python scripts/build_demo_vault.py
           git diff --exit-code -- examples/sample-vault
       - name: Release package and audit
-        run: python scripts/package_release.py --version 0.2.0
+        run: python scripts/package_release.py --version 0.2.1
 
   creator-builds:
     runs-on: ubuntu-latest

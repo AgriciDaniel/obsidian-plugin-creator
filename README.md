@@ -22,7 +22,7 @@ The public reference pack contains **121 source entries and 200 original paraphr
 
 ## Quick start
 
-Download the [complete v0.2.0 source ZIP](https://github.com/AgriciDaniel/obsidian-plugin-creator-public/releases/download/v0.2.0/obsidian-plugin-brain-source-v0.2.0.zip) or clone this repository. Open **`assets/template-brain/`** as a vault in Obsidian and begin with **Plugin Creator Studio**. No command line setup is required to read the knowledge.
+Download the [complete v0.2.1 source ZIP](https://github.com/AgriciDaniel/obsidian-plugin-creator/releases/download/v0.2.1/obsidian-plugin-brain-source-v0.2.1.zip) or clone this repository. Open **`assets/template-brain/`** as a vault in Obsidian and begin with **Plugin Creator Studio**. No command line setup is required to read the knowledge.
 
 For your own intake, notes, reports, and graph configuration, create a separate working vault with Python 3.11 or newer:
 

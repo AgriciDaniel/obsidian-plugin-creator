@@ -1,6 +1,6 @@
 # Release checklist
 
-Public source edition 0.2.0, checked 2 November 2026. The owner authorized
+Public source edition 0.2.1, checked 2 November 2026. The owner authorized
 publication of this clean edition. The original source repository stays private.
 
 ## Source and distribution
@@ -25,9 +25,9 @@ publication of this clean edition. The original source repository stays private.
 - [x] Eight starters passed TypeScript, bundle, and official lint checks.
 - [x] Internal maturity audit passed with no critical findings.
 - [x] Four release ZIPs passed entry, content, and checksum validation.
-- [x] [Hosted CI](https://github.com/AgriciDaniel/obsidian-plugin-creator-public/actions/runs/41485543731) passed on the initial clean source snapshot.
+- [x] [Hosted CI](https://github.com/AgriciDaniel/obsidian-plugin-creator/actions/runs/41485543731) passed on the initial clean source snapshot.
 
-The final release commit must also pass both CI jobs before public visibility.
+The canonical-name patch must pass both CI jobs before its new release is published.
 The release notes retain that final commit, CI link, artifact hashes, and evidence
 limits. Any changed source or artifact requires repeating its relevant checks.
 

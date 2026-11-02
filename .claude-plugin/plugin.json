@@ -1,13 +1,13 @@
 {
   "name": "obsidian-plugin-brain",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Obsidian Plugin Creator: a source-backed brain with product playbooks, eight starter archetypes, bounded local source generation, and static review.",
   "author": {
     "name": "Daniel Agrici",
     "url": "https://github.com/AgriciDaniel"
   },
-  "homepage": "https://github.com/AgriciDaniel/obsidian-plugin-creator-public",
-  "repository": "https://github.com/AgriciDaniel/obsidian-plugin-creator-public",
+  "homepage": "https://github.com/AgriciDaniel/obsidian-plugin-creator",
+  "repository": "https://github.com/AgriciDaniel/obsidian-plugin-creator",
   "license": "Apache-2.0",
   "keywords": [
     "obsidian-plugin-brain",

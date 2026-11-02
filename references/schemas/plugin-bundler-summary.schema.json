@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/AgriciDaniel/obsidian-plugin-creator-public/schemas/plugin-bundler-summary.schema.json",
+  "$id": "https://github.com/AgriciDaniel/obsidian-plugin-creator/schemas/plugin-bundler-summary.schema.json",
   "title": "Obsidian Plugin Bundler and Static Analysis Summary",
   "description": "Normalized output produced by obsidian_plugin_brain.importers.plugin_repo.import_plugin_repo.",
   "type": "object",

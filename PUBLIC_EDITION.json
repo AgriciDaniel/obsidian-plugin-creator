@@ -1,10 +1,10 @@
 {
   "schema": "obsidian-plugin-public-edition.v1",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "source_catalog": "references/public-sources.json",
   "source_count": 121,
   "claim_count": 200,
   "catalog_sha256": "2180b7c07b51d01618808966204194f8af8337355313bcd9edfe343ddb1a809b",
   "publication": "Public source edition. Publication requires passing source, archive, privacy, and hosted CI checks under the reviewed release workflow.",
-  "repository": "AgriciDaniel/obsidian-plugin-creator-public"
+  "repository": "AgriciDaniel/obsidian-plugin-creator"
 }

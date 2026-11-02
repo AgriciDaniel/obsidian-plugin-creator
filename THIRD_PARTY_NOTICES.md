@@ -1,6 +1,6 @@
 # Third-Party Notices
 
-Obsidian Plugin Brain (`obsidian-plugin-brain`) v0.2.0 has **zero runtime third-party Python dependencies**. The package and static plugin analyzer import only from the Python 3.11+ standard library, enforced by `pyproject.toml` (`dependencies = []`) and verified by `tests/test_pipeline.py`.
+Obsidian Plugin Brain (`obsidian-plugin-brain`) v0.2.1 has **zero runtime third-party Python dependencies**. The package and static plugin analyzer import only from the Python 3.11+ standard library, enforced by `pyproject.toml` (`dependencies = []`) and verified by `tests/test_pipeline.py`.
 
 ## Build-Time Dependencies
 

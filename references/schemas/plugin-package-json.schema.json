@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/AgriciDaniel/obsidian-plugin-creator-public/schemas/plugin-package-json.schema.json",
+  "$id": "https://github.com/AgriciDaniel/obsidian-plugin-creator/schemas/plugin-package-json.schema.json",
   "title": "Obsidian Plugin package.json Contract",
   "description": "Normalized static-import schema for an Obsidian plugin package.json file.",
   "type": "object",
